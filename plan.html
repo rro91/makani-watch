@@ -1,0 +1,735 @@
+<title>Makani Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --bg:#EEF1F1; --surface:#FFFFFF; --surface-2:#E3E9E9; --sunk:#E8ECEC;
+  --ink:#0C1719; --ink-2:#3C4C4F; --ink-3:#6C7D80;
+  --rule:#C9D4D4; --rule-2:#DDE4E4;
+  --accent:#0B6E7A; --accent-2:#0E8794; --accent-soft:#D7EBEC; --on-accent:#FFFFFF;
+  --l0:#1F7A5C; --l1:#8E7200; --l2:#B85B15; --l3:#BE3419; --l4:#A0133B; --l5:#6B2A83;
+  --l0-bg:#DCEDE6; --l1-bg:#F0E9CE; --l2-bg:#F6E3D3; --l3-bg:#F7DCD5; --l4-bg:#F6D7DF; --l5-bg:#EBDCF0;
+  --shadow:0 1px 2px rgba(12,23,25,.06), 0 8px 24px -12px rgba(12,23,25,.18);
+  --step--1:.8125rem; --step-0:1.0625rem; --step-1:1.3rem; --step-2:1.65rem; --step-3:2.2rem; --step-4:3.1rem;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#091113; --surface:#111D20; --surface-2:#18272A; --sunk:#0D181A;
+  --ink:#E7EDED; --ink-2:#A8BABC; --ink-3:#72868A;
+  --rule:#27383B; --rule-2:#1E2D30;
+  --accent:#3FB6C2; --accent-2:#63CFD8; --accent-soft:#12333A; --on-accent:#06191C;
+  --l0:#41C295; --l1:#D8B62B; --l2:#EE8A3C; --l3:#F4634A; --l4:#F05678; --l5:#B983D4;
+  --l0-bg:#0F2B24; --l1-bg:#2C2610; --l2-bg:#33220F; --l3-bg:#361A14; --l4-bg:#34141F; --l5-bg:#261832;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  --bg:#091113; --surface:#111D20; --surface-2:#18272A; --sunk:#0D181A;
+  --ink:#E7EDED; --ink-2:#A8BABC; --ink-3:#72868A;
+  --rule:#27383B; --rule-2:#1E2D30;
+  --accent:#3FB6C2; --accent-2:#63CFD8; --accent-soft:#12333A; --on-accent:#06191C;
+  --l0:#41C295; --l1:#D8B62B; --l2:#EE8A3C; --l3:#F4634A; --l4:#F05678; --l5:#B983D4;
+  --l0-bg:#0F2B24; --l1-bg:#2C2610; --l2-bg:#33220F; --l3-bg:#361A14; --l4-bg:#34141F; --l5-bg:#261832;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size:var(--step-0); line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:70rem; margin:0 auto; padding:0 1.5rem 5rem}
+h1,h2,h3,h4{font-family:Archivo, "Helvetica Neue", Arial, sans-serif; text-wrap:balance; letter-spacing:-.018em}
+h2{font-size:var(--step-2); font-weight:700; line-height:1.15; margin:0}
+h3{font-size:var(--step-1); font-weight:600; line-height:1.25; margin:0}
+h4{font-size:var(--step-0); font-weight:700; line-height:1.3; margin:0}
+p{margin:0}
+a{color:var(--accent); text-underline-offset:.18em; text-decoration-thickness:.06em}
+a:focus-visible{outline:2px solid var(--accent-2); outline-offset:3px; border-radius:2px}
+code{font-family:"IBM Plex Mono", ui-monospace, Consolas, monospace; font-variant-numeric:tabular-nums; font-size:.86em; background:var(--sunk); padding:.1em .34em; border-radius:3px; color:var(--ink-2); word-break:break-all}
+.num{font-family:"IBM Plex Mono", ui-monospace, Consolas, monospace; font-variant-numeric:tabular-nums}
+
+/* masthead */
+.mast{border-bottom:1px solid var(--rule); padding:3.2rem 0 2rem; margin-bottom:2.5rem}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:var(--step--1); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 1.1rem}
+h1{font-size:var(--step-4); font-weight:800; line-height:.98; margin:0 0 .5rem; letter-spacing:-.035em}
+.sub{font-family:Archivo,sans-serif; font-weight:500; font-size:var(--step-1); color:var(--accent); margin:0 0 1.4rem; letter-spacing:-.01em}
+.lede{font-size:1.18rem; line-height:1.55; color:var(--ink-2); max-width:58ch}
+.mast-meta{display:flex; flex-wrap:wrap; gap:0 2.4rem; margin-top:2rem; padding-top:1.4rem; border-top:1px solid var(--rule-2)}
+.mm{display:flex; flex-direction:column; gap:.15rem; padding:.4rem 0}
+.mm dt{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3)}
+.mm dd{margin:0; font-family:Archivo,sans-serif; font-weight:600; font-size:var(--step-0)}
+
+/* sections */
+section{margin-top:4.2rem}
+.sec-head{display:flex; align-items:baseline; gap:1rem; padding-bottom:.9rem; border-bottom:2px solid var(--ink); margin-bottom:1.8rem}
+.hat{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--on-accent); background:var(--accent); padding:.28rem .5rem; border-radius:3px; white-space:nowrap; align-self:center}
+.sec-head h2{flex:1}
+.lead{color:var(--ink-2); max-width:66ch; margin-bottom:1.6rem}
+.stack{display:flex; flex-direction:column; gap:1.1rem}
+
+/* now tiles */
+.now{display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:6px; overflow:hidden; box-shadow:var(--shadow)}
+.now>div{background:var(--surface); padding:1.15rem 1.25rem; display:flex; flex-direction:column; gap:.4rem}
+.now .k{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3)}
+.now .v{font-family:Archivo,sans-serif; font-weight:700; font-size:1.42rem; line-height:1.1; letter-spacing:-.02em}
+.now .n{font-size:var(--step--1); color:var(--ink-2); line-height:1.45}
+.dot{width:.55rem; height:.55rem; border-radius:50%; display:inline-block; margin-right:.45rem; vertical-align:.06em}
+
+.bulletin{background:var(--sunk); border:1px solid var(--rule-2); border-left:3px solid var(--accent); border-radius:4px; padding:1rem 1.1rem; font-family:"IBM Plex Mono",monospace; font-size:.78rem; line-height:1.72; color:var(--ink-2); white-space:pre-wrap; overflow-x:auto; margin-top:1.1rem}
+.bulletin b{color:var(--ink); font-weight:600}
+
+/* tables */
+.tw{overflow-x:auto; border:1px solid var(--rule); border-radius:6px; background:var(--surface); box-shadow:var(--shadow)}
+table{border-collapse:collapse; width:100%; font-size:var(--step--1); min-width:38rem}
+th{font-family:Archivo,sans-serif; font-weight:600; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); text-align:left; padding:.8rem 1rem; border-bottom:1px solid var(--rule); white-space:nowrap; background:var(--surface-2)}
+td{padding:.8rem 1rem; border-bottom:1px solid var(--rule-2); vertical-align:top; line-height:1.5}
+tbody tr:last-child td{border-bottom:0}
+td.mono{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; font-size:.76rem; color:var(--ink-2)}
+td strong{font-family:Archivo,sans-serif; font-weight:600}
+
+/* threat ramp */
+.ramp{display:grid; grid-template-columns:repeat(6,1fr); gap:.4rem; margin-bottom:1.5rem}
+.ramp>div{display:flex; flex-direction:column; gap:.5rem}
+.ramp .bar{height:.5rem; border-radius:2px}
+.ramp .lv{font-family:"IBM Plex Mono",monospace; font-size:.78rem; font-weight:600}
+.ramp .nm{font-family:Archivo,sans-serif; font-weight:600; font-size:.8rem; line-height:1.2; letter-spacing:-.01em}
+@media(max-width:46rem){.ramp{grid-template-columns:repeat(3,1fr); gap:.7rem}}
+.lvl{display:inline-flex; align-items:center; gap:.4rem; font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:.76rem; padding:.16rem .45rem; border-radius:3px; white-space:nowrap}
+
+/* moscow */
+.moscow{display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1.1rem}
+.mcol{border:1px solid var(--rule); border-radius:6px; background:var(--surface); overflow:hidden; display:flex; flex-direction:column}
+.mcol>header{padding:.75rem 1rem; border-bottom:1px solid var(--rule); display:flex; justify-content:space-between; align-items:baseline; gap:.5rem}
+.mcol>header span:first-child{font-family:Archivo,sans-serif; font-weight:700; font-size:.92rem}
+.mcol>header span:last-child{font-family:"IBM Plex Mono",monospace; font-size:.7rem; color:var(--ink-3)}
+.mcol ul{margin:0; padding:.35rem 0; list-style:none; display:flex; flex-direction:column; flex:1}
+.mcol li{padding:.55rem 1rem; font-size:var(--step--1); line-height:1.45; display:flex; gap:.6rem; border-bottom:1px solid var(--rule-2)}
+.mcol li:last-child{border-bottom:0}
+.mcol li b{font-family:"IBM Plex Mono",monospace; font-weight:600; color:var(--ink-3); font-size:.74rem; padding-top:.14rem}
+.must>header{background:var(--l4-bg)} .must>header span:first-child{color:var(--l4)}
+.should>header{background:var(--l2-bg)} .should>header span:first-child{color:var(--l2)}
+.could>header{background:var(--l1-bg)} .could>header span:first-child{color:var(--l1)}
+.wont>header{background:var(--surface-2)} .wont>header span:first-child{color:var(--ink-3)}
+.wont li{color:var(--ink-3)}
+.wont li span{text-decoration:line-through; text-decoration-color:var(--rule)}
+
+/* modes */
+.modes{display:grid; grid-template-columns:1fr 1fr; gap:1.1rem}
+@media(max-width:44rem){.modes{grid-template-columns:1fr}}
+.mode{border:1px solid var(--rule); border-top:3px solid var(--accent); border-radius:6px; background:var(--surface); padding:1.2rem 1.3rem; display:flex; flex-direction:column; gap:.7rem}
+.mode.b{border-top-color:var(--l3)}
+.mode .when{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3)}
+.mode dl{margin:0; display:flex; flex-direction:column; gap:.5rem; font-size:var(--step--1)}
+.mode dl>div{display:grid; grid-template-columns:7.2rem 1fr; gap:.7rem}
+.mode dt{color:var(--ink-3); font-family:Archivo,sans-serif; font-weight:600; font-size:.76rem; padding-top:.12rem}
+.mode dd{margin:0; line-height:1.45}
+
+/* flows + screens */
+.flows{display:flex; flex-direction:column; border:1px solid var(--rule); border-radius:6px; background:var(--surface); overflow:hidden}
+.flow{display:grid; grid-template-columns:auto 1fr; gap:1.1rem; padding:1.1rem 1.25rem; border-bottom:1px solid var(--rule-2); align-items:start}
+.flow:last-child{border-bottom:0}
+.flow .t{font-family:"IBM Plex Mono",monospace; font-size:.74rem; font-weight:600; color:var(--accent); background:var(--accent-soft); padding:.28rem .45rem; border-radius:3px; white-space:nowrap}
+.flow .body{display:flex; flex-direction:column; gap:.3rem}
+.flow .steps{font-size:var(--step--1); color:var(--ink-2); line-height:1.5}
+.flow .steps em{font-style:normal; color:var(--ink); font-family:"IBM Plex Mono",monospace; font-size:.78rem}
+
+.screens{display:grid; grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr)); gap:.9rem}
+.scr{border:1px solid var(--rule); border-radius:6px; background:var(--surface); overflow:hidden; display:flex; flex-direction:column}
+.scr .top{background:var(--surface-2); padding:.55rem .8rem; border-bottom:1px solid var(--rule); font-family:Archivo,sans-serif; font-weight:700; font-size:.85rem; display:flex; align-items:center; gap:.45rem}
+.scr .top .i{font-family:"IBM Plex Mono",monospace; font-size:.68rem; color:var(--ink-3); font-weight:500}
+.scr ul{margin:0; padding:.7rem .8rem; list-style:none; display:flex; flex-direction:column; gap:.42rem; font-size:.79rem; line-height:1.35; color:var(--ink-2)}
+.scr li::before{content:"\00B7"; color:var(--accent); font-weight:700; margin-right:.4rem}
+
+/* palette + type */
+.pal{display:grid; grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr)); gap:.6rem}
+.sw{border:1px solid var(--rule); border-radius:5px; overflow:hidden; background:var(--surface)}
+.sw .chip{height:3rem}
+.sw .meta{padding:.5rem .6rem; display:flex; flex-direction:column; gap:.1rem}
+.sw .nm{font-family:Archivo,sans-serif; font-weight:600; font-size:.78rem}
+.sw .hx{font-family:"IBM Plex Mono",monospace; font-size:.68rem; color:var(--ink-3)}
+
+.typespec{display:flex; flex-direction:column; border:1px solid var(--rule); border-radius:6px; overflow:hidden; background:var(--surface)}
+.typespec>div{padding:1rem 1.2rem; border-bottom:1px solid var(--rule-2); display:flex; flex-direction:column; gap:.25rem}
+.typespec>div:last-child{border-bottom:0}
+.typespec .role{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3)}
+.typespec .spec{color:var(--ink-3); font-size:.78rem; font-family:"IBM Plex Mono",monospace}
+.sample-d{font-family:Archivo,sans-serif; font-weight:800; font-size:1.75rem; letter-spacing:-.03em; line-height:1.1}
+.sample-b{font-family:"Source Serif 4",serif; font-size:1.05rem; line-height:1.5}
+.sample-m{font-family:"IBM Plex Mono",monospace; font-size:.95rem; font-weight:500}
+
+/* pipeline */
+.pipe{display:grid; grid-template-columns:repeat(5,1fr); border:1px solid var(--rule); border-radius:6px; overflow:hidden; background:var(--surface); box-shadow:var(--shadow)}
+.stage{padding:1rem .95rem; border-right:1px solid var(--rule-2); display:flex; flex-direction:column; gap:.55rem}
+.stage:last-child{border-right:0}
+.stage .sn{font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.1em; color:var(--ink-3); text-transform:uppercase}
+.stage .st{font-family:Archivo,sans-serif; font-weight:700; font-size:.92rem; line-height:1.15; letter-spacing:-.015em}
+.stage ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.3rem}
+.stage li{font-family:"IBM Plex Mono",monospace; font-size:.7rem; color:var(--ink-2); line-height:1.35}
+.stage.io{background:var(--sunk)}
+.stage.core{background:var(--accent-soft)}
+.stage.core .st{color:var(--accent)}
+@media(max-width:56rem){.pipe{grid-template-columns:1fr} .stage{border-right:0; border-bottom:1px solid var(--rule-2)} .stage:last-child{border-bottom:0}}
+.pipe-note{font-size:var(--step--1); color:var(--ink-3); margin-top:.7rem; font-family:"IBM Plex Mono",monospace; line-height:1.55}
+
+/* adr */
+.adr{border:1px solid var(--rule); border-left:3px solid var(--accent); border-radius:5px; background:var(--surface); padding:1.1rem 1.25rem; display:flex; flex-direction:column; gap:.55rem}
+.adr .id{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--accent)}
+.adr .q{font-family:Archivo,sans-serif; font-weight:700; font-size:1.02rem; letter-spacing:-.015em}
+.adr p{font-size:var(--step--1); line-height:1.55; color:var(--ink-2)}
+.adr .verdict{font-size:var(--step--1); line-height:1.55; padding-top:.5rem; border-top:1px solid var(--rule-2)}
+.adr .verdict b{font-family:Archivo,sans-serif; color:var(--ink)}
+
+/* schedule */
+.sched{display:flex; flex-direction:column; border:1px solid var(--rule); border-radius:6px; background:var(--surface); overflow:hidden}
+.day{display:grid; grid-template-columns:5.5rem 1fr auto; gap:1.1rem; padding:.85rem 1.1rem; border-bottom:1px solid var(--rule-2); align-items:baseline}
+.day:last-child{border-bottom:0}
+.day .d{font-family:"IBM Plex Mono",monospace; font-size:.78rem; font-weight:600; color:var(--ink-3)}
+.day .w{display:flex; flex-direction:column; gap:.18rem}
+.day .w b{font-family:Archivo,sans-serif; font-weight:600; font-size:.95rem; letter-spacing:-.01em}
+.day .w span{font-size:var(--step--1); color:var(--ink-2); line-height:1.45}
+.day .tag{font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; padding:.2rem .42rem; border-radius:3px; white-space:nowrap; background:var(--surface-2); color:var(--ink-3)}
+.day.gate{background:var(--l0-bg)}
+.day.gate .tag{background:var(--l0); color:var(--bg)}
+.day.gate .d{color:var(--l0)}
+.day.trip{background:var(--accent-soft)}
+.day.trip .tag{background:var(--accent); color:var(--on-accent)}
+.day.trip .d{color:var(--accent)}
+@media(max-width:40rem){.day{grid-template-columns:1fr; gap:.3rem}}
+
+/* misc */
+.call{background:var(--accent-soft); border-radius:6px; padding:1.25rem 1.4rem; display:flex; flex-direction:column; gap:.5rem; border:1px solid var(--rule-2)}
+.call .k{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent)}
+.call p{font-size:1.04rem; line-height:1.55}
+.call strong{font-family:Archivo,sans-serif; font-weight:700}
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:1.1rem}
+@media(max-width:44rem){.grid2{grid-template-columns:1fr}}
+.card{border:1px solid var(--rule); border-radius:6px; background:var(--surface); padding:1.1rem 1.25rem; display:flex; flex-direction:column; gap:.5rem}
+.card p,.card li{font-size:var(--step--1); line-height:1.5; color:var(--ink-2)}
+.card ul{margin:0; padding-left:1.05rem; display:flex; flex-direction:column; gap:.35rem}
+.q-big{font-family:Archivo,sans-serif; font-weight:700; font-size:1.3rem; color:var(--ink); line-height:1.25; letter-spacing:-.02em}
+
+.foot{margin-top:4.5rem; padding-top:1.6rem; border-top:2px solid var(--ink); display:flex; flex-direction:column; gap:1rem}
+.foot .warn{border-left:3px solid var(--l4); padding-left:1rem; display:flex; flex-direction:column; gap:.35rem}
+.foot .warn b{font-family:Archivo,sans-serif; color:var(--l4)}
+.foot p{font-size:var(--step--1); color:var(--ink-2); line-height:1.55}
+.srcs{display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; font-family:"IBM Plex Mono",monospace; font-size:.72rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Plan produktu &middot; 17 wrze&#347;nia 2026 &middot; v1</p>
+  <h1>Makani Watch</h1>
+  <p class="sub">Monitoring zagro&#380;e&#324; pogodowych na Hawajach &mdash; wyjazd 1&ndash;15 pa&#378;dziernika 2026</p>
+  <p class="lede">Aplikacja, kt&oacute;ra zamienia surowe komunikaty NOAA w jedn&#261; odpowied&#378;: <em>czy dzisiaj musz&#281; zmieni&#263; plany?</em> Zaprojektowana pod jednego u&#380;ytkownika w podr&oacute;&#380;y, w strefie czasowej oddalonej o 12 godzin, z czternastodniowym oknem na zbudowanie.</p>
+  <dl class="mast-meta">
+    <div class="mm"><dt>Okno realizacji</dt><dd>14 dni &middot; do 30.09</dd></div>
+    <div class="mm"><dt>Twardy deadline</dt><dd class="num">1.10.2026</dd></div>
+    <div class="mm"><dt>U&#380;ytkownicy</dt><dd>1 (+ wsp&oacute;&#322;towarzysze)</dd></div>
+    <div class="mm"><dt>Koszt utrzymania</dt><dd class="num">0 USD / mies.</dd></div>
+    <div class="mm"><dt>Backend</dt><dd>brak (cron + JSON)</dd></div>
+    <div class="mm"><dt>Trasa</dt><dd>Honolulu &rarr; Big Island &rarr; Maui</dd></div>
+  </dl>
+</header>
+
+<section>
+  <div class="sec-head"><span class="hat">Plan podr&oacute;&#380;y</span><h2>Trasa, na kt&oacute;rej opiera si&#281; mapowanie alert&oacute;w</h2></div>
+  <p class="lead">Trzy segmenty na trzech wyspach &mdash; ale zwiedzacie ca&#322;e wyspy, nie siedzicie przy hotelu. To wyklucza mapowanie &bdquo;jeden nocleg &rarr; jedna strefa&rdquo;: Big Island i Maui maj&#261; po kilkana&#347;cie kilometr&oacute;w r&oacute;&#380;nicy mi&#281;dzy stron&#261; zawietrzn&#261; a nawietrzn&#261; tej samej wyspy w tym samym dniu. Dlatego M6 monitoruje <strong>wszystkie strefy NWS ka&#380;dej odwiedzanej wyspy naraz</strong>, a poziom zagro&#380;enia dnia to najgorszy wynik spo&#347;r&oacute;d nich &mdash; z wyra&#378;nym wskazaniem, kt&oacute;ry region wyspy go wywo&#322;a&#322;. Dni przed 2.10 i po 12.10 sp&#281;dzasz w Los Angeles &mdash; poza zasi&#281;giem monitoringu Hawaj&oacute;w, wi&#281;c aplikacja w te dni milczy zamiast pokazywa&#263; puste karty.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Segment</th><th>Daty</th><th>Monitorowane strefy NWS (ca&#322;a wyspa)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Dolot &middot; Los Angeles</strong></td><td class="mono">do 2.10</td><td>Poza zakresem &middot; brak monitoringu Hawaj&oacute;w</td></tr>
+        <tr><td><strong>Oahu</strong></td><td class="mono">2&ndash;5.10</td><td class="mono">10 stref &mdash; Honolulu Metro &middot; East Honolulu &middot; North Shore &middot; Ewa Plain &middot; Waianae Coast &middot; Waianae Mountains &middot; Central Oahu &middot; Koolau Windward &middot; Koolau Leeward &middot; Olomana</td></tr>
+        <tr><td><strong>Big Island</strong></td><td class="mono">5&ndash;8.10</td><td class="mono">8 stref &mdash; Kona &middot; Kohala &middot; Interior &middot; Summit &middot; South &middot; Southeast &middot; East &middot; North</td></tr>
+        <tr><td><strong>Maui</strong></td><td class="mono">8&ndash;12.10</td><td class="mono">9 stref &mdash; Windward West &middot; Leeward West &middot; Haleakala Summit &middot; Central Valley North &middot; Central Valley South &middot; Windward Haleakala &middot; Kipahulu &middot; South Maui/Upcountry &middot; South Haleakala</td></tr>
+        <tr><td><strong>Powr&oacute;t &middot; Los Angeles</strong></td><td class="mono">od 12.10</td><td>Poza zakresem &middot; brak monitoringu Hawaj&oacute;w</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="call" style="margin-top:1.1rem">
+    <span class="k">Konsekwencja dla ekranu &bdquo;Dzi&#347;&rdquo; i Mapy</span>
+    <p>Przy zwiedzaniu ca&#322;ej wyspy jedna liczba poziomu nie wystarczy bez kontekstu geograficznego &mdash; <code>&bdquo;Flash Flood Warning na Kipahulu (Droga do Hany)&rdquo;</code> to zupe&#322;nie inna informacja ni&#380; to samo ostrze&#380;enie dla strony Kona. Ekran &bdquo;Dzi&#347;&rdquo; pokazuje poziom zbiorczy plus rozwijan&#261; list&#281; stref z osobnym statusem ka&#380;dej; Mapa nak&#322;ada granice stref jako warstw&#281;, wi&#281;c widzisz od razu, kt&oacute;ra cz&#281;&#347;&#263; trasy dnia jest dotkni&#281;ta. To nie zmienia zakresu M1&ndash;M6 z poprzedniej wersji planu &mdash; ten model by&#322; ju&#380; w nich za&#322;o&#380;ony, tylko z b&#322;&#281;dnym uproszczeniem do jednej strefy na wysp&#281;.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Sytuacja</span><h2>Co pokazuj&#261; dane w chwili pisania planu</h2></div>
+  <p class="lead">Wszystkie liczby poni&#380;ej pochodz&#261; z odpytania oficjalnych endpoint&oacute;w NOAA 17 wrze&#347;nia 2026, ok. 08:10 UTC. To jednocze&#347;nie dow&oacute;d, &#380;e ka&#380;de &#378;r&oacute;d&#322;o u&#380;yte w architekturze dzia&#322;a i jest dost&#281;pne bez klucza API.</p>
+
+  <div class="now">
+    <div>
+      <span class="k">Cyklony w basenie centralnym</span>
+      <span class="v" style="color:var(--l0)"><span class="dot" style="background:var(--l0)"></span>Brak</span>
+      <span class="n"><code>CurrentStorms.json</code> zwraca pust&#261; tablic&#281; <code>activeStorms</code>.</span>
+    </div>
+    <div>
+      <span class="k">Szansa formowania &middot; 7 dni</span>
+      <span class="v" style="color:var(--l2)"><span class="dot" style="background:var(--l2)"></span>60&nbsp;%</span>
+      <span class="n">Fala tropikalna na zachodzie Pacyfiku Wschodniego. CPHC ocenia rozw&oacute;j jako <em>medium</em>.</span>
+    </div>
+    <div>
+      <span class="k">Aktywne alerty NWS &middot; Hawaje</span>
+      <span class="v" style="color:var(--l3)"><span class="dot" style="background:var(--l3)"></span>Flood Watch</span>
+      <span class="n">Wszystkie g&#322;&oacute;wne wyspy, do 18.09 06:00 HST. Pow&oacute;d: pozosta&#322;o&#347;ci wilgoci tropikalnej.</span>
+    </div>
+    <div>
+      <span class="k">Strefy prognostyczne</span>
+      <span class="v">43</span>
+      <span class="n">Hawaje dziel&#261; si&#281; na 43 strefy NWS. Alerty wydaje si&#281; <em>per strefa</em>, nie per stan &mdash; to fundament modelu danych.</span>
+    </div>
+  </div>
+
+  <div class="bulletin">ACPN50 PHFO 170510
+TWOCP
+
+<b>Tropical Weather Outlook</b>
+NWS Central Pacific Hurricane Center Honolulu HI
+800 PM HST Wed Sep 16 2026
+
+For the central North Pacific...between 140W and 180W:
+
+A tropical wave is producing disorganized showers and thunderstorms
+well to the south-southwest of the southern tip of the Baja
+California Peninsula.  Environmental conditions appear conducive for
+gradual development, and a tropical depression could form this
+weekend as the system moves westward at around 10 mph.
+* Formation chance through 48 hours...low...<b>10 percent</b>.
+* Formation chance through 7 days...medium...<b>60 percent</b>.</div>
+  <p class="pipe-note">Surowy biuletyn z <code>nhc.noaa.gov/index-cp.xml</code> &mdash; dok&#322;adnie ten tekst aplikacja musi przet&#322;umaczy&#263; na jedno zdanie po polsku.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Product Manager</span><h2>Czego naprawd&#281; si&#281; ba&#263; w pierwszej po&#322;owie pa&#378;dziernika</h2></div>
+  <p class="lead">Sezon huraganowy na Pacyfiku Centralnym trwa od 1 czerwca do 30 listopada, ze szczytem w sierpniu i wrze&#347;niu. Pa&#378;dziernik jest wci&#261;&#380; aktywny. Ale bezpo&#347;rednie uderzenie huraganu w Hawaje to zdarzenie rzadkie &mdash; ostatnie to Iniki w 1992 roku. Ranking poni&#380;ej jest u&#322;o&#380;ony pod turyst&#281; z planem dnia, nie pod mieszka&#324;ca zabezpieczaj&#261;cego dom.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Zagro&#380;enie</th><th>Prawdopodobie&#324;stwo 1&ndash;15.10</th><th>Co realnie psuje</th><th>Wyprzedzenie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ulewy i flash flood</strong></td><td><span class="lvl" style="background:var(--l3-bg);color:var(--l3)">wysokie</span></td><td>Zamkni&#281;te drogi (Hana Highway, doliny), odwo&#322;ane wycieczki, podtopione dojazdy</td><td class="mono">6&ndash;36 h</td></tr>
+        <tr><td><strong>High surf i pr&#261;dy rozrywaj&#261;ce</strong></td><td><span class="lvl" style="background:var(--l3-bg);color:var(--l3)">wysokie</span></td><td>Zamkni&#281;te pla&#380;e, zakaz wej&#347;cia do wody, odwo&#322;any snorkeling</td><td class="mono">12&ndash;48 h</td></tr>
+        <tr><td><strong>Brown water advisory</strong></td><td><span class="lvl" style="background:var(--l2-bg);color:var(--l2)">&#347;rednie</span></td><td>Po ulewie ocean ska&#380;ony sp&#322;ywem, 24&ndash;72 h bez k&#261;pieli</td><td class="mono">po fakcie</td></tr>
+        <tr><td><strong>Burza tropikalna przechodz&#261;ca obok</strong></td><td><span class="lvl" style="background:var(--l2-bg);color:var(--l2)">&#347;rednie</span></td><td>Odwo&#322;ane loty mi&#281;dzywyspowe, zamkni&#281;te parki narodowe, lokalny brak pr&#261;du</td><td class="mono">2&ndash;5 dni</td></tr>
+        <tr><td><strong>Vog z K&#299;lauea</strong></td><td><span class="lvl" style="background:var(--l1-bg);color:var(--l1)">&#347;rednie</span></td><td>Jako&#347;&#263; powietrza na Big Island i zawietrznej, problem przy wysi&#322;ku</td><td class="mono">1&ndash;2 dni</td></tr>
+        <tr><td><strong>Bliskie przej&#347;cie lub uderzenie huraganu</strong></td><td><span class="lvl" style="background:var(--l1-bg);color:var(--l1)">niskie</span></td><td>Ewakuacja, dni bez pr&#261;du (jak 92&nbsp;% Kaua&#699;i przy Lowell), zamkni&#281;te lotnisko, odwo&#322;any lot powrotny</td><td class="mono">3&ndash;5 dni</td></tr>
+        <tr><td><strong>Tsunami</strong></td><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">bardzo niskie</span></td><td>Natychmiastowa ewakuacja ze strefy zalewowej</td><td class="mono">minuty&ndash;godziny</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="call" style="margin-top:1.5rem">
+    <span class="k">Wniosek, kt&oacute;ry przes&#261;dza o projekcie</span>
+    <p>Aplikacja nazywa si&#281; &bdquo;huraganowa&rdquo;, ale w <strong>wi&#281;kszo&#347;ci dni</strong> b&#281;dzie s&#322;u&#380;y&#263; do czego&#347; innego: ostrze&#380;e&#324; o ulewach, stanie oceanu i zamkni&#281;tych szlakach. Je&#347;li zaprojektujesz j&#261; wy&#322;&#261;cznie wok&oacute;&#322; sto&#380;ka niepewno&#347;ci huraganu, przez wi&#281;kszo&#347;&#263; czternastu dni b&#281;dzie pokazywa&#263; pust&#261; map&#281; i zero warto&#347;ci. <strong>Poziom zagro&#380;enia musi &#322;&#261;czy&#263; cyklony z bie&#380;&#261;cymi alertami NWS</strong> &mdash; a jak pokazuje poni&#380;szy precedens, w tym sezonie te dwa &#378;r&oacute;d&#322;a potrafi&#261; eskalowa&#263; r&oacute;wnocze&#347;nie i bardzo szybko.</p>
+  </div>
+
+  <div class="call" style="margin-top:1.1rem; border-left:3px solid var(--l3)">
+    <span class="k" style="color:var(--l3)">To nie jest teoria &mdash; sta&#322;o si&#281; 9 dni temu</span>
+    <p><strong>Hurricane Lowell</strong>, sz&oacute;sty huragan kategorii&nbsp;5 na &#347;wiecie w 2026 roku, skr&#281;ci&#322; na p&oacute;&#322;noc i 7&ndash;8 wrze&#347;nia przeszed&#322; tu&#380; na zach&oacute;d od Ni&#699;ihau i Kaua&#699;i jako kategoria&nbsp;2, z podmuchami do 92 mph zarejestrowanymi na l&#261;dzie i oko&#322;o 100 mph nad wodami przybrze&#380;nymi. Efekt: <strong>92&nbsp;% odbiorc&oacute;w pr&#261;du na Kaua&#699;i bez zasilania</strong> (33&nbsp;000 z 36&nbsp;000), do 16 cali deszczu, zamkni&#281;te drogi i podtopienia na zachodnim O&#699;ahu oraz w Kihei na Maui, tropical storm warning dla ca&#322;ego O&#699;ahu i <strong>pierwszy w historii Hawaj&oacute;w tornado watch</strong>. Gubernator Josh Green og&#322;osi&#322; stan wyj&#261;tkowy dla ca&#322;ego stanu ju&#380; 3 wrze&#347;nia &mdash; zanim by&#322;o wiadomo, czy uderzy Lowell czy r&oacute;wnolegle &#347;ledzony Karina. Ten sam sezon przyni&oacute;s&#322; te&#380; huragan Lala, kt&oacute;ry w sierpniu wywo&#322;a&#322; ostrze&#380;enia o wysokiej fali na Big Island. Sezon centralnopacyficzny 2026 jest wyj&#261;tkowo aktywny, a Kihei i zachodnie O&#699;ahu &mdash; miejsca realnie dotkni&#281;te przez Lowell &mdash; le&#380;&#261; w strefach, kt&oacute;re monitorujecie w ramach w&#322;asnej trasy.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Product Manager</span><h2>Dla kogo, po co i czego nie robimy</h2></div>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>U&#380;ytkownik</h4>
+      <p>Jedna osoba plus towarzysze podr&oacute;&#380;y. Do 30 wrze&#347;nia siedzi w Polsce &mdash; <strong>12 godzin przed Hawajami</strong> &mdash; i sprawdza raz dziennie. Od 1 pa&#378;dziernika jest na miejscu: w wodzie, w aucie, na szlaku, cz&#281;sto bez zasi&#281;gu i z ograniczonym transferem w roamingu.</p>
+      <p>Nie jest meteorologiem. Nie przeczyta biuletynu WMO. Potrzebuje decyzji, nie danych.</p>
+    </div>
+    <div class="card">
+      <h4>Jedno pytanie, na kt&oacute;re odpowiada ekran g&#322;&oacute;wny</h4>
+      <p class="q-big">&bdquo;Czy dzisiaj musz&#281; zmieni&#263; plany?&rdquo;</p>
+      <p>Odpowied&#378; musi by&#263; czytelna w trzy sekundy, z odblokowanego telefonu, w pe&#322;nym s&#322;o&#324;cu. Wszystko inne na ekranie jest uzasadnieniem tej odpowiedzi.</p>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:1.1rem">
+    <div class="card">
+      <h4>Trzy zasady produktu</h4>
+      <ul>
+        <li><b>Nigdy nie zgaduj.</b> Ka&#380;da liczba ma znacznik czasu i link do &#378;r&oacute;d&#322;a. Aplikacja nie prognozuje sama &mdash; tylko t&#322;umaczy NOAA.</li>
+        <li><b>Nigdy nie pokazuj pustki.</b> Gdy &#378;r&oacute;d&#322;o padnie, poka&#380; ostatnie znane dane z wyra&#378;n&#261; etykiet&#261; wieku, nie spinner i nie b&#322;&#261;d.</li>
+        <li><b>Nie jeste&#347; jedynym kana&#322;em.</b> Przy poziomie 4+ ekran kieruje do HI-EMA, radia lokalnego i NOAA Weather Radio.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Metryki sukcesu</h4>
+      <ul>
+        <li>Czas od wydania alertu NWS do powiadomienia na telefonie: <strong>&lt; 10 minut</strong></li>
+        <li>Fa&#322;szywe alarmy wybudzaj&#261;ce w nocy: <strong>0</strong> (eskalacja wy&#322;&#261;cznie przy wzro&#347;cie poziomu)</li>
+        <li>Odpowied&#378; na g&#322;&oacute;wne pytanie bez scrollowania: <strong>zawsze</strong></li>
+        <li>Dzia&#322;a po wyl&#261;dowaniu bez konfiguracji: <strong>tak</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Product Manager</span><h2>Poziom zagro&#380;enia &mdash; jeden wska&#378;nik, jawne regu&#322;y</h2></div>
+  <p class="lead">Sercem aplikacji jest jedna liczba od 0 do 5, wyliczana z twardych regu&#322;. Regu&#322;y s&#261; w kodzie, jawne i testowalne &mdash; u&#380;ytkownik mo&#380;e w ka&#380;dej chwili rozwin&#261;&#263; &bdquo;dlaczego ten poziom&rdquo; i zobaczy&#263;, kt&oacute;ry warunek zadzia&#322;a&#322;.</p>
+
+  <div class="ramp">
+    <div><div class="bar" style="background:var(--l0)"></div><span class="lv" style="color:var(--l0)">0</span><span class="nm">Spok&oacute;j</span></div>
+    <div><div class="bar" style="background:var(--l1)"></div><span class="lv" style="color:var(--l1)">1</span><span class="nm">Obserwacja</span></div>
+    <div><div class="bar" style="background:var(--l2)"></div><span class="lv" style="color:var(--l2)">2</span><span class="nm">Podwy&#380;szony</span></div>
+    <div><div class="bar" style="background:var(--l3)"></div><span class="lv" style="color:var(--l3)">3</span><span class="nm">Watch</span></div>
+    <div><div class="bar" style="background:var(--l4)"></div><span class="lv" style="color:var(--l4)">4</span><span class="nm">Warning</span></div>
+    <div><div class="bar" style="background:var(--l5)"></div><span class="lv" style="color:var(--l5)">5</span><span class="nm">Uderzenie</span></div>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Poziom</th><th>Warunek wyzwalaj&#261;cy (dowolny spe&#322;niony)</th><th>Komunikat</th><th>Kana&#322;</th></tr></thead>
+      <tbody>
+        <tr><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">0 Spok&oacute;j</span></td><td>Brak cyklon&oacute;w w basenie 140W&ndash;180W &middot; brak alert&oacute;w NWS dla Twoich stref</td><td>&bdquo;Bez zmian. Plan dnia aktualny.&rdquo;</td><td class="mono">brak</td></tr>
+        <tr><td><span class="lvl" style="background:var(--l1-bg);color:var(--l1)">1 Obserwacja</span></td><td>TWO &ge; 40&nbsp;% formowania w 7 dni &middot; lub Beach Hazards / Small Craft Advisory</td><td>&bdquo;Co&#347; si&#281; tworzy, ale daleko. Sprawdzaj raz dziennie.&rdquo;</td><td class="mono">dzienne podsumowanie</td></tr>
+        <tr><td><span class="lvl" style="background:var(--l2-bg);color:var(--l2)">2 Podwy&#380;szony</span></td><td>Aktywny cyklon w basenie &gt; 1600 km od Ciebie &middot; lub Flood Watch / High Surf Advisory</td><td>&bdquo;Uwa&#380;aj na wod&#281; i drogi. Miej plan B na jeden dzie&#324;.&rdquo;</td><td class="mono">push &middot; 1&times;/dzie&#324;</td></tr>
+        <tr><td><span class="lvl" style="background:var(--l3-bg);color:var(--l3)">3 Watch</span></td><td>Prawd. wiatru 34 kt &ge; 10&nbsp;% dla Twojej wyspy &middot; lub TS/Hurricane Watch &middot; lub Flash Flood Warning &middot; lub Tornado Watch <span style="color:var(--ink-3)">(precedens: pierwszy w historii Hawaj&oacute;w, 8.09.2026)</span></td><td>&bdquo;Zmie&#324; plan dnia. Sprawd&#378; loty i rezerwacje.&rdquo;</td><td class="mono">push natychmiast</td></tr>
+        <tr><td><span class="lvl" style="background:var(--l4-bg);color:var(--l4)">4 Warning</span></td><td>TS/Hurricane Warning dla Twojej strefy &middot; lub prawd. 34 kt &ge; 30&nbsp;%</td><td>&bdquo;Zosta&#324; w bazie. Zapasy, woda, powerbank, got&oacute;wka.&rdquo;</td><td class="mono">push + Telegram + e-mail</td></tr>
+        <tr><td><span class="lvl" style="background:var(--l5-bg);color:var(--l5)">5 Uderzenie</span></td><td>Prognozowany wiatr 64 kt &middot; lub alert o severity <code>Extreme</code> &middot; lub polecenie ewakuacji</td><td>Tryb kryzysowy: schron, kontakty, PDF offline, radio</td><td class="mono">wszystkie kana&#322;y</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid2" style="margin-top:1.1rem">
+    <div class="card">
+      <h4>Regu&#322;a anty-spamowa</h4>
+      <p>Powiadamiaj <strong>wy&#322;&#261;cznie przy wzro&#347;cie poziomu</strong>. Spadek nie budzi &mdash; trafia do porannego podsumowania jako &bdquo;odwo&#322;ane&rdquo;. Deduplikacja po <code>alert.id</code> z NWS, &#380;eby aktualizacja tego samego ostrze&#380;enia nie generowa&#322;a drugiego pusha.</p>
+    </div>
+    <div class="card">
+      <h4>Cisza nocna</h4>
+      <p>Poziomy 0&ndash;2 nie budz&#261; mi&#281;dzy 22:00 a 07:00 czasu lokalnego u&#380;ytkownika (HST na miejscu, CEST przed wyjazdem). Poziomy 3&ndash;5 przebijaj&#261; cisz&#281; zawsze &mdash; o to chodzi w ca&#322;ej aplikacji.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Product Manager</span><h2>Zakres &mdash; co wchodzi do wersji lec&#261;cej z Tob&#261;</h2></div>
+  <p class="lead">Czterna&#347;cie dni to ma&#322;o, a deadline jest nieprzesuwalny. Podzia&#322; MoSCoW z tward&#261; granic&#261;: je&#347;li 25 wrze&#347;nia &bdquo;Must&rdquo; nie stoi na produkcji, wszystko z &bdquo;Should&rdquo; wypada bez dyskusji.</p>
+
+  <div class="moscow">
+    <div class="mcol must">
+      <header><span>Must</span><span>do 25.09</span></header>
+      <ul>
+        <li><b>M1</b><span>Ekran &bdquo;Dzi&#347;&rdquo;: poziom zagro&#380;enia + jedno zdanie rekomendacji</span></li>
+        <li><b>M2</b><span>Alerty NWS filtrowane do stref z Twojego planu podr&oacute;&#380;y</span></li>
+        <li><b>M3</b><span>Aktywne cyklony CPac/EPac: pozycja, si&#322;a, odleg&#322;o&#347;&#263; od Ciebie</span></li>
+        <li><b>M4</b><span>Prognoza 7 dni dla bie&#380;&#261;cej lokalizacji: wiatr, opady, fale</span></li>
+        <li><b>M5</b><span>Powiadomienia push i Telegram przy wzro&#347;cie poziomu</span></li>
+        <li><b>M6</b><span>Trasa 2&ndash;5.10 Oahu, 5&ndash;8.10 Big Island, 8&ndash;12.10 Maui &rarr; wszystkie strefy ka&#380;dej wyspy, alerty per region</span></li>
+      </ul>
+    </div>
+    <div class="mcol should">
+      <header><span>Should</span><span>26&ndash;29.09</span></header>
+      <ul>
+        <li><b>S1</b><span>Mapa ze sto&#380;kiem niepewno&#347;ci i torem prognozowanym</span></li>
+        <li><b>S2</b><span>P&#281;tla satelitarna GOES-18, sektor Hawaje</span></li>
+        <li><b>S3</b><span>Boje NDBC: wysoko&#347;&#263; i okres fali</span></li>
+        <li><b>S4</b><span>Tryb offline (PWA) z ostatnim znanym stanem</span></li>
+        <li><b>S5</b><span>Checklista gotowo&#347;ci zale&#380;na od poziomu</span></li>
+      </ul>
+    </div>
+    <div class="mcol could">
+      <header><span>Could</span><span>je&#347;li zostanie czas</span></header>
+      <ul>
+        <li><b>C1</b><span>Kana&#322; tsunami z PTWC</span></li>
+        <li><b>C2</b><span>Status lot&oacute;w mi&#281;dzywyspowych</span></li>
+        <li><b>C3</b><span>Jako&#347;&#263; powietrza i vog</span></li>
+        <li><b>C4</b><span>PDF awaryjny: kontakty, adresy, ubezpieczenie</span></li>
+        <li><b>C5</b><span>Por&oacute;wnanie historyczne: Iniki 1992, Lane 2018, Douglas 2020</span></li>
+      </ul>
+    </div>
+    <div class="mcol wont">
+      <header><span>Won&rsquo;t</span><span>nie w tej wersji</span></header>
+      <ul>
+        <li><b>W1</b><span>Konta u&#380;ytkownik&oacute;w i logowanie</span></li>
+        <li><b>W2</b><span>W&#322;asne modelowanie toru burzy</span></li>
+        <li><b>W3</b><span>Aplikacja natywna iOS/Android</span></li>
+        <li><b>W4</b><span>Wsparcie wielu podr&oacute;&#380;y i wielu os&oacute;b</span></li>
+        <li><b>W5</b><span>T&#322;umaczenie biuletyn&oacute;w przez model j&#281;zykowy</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="pipe-note">W5 celowo poza zakresem: t&#322;umaczenie komunikat&oacute;w bezpiecze&#324;stwa przez model wprowadza ryzyko przek&#322;amania. Zamiast tego &mdash; s&#322;ownik sta&#322;ych fraz NWS przet&#322;umaczonych r&#281;cznie, plus zawsze dost&#281;pny orygina&#322;.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">UX Designer</span><h2>Dwa tryby, cztery przep&#322;ywy</h2></div>
+  <p class="lead">Aplikacja zmienia si&#281; w dniu wylotu. To nie jest kosmetyka &mdash; zmienia si&#281; pytanie, horyzont czasowy, spos&oacute;b powiadamiania i to, czy w og&oacute;le jest internet.</p>
+
+  <div class="modes">
+    <div class="mode">
+      <span class="when">Tryb A &middot; 17&ndash;30 wrze&#347;nia</span>
+      <h3>Przed wyjazdem</h3>
+      <dl>
+        <div><dt>Pytanie</dt><dd>&bdquo;Czy w og&oacute;le lecie&#263; i czy zmienia&#263; rezerwacje?&rdquo;</dd></div>
+        <div><dt>Horyzont</dt><dd>5&ndash;10 dni, prognoza sezonowa i TWO</dd></div>
+        <div><dt>Rytm</dt><dd>Jedno podsumowanie o 8:00 CEST</dd></div>
+        <div><dt>Lokalizacja</dt><dd>Z planu podr&oacute;&#380;y &mdash; jeszcze nie z GPS</dd></div>
+        <div><dt>Akcent</dt><dd>Trendy i odliczanie do wylotu</dd></div>
+      </dl>
+    </div>
+    <div class="mode b">
+      <span class="when">Tryb B &middot; 1&ndash;15 pa&#378;dziernika</span>
+      <h3>Na miejscu</h3>
+      <dl>
+        <div><dt>Pytanie</dt><dd>&bdquo;Co robi&#281; dzisiaj i gdzie nie wchodz&#281; do wody?&rdquo;</dd></div>
+        <div><dt>Horyzont</dt><dd>Dzi&#347; i jutro, godzina po godzinie</dd></div>
+        <div><dt>Rytm</dt><dd>Push natychmiast + poranne 6:30 HST</dd></div>
+        <div><dt>Lokalizacja</dt><dd>GPS, z planem podr&oacute;&#380;y jako zapasem</dd></div>
+        <div><dt>Akcent</dt><dd>Offline-first, du&#380;e liczby, tryb kryzysowy</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <p class="lead" style="margin-top:1.8rem">Cztery przep&#322;ywy pokrywaj&#261; wszystko, co u&#380;ytkownik naprawd&#281; zrobi. Czas przy ka&#380;dym to bud&#380;et, w kt&oacute;rym musi si&#281; zmie&#347;ci&#263;.</p>
+
+  <div class="flows">
+    <div class="flow">
+      <span class="t">3 s</span>
+      <div class="body"><h4>Poranny rzut oka</h4>
+      <span class="steps">Otwarcie z ekranu blokady &rarr; <em>kolor + jedno zdanie</em> &rarr; zamkni&#281;cie. Bez scrolla i bez &#322;adowania &mdash; ostatni snapshot z cache renderuje si&#281; natychmiast, &#347;wie&#380;e dane doci&#261;gaj&#261; w tle i podmieniaj&#261; znacznik czasu.</span></div>
+    </div>
+    <div class="flow">
+      <span class="t">30 s</span>
+      <div class="body"><h4>Reakcja na powiadomienie</h4>
+      <span class="steps">Push &rarr; tre&#347;&#263; m&oacute;wi <em>co, gdzie, do kiedy</em> jeszcze przed odblokowaniem &rarr; tap otwiera kart&#281; alertu z instrukcj&#261; NWS po polsku &rarr; link &bdquo;orygina&#322; NOAA&rdquo; zawsze widoczny pod spodem.</span></div>
+    </div>
+    <div class="flow">
+      <span class="t">2 min</span>
+      <div class="body"><h4>Planowanie jutrzejszego dnia</h4>
+      <span class="steps">Zak&#322;adka <em>Plan</em> &rarr; wyb&oacute;r dnia &rarr; opady, wiatr i fale dla wyspy z planu &rarr; ostrze&#380;enia na&#322;o&#380;one na wpisy planu (&bdquo;Hana Highway &mdash; Flood Watch do 18:00&rdquo;) &rarr; decyzja o zamianie dni.</span></div>
+    </div>
+    <div class="flow">
+      <span class="t">natychmiast</span>
+      <div class="body"><h4>Tryb kryzysowy &middot; poziom 4&ndash;5</h4>
+      <span class="steps">Interfejs si&#281; przebudowuje: znika prognoza i mapa, zostaje <em>checklista, kontakty, adres najbli&#380;szego schronu, PDF offline i cz&#281;stotliwo&#347;&#263; radia</em>. Jeden ekran, du&#380;e elementy, dzia&#322;a bez sieci.</span></div>
+    </div>
+  </div>
+
+  <p class="lead" style="margin-top:1.8rem">Nawigacja: pi&#281;&#263; zak&#322;adek na dole ekranu, bo to urz&#261;dzenie trzymane w jednej r&#281;ce, cz&#281;sto mokrej. &bdquo;Dzi&#347;&rdquo; jest zawsze domy&#347;lne, tak&#380;e po powrocie z t&#322;a po kilku godzinach.</p>
+
+  <div class="screens">
+    <div class="scr"><div class="top">Dzi&#347; <span class="i">domy&#347;lny</span></div><ul><li>Poziom zagro&#380;enia, pe&#322;na szeroko&#347;&#263;</li><li>Jedno zdanie rekomendacji</li><li>Aktywne alerty dla wszystkich stref wyspy</li><li>&bdquo;Dlaczego ten poziom&rdquo; &mdash; rozwijane</li><li>Wiek danych przy ka&#380;dym &#378;r&oacute;dle</li></ul></div>
+    <div class="scr"><div class="top">Mapa</div><ul><li>Pozycja cyklonu i tor</li><li>Sto&#380;ek niepewno&#347;ci 60&ndash;70&nbsp;%</li><li>Twoja pozycja i dystans</li><li>Strefy watch i warning</li><li>Satelita GOES jako podk&#322;ad</li></ul></div>
+    <div class="scr"><div class="top">Plan</div><ul><li>15 dni wyjazdu jako pasek</li><li>Wyspa i nocleg na ka&#380;dy dzie&#324;</li><li>Alerty przypi&#281;te do dni</li><li>Dni oznaczone kolorem ryzyka</li><li>Edycja bez logowania</li></ul></div>
+    <div class="scr"><div class="top">Prognoza</div><ul><li>Wiatr, opady, fale &mdash; 7 dni</li><li>Godzinowo na dzi&#347; i jutro</li><li>Boje NDBC: fala i okres</li><li>Wsch&oacute;d i zach&oacute;d s&#322;o&#324;ca</li><li>Zawsze HST obok CEST</li></ul></div>
+    <div class="scr"><div class="top">Gotowo&#347;&#263;</div><ul><li>Checklista zale&#380;na od poziomu</li><li>Kontakty: HI-EMA, konsulat, hotel</li><li>Cz&#281;stotliwo&#347;ci radia</li><li>PDF offline do pobrania</li><li>Adresy schron&oacute;w</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">UI Designer</span><h2>System wizualny</h2></div>
+  <p class="lead">Kierunek: przyrz&#261;d pomiarowy, nie aplikacja pogodowa. Ch&#322;odne szaro&#347;ci z domieszk&#261; cyjanu jako t&#322;o, jeden turkusowy akcent na elementy interfejsu &mdash; i ca&#322;a si&#322;a koloru zarezerwowana dla skali zagro&#380;enia. Skala idzie od morskiej zieleni przez bursztyn do fioletu, zgodnie z konwencj&#261; NWS dla zdarze&#324; ekstremalnych.</p>
+
+  <div class="pal">
+    <div class="sw"><div class="chip" style="background:var(--l0)"></div><div class="meta"><span class="nm">Poziom 0</span><span class="hx">#1F7A5C</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--l1)"></div><div class="meta"><span class="nm">Poziom 1</span><span class="hx">#8E7200</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--l2)"></div><div class="meta"><span class="nm">Poziom 2</span><span class="hx">#B85B15</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--l3)"></div><div class="meta"><span class="nm">Poziom 3</span><span class="hx">#BE3419</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--l4)"></div><div class="meta"><span class="nm">Poziom 4</span><span class="hx">#A0133B</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--l5)"></div><div class="meta"><span class="nm">Poziom 5</span><span class="hx">#6B2A83</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--accent)"></div><div class="meta"><span class="nm">Akcent</span><span class="hx">#0B6E7A</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ink)"></div><div class="meta"><span class="nm">Tekst</span><span class="hx">#0C1719</span></div></div>
+  </div>
+
+  <div class="typespec" style="margin-top:1.1rem">
+    <div><span class="role">Display &middot; Archivo 700&ndash;800</span><span class="sample-d">Poziom 3 &mdash; zmie&#324; plan dnia</span><span class="spec">nag&#322;&oacute;wki, poziom zagro&#380;enia, etykiety &middot; tracking -0.03em</span></div>
+    <div><span class="role">Tekst &middot; Source Serif 4</span><span class="sample-b">Ostrze&#380;enie o powodzi b&#322;yskawicznej obowi&#261;zuje do 18:00 czasu lokalnego dla ca&#322;ego wschodniego Maui.</span><span class="spec">opisy, instrukcje, tre&#347;&#263; alert&oacute;w &middot; 65 znak&oacute;w w wierszu</span></div>
+    <div><span class="role">Dane &middot; IBM Plex Mono</span><span class="sample-m">21&deg;40.2&prime;N 158&deg;07.1&prime;W &middot; 34 kt &middot; 08:10 HST</span><span class="spec">wsp&oacute;&#322;rz&#281;dne, pr&#281;dko&#347;ci, czasy, identyfikatory stref &middot; tabular-nums</span></div>
+  </div>
+
+  <div class="grid2" style="margin-top:1.1rem">
+    <div class="card">
+      <h4>Komponenty o w&#322;asnej roli</h4>
+      <ul>
+        <li><b>Pas statusu</b> &mdash; pe&#322;na szeroko&#347;&#263;, kolor poziomu, jedyny element z tak du&#380;&#261; plam&#261; koloru na ekranie.</li>
+        <li><b>Karta alertu</b> &mdash; pionowy pasek severity po lewej, nag&#322;&oacute;wek, czas obowi&#261;zywania, instrukcja, link do orygina&#322;u.</li>
+        <li><b>Karta sztormu</b> &mdash; nazwa, klasyfikacja, wiatr w kt, kierunek ruchu, dystans do Ciebie.</li>
+        <li><b>Znacznik nie&#347;wie&#380;o&#347;ci</b> &mdash; pojawia si&#281;, gdy dane przekrocz&#261; TTL &#378;r&oacute;d&#322;a. Szary, nie czerwony: stare dane to nie awaria.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Dost&#281;pno&#347;&#263; i warunki u&#380;ycia</h4>
+      <ul>
+        <li>Poziom zagro&#380;enia nigdy nie jest komunikowany <em>samym kolorem</em> &mdash; zawsze numer, nazwa i ikona.</li>
+        <li>Kontrast minimum 4.5:1 w obu motywach; jasny motyw zoptymalizowany pod ostre s&#322;o&#324;ce.</li>
+        <li>Cele dotykowe minimum 44 px &mdash; telefon obs&#322;ugiwany mokr&#261; r&#281;k&#261;.</li>
+        <li>Obie strefy czasowe zawsze obok siebie: <code>14:20 HST &middot; 02:20 CEST</code>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Architekt</span><h2>Architektura</h2></div>
+  <p class="lead">Dwie decyzje przes&#261;dzaj&#261; o kszta&#322;cie ca&#322;o&#347;ci, i obie wynikaj&#261; z weryfikacji przeprowadzonej na &#380;ywych endpointach, nie z za&#322;o&#380;e&#324;.</p>
+
+  <div class="stack">
+    <div class="adr">
+      <span class="id">Decyzja 1 &middot; warstwa serwerowa</span>
+      <span class="q">Aplikacja nie mo&#380;e by&#263; wy&#322;&#261;cznie kliencka</span>
+      <p>Odpytanie ka&#380;dego &#378;r&oacute;d&#322;a z nag&#322;&oacute;wkiem <code>Origin</code> pokazuje wyra&#378;ny podzia&#322;. Zwracaj&#261; <code>access-control-allow-origin: *</code>: <code>api.weather.gov</code>, <code>api.open-meteo.com</code> oraz CDN satelitarny NESDIS. Nie zwracaj&#261; &#380;adnego nag&#322;&oacute;wka CORS: <code>nhc.noaa.gov</code> (kana&#322;y CPHC), <code>ndbc.noaa.gov</code> (boje), <code>tsunami.gov</code>. Przegl&#261;darka zablokuje te trzy.</p>
+      <p class="verdict"><b>Rozstrzygni&#281;cie:</b> potrzebny jest komponent po stronie serwera, kt&oacute;ry pobiera dane z NOAA, normalizuje je i udost&#281;pnia jako gotowy JSON. Nie musi to by&#263; dzia&#322;aj&#261;cy serwer &mdash; wystarczy zadanie cykliczne zapisuj&#261;ce plik.</p>
+    </div>
+
+    <div class="adr">
+      <span class="id">Decyzja 2 &middot; harmonogram</span>
+      <span class="q">Vercel Cron odpada &mdash; GitHub Actions wystarcza w ca&#322;o&#347;ci</span>
+      <p>Vercel na planie Hobby dopuszcza cron <strong>raz na dob&#281;</strong>, a wyra&#380;enia cz&#281;stsze odrzuca ju&#380; przy deployu. Aplikacja ostrzegawcza odpytuj&#261;ca NOAA raz dziennie jest bezu&#380;yteczna. GitHub Actions daje harmonogram co 10 minut w darmowym limicie, ma sekrety, retry i logi &mdash; i mo&#380;e bezpo&#347;rednio wywo&#322;a&#263; Telegram Bot API, wi&#281;c pokrywa te&#380; wysy&#322;k&#281; powiadomie&#324;.</p>
+      <p class="verdict"><b>Rozstrzygni&#281;cie:</b> ingest, regu&#322;y i notyfikacje &#380;yj&#261; w GitHub Actions. Wynikiem jest statyczny <code>snapshot.json</code>. Frontend to PWA na Cloudflare Pages, kt&oacute;ra ten plik czyta. <b>Zero serwer&oacute;w, zero bazy danych, zero koszt&oacute;w.</b></p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:2.2rem">Potok danych</h3>
+  <div class="pipe" style="margin-top:.9rem">
+    <div class="stage io">
+      <span class="sn">&#378;r&oacute;d&#322;a</span><span class="st">NOAA</span>
+      <ul><li>api.weather.gov</li><li>nhc.noaa.gov</li><li>open-meteo</li><li>ndbc / NESDIS</li></ul>
+    </div>
+    <div class="stage">
+      <span class="sn">co 10 min</span><span class="st">Ingest</span>
+      <ul><li>GitHub Actions</li><li>retry + backoff</li><li>User-Agent z kontaktem</li><li>cache ETag</li></ul>
+    </div>
+    <div class="stage core">
+      <span class="sn">czysta funkcja</span><span class="st">Regu&#322;y</span>
+      <ul><li>normalizacja</li><li>dystans do Ciebie</li><li>poziom 0&ndash;5</li><li>testy jednostkowe</li></ul>
+    </div>
+    <div class="stage io">
+      <span class="sn">artefakt</span><span class="st">snapshot.json</span>
+      <ul><li>commit do repo</li><li>~50 kB</li><li>wersjonowany</li><li>historia gratis</li></ul>
+    </div>
+    <div class="stage">
+      <span class="sn">odbiorcy</span><span class="st">PWA + push</span>
+      <ul><li>Cloudflare Pages</li><li>Service Worker</li><li>Telegram Bot</li><li>Web Push</li></ul>
+    </div>
+  </div>
+  <p class="pipe-note">Efekt uboczny wart docenienia: historia commit&oacute;w <code>snapshot.json</code> daje pe&#322;ny zapis przebiegu sezonu za darmo &mdash; przyda si&#281;, gdy b&#281;dziesz chcia&#322; sprawdzi&#263;, jak regu&#322;y zachowa&#322;y si&#281; przy prawdziwym sztormie.</p>
+
+  <h3 style="margin-top:2.2rem">&#377;r&oacute;d&#322;a danych &mdash; zweryfikowane 17.09.2026</h3>
+  <div class="tw" style="margin-top:.9rem">
+    <table>
+      <thead><tr><th>&#377;r&oacute;d&#322;o</th><th>Endpoint</th><th>Format</th><th>CORS</th><th>Od&#347;wie&#380;anie</th><th>Zasila</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Alerty NWS</strong></td><td class="mono">api.weather.gov/alerts/active?zone=&hellip;</td><td class="mono">GeoJSON</td><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">tak</span></td><td class="mono">5 min</td><td>Poziom 2&ndash;5, karty alert&oacute;w</td></tr>
+        <tr><td><strong>Strefy Hawaj&oacute;w</strong></td><td class="mono">api.weather.gov/zones/forecast?area=HI</td><td class="mono">GeoJSON</td><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">tak</span></td><td class="mono">raz</td><td>43 strefy &rarr; mapowanie planu</td></tr>
+        <tr><td><strong>Prognoza NWS</strong></td><td class="mono">api.weather.gov/points/{lat},{lon}</td><td class="mono">GeoJSON</td><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">tak</span></td><td class="mono">1 h</td><td>Prognoza opisowa</td></tr>
+        <tr><td><strong>Aktywne cyklony</strong></td><td class="mono">nhc.noaa.gov/CurrentStorms.json</td><td class="mono">JSON</td><td><span class="lvl" style="background:var(--l4-bg);color:var(--l4)">nie</span></td><td class="mono">10 min</td><td>Pozycja, si&#322;a, dystans</td></tr>
+        <tr><td><strong>CPHC &middot; biuletyny</strong></td><td class="mono">nhc.noaa.gov/index-cp.xml</td><td class="mono">RSS</td><td><span class="lvl" style="background:var(--l4-bg);color:var(--l4)">nie</span></td><td class="mono">10 min</td><td>TWO, poziom 1, advisory</td></tr>
+        <tr><td><strong>CPHC &middot; GIS</strong></td><td class="mono">nhc.noaa.gov/gis-cp.xml</td><td class="mono">RSS &rarr; KMZ/SHP</td><td><span class="lvl" style="background:var(--l4-bg);color:var(--l4)">nie</span></td><td class="mono">10 min</td><td>Sto&#380;ek, tor, strefy ostrze&#380;e&#324;</td></tr>
+        <tr><td><strong>Open-Meteo</strong></td><td class="mono">api.open-meteo.com/v1/forecast</td><td class="mono">JSON</td><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">tak</span></td><td class="mono">1 h</td><td>Wiatr, opady godzinowo</td></tr>
+        <tr><td><strong>Open-Meteo Marine</strong></td><td class="mono">marine-api.open-meteo.com/v1/marine</td><td class="mono">JSON</td><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">tak</span></td><td class="mono">1 h</td><td>Wysoko&#347;&#263; i okres fali</td></tr>
+        <tr><td><strong>Boje NDBC</strong></td><td class="mono">ndbc.noaa.gov/data/latest_obs/51201.txt</td><td class="mono">tekst</td><td><span class="lvl" style="background:var(--l4-bg);color:var(--l4)">nie</span></td><td class="mono">30 min</td><td>Realny stan oceanu</td></tr>
+        <tr><td><strong>Satelita GOES-18</strong></td><td class="mono">cdn.star.nesdis.noaa.gov/GOES18/&hellip;/hi/GEOCOLOR/</td><td class="mono">JPEG</td><td><span class="lvl" style="background:var(--l0-bg);color:var(--l0)">tak</span></td><td class="mono">10 min</td><td>Podk&#322;ad mapy, p&#281;tla</td></tr>
+        <tr><td><strong>Tsunami PTWC</strong></td><td class="mono">tsunami.gov/events/xml/PHEBAtom.xml</td><td class="mono">Atom</td><td><span class="lvl" style="background:var(--l4-bg);color:var(--l4)">nie</span></td><td class="mono">5 min</td><td>Osobny kana&#322; krytyczny</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="pipe-note">&#379;adne z tych &#378;r&oacute;de&#322; nie wymaga klucza API. <code>api.weather.gov</code> wymaga natomiast nag&#322;&oacute;wka <code>User-Agent</code> z adresem kontaktowym &mdash; bez niego potrafi odm&oacute;wi&#263; obs&#322;ugi.</p>
+
+  <h3 style="margin-top:2.2rem">Model danych i odporno&#347;&#263;</h3>
+  <div class="grid2" style="margin-top:.9rem">
+    <div class="card">
+      <h4>Encje kanoniczne</h4>
+      <ul>
+        <li><code>ThreatSnapshot</code> &mdash; poziom, uzasadnienie, lista spe&#322;nionych regu&#322;, czas wyliczenia</li>
+        <li><code>Storm</code> &mdash; id, nazwa, klasa, wiatr w kt, pozycja, ruch, dystans, sto&#380;ek jako GeoJSON</li>
+        <li><code>Alert</code> &mdash; id NWS, zdarzenie, severity, strefy, obowi&#261;zuje od/do, instrukcja</li>
+        <li><code>TripSegment</code> &mdash; data od/do, wyspa, <em>wszystkie</em> strefy NWS tej wyspy (lista, nie pojedyncza warto&#347;&#263;)</li>
+        <li><code>SourceHealth</code> &mdash; dla ka&#380;dego &#378;r&oacute;d&#322;a: ostatni sukces, wiek, status</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Zasady odporno&#347;ci</h4>
+      <ul>
+        <li><b>Stale-while-error.</b> Padni&#281;te &#378;r&oacute;d&#322;o nie kasuje poprzednich danych &mdash; zostaj&#261; z widocznym wiekiem.</li>
+        <li><b>TTL per &#378;r&oacute;d&#322;o.</b> Alerty 15 min, cyklony 30 min, prognoza 3 h, boje 2 h. Po przekroczeniu &mdash; znacznik nie&#347;wie&#380;o&#347;ci.</li>
+        <li><b>Degradacja, nie awaria.</b> Brak danych o cyklonach przy dzia&#322;aj&#261;cych alertach NWS to nadal u&#380;yteczny ekran.</li>
+        <li><b>Precache w Service Workerze.</b> Pow&#322;oka, ostatni snapshot i PDF awaryjny dost&#281;pne bez sieci.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:2.2rem">Stos technologiczny</h3>
+  <div class="tw" style="margin-top:.9rem">
+    <table>
+      <thead><tr><th>Warstwa</th><th>Wyb&oacute;r</th><th>Dlaczego ten, a nie inny</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ingest</strong></td><td class="mono">GitHub Actions &middot; cron */10</td><td>Darmowe, harmonogram co 10 min, sekrety, logi. Vercel Hobby dopuszcza tylko raz na dob&#281;.</td></tr>
+        <tr><td><strong>Logika</strong></td><td class="mono">TypeScript &middot; Node 22</td><td>Regu&#322;y jako czyste funkcje &mdash; testowalne na archiwalnych danych z prawdziwych sztorm&oacute;w.</td></tr>
+        <tr><td><strong>Magazyn</strong></td><td class="mono">JSON w repozytorium</td><td>Jeden u&#380;ytkownik, ~50 kB stanu. Baza danych by&#322;aby czystym narzutem, a git daje histori&#281; za darmo.</td></tr>
+        <tr><td><strong>Frontend</strong></td><td class="mono">Vite + React + PWA</td><td>Statyczny build, natychmiastowy start, pe&#322;na kontrola nad Service Workerem.</td></tr>
+        <tr><td><strong>Mapa</strong></td><td class="mono">MapLibre GL + kafle OSM</td><td>Bez klucza i bez limit&oacute;w. Sto&#380;ek i tor jako warstwy GeoJSON.</td></tr>
+        <tr><td><strong>Hosting</strong></td><td class="mono">Cloudflare Pages</td><td>Darmowy, globalny CDN, HTTPS i nag&#322;&oacute;wki potrzebne dla PWA.</td></tr>
+        <tr><td><strong>Powiadomienia</strong></td><td class="mono">Telegram Bot + Web Push</td><td>Telegram dzia&#322;a na s&#322;abym &#322;&#261;czu i w roamingu, nie wymaga zg&oacute;d przegl&#261;darki i jest natychmiastowy. Web Push jako uzupe&#322;nienie.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Architekt</span><h2>Harmonogram do wylotu</h2></div>
+  <p class="lead">Czterna&#347;cie dni kalendarzowych, z czego dziewi&#281;&#263; na budow&#281; i pi&#281;&#263; na bufor. Bufor nie jest opcjonalny &mdash; aplikacja ostrzegawcza, kt&oacute;ra pierwszy raz dzia&#322;a w dniu wylotu, jest bezu&#380;yteczna, bo nie zd&#261;&#380;ysz jej zaufa&#263;.</p>
+
+  <div class="sched">
+    <div class="day"><span class="d">17&ndash;18.09</span><span class="w"><b>Fundament</b><span>Ingest wszystkich jedenastu &#378;r&oacute;de&#322;, parsery RSS i tekstu, normalizacja do encji kanonicznych, silnik regu&#322; z testami na archiwalnych danych huraganu Lowell (wrzesie&#324; 2026).</span></span><span class="tag">2 dni</span></div>
+    <div class="day"><span class="d">19&ndash;20.09</span><span class="w"><b>Ekran &bdquo;Dzi&#347;&rdquo; i alerty</b><span>Pas poziomu zagro&#380;enia, rekomendacja, karty alert&oacute;w NWS przefiltrowane do stref z planu podr&oacute;&#380;y, blok &bdquo;dlaczego ten poziom&rdquo;.</span></span><span class="tag">M1 M2</span></div>
+    <div class="day"><span class="d">21&ndash;22.09</span><span class="w"><b>Cyklony i mapa</b><span>Karty sztorm&oacute;w z dystansem, mapa MapLibre, sto&#380;ek niepewno&#347;ci i tor prognozowany z kana&#322;u GIS, podk&#322;ad satelitarny.</span></span><span class="tag">M3 S1</span></div>
+    <div class="day"><span class="d">23.09</span><span class="w"><b>Powiadomienia</b><span>Bot Telegrama, Web Push, logika eskalacji i deduplikacji, cisza nocna, test wybudzenia na prawdziwym telefonie.</span></span><span class="tag">M5</span></div>
+    <div class="day"><span class="d">24.09</span><span class="w"><b>Prognoza i plan podr&oacute;&#380;y</b><span>Siedmiodniowa prognoza, boje NDBC, pasek pi&#281;tnastu dni wyjazdu z alertami przypi&#281;tymi do konkretnych dni.</span></span><span class="tag">M4 M6</span></div>
+    <div class="day gate"><span class="d">25.09</span><span class="w"><b>Wdro&#380;enie produkcyjne &mdash; punkt kontrolny</b><span>Pe&#322;ny zakres &bdquo;Must&rdquo; dzia&#322;a na Cloudflare Pages i odpytuje NOAA co 10 minut. Od tego momentu aplikacja pracuje na &#380;ywych danych bez przerwy. Je&#347;li co&#347; z &bdquo;Must&rdquo; nie stoi &mdash; &bdquo;Should&rdquo; wypada w ca&#322;o&#347;ci.</span></span><span class="tag">bramka</span></div>
+    <div class="day"><span class="d">26&ndash;27.09</span><span class="w"><b>Offline i gotowo&#347;&#263;</b><span>Service Worker, precache pow&#322;oki i snapshotu, checklista zale&#380;na od poziomu, kontakty awaryjne, PDF do pobrania przed wylotem.</span></span><span class="tag">S4 S5</span></div>
+    <div class="day"><span class="d">28&ndash;30.09</span><span class="w"><b>Hartowanie</b><span>Scenariusze b&#322;&#281;d&oacute;w sieci, stany nie&#347;wie&#380;o&#347;ci, test w trybie samolotowym, test przy wy&#322;&#261;czonym Wi-Fi, weryfikacja obu motyw&oacute;w w pe&#322;nym s&#322;o&#324;cu. Wpisanie prawdziwego planu podr&oacute;&#380;y.</span></span><span class="tag">bufor</span></div>
+    <div class="day trip"><span class="d">1.10</span><span class="w"><b>Prze&#322;&#261;czenie w tryb &bdquo;Na miejscu&rdquo;</b><span>Zmiana pytania, horyzontu i rytmu powiadomie&#324; nast&#281;puje automatycznie po dacie. Od tej chwili &#380;adnych wdro&#380;e&#324; &mdash; kod jest zamro&#380;ony na czas wyjazdu.</span></span><span class="tag">wylot</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="hat">Architekt</span><h2>Ryzyka projektu</h2></div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Ryzyko</th><th>Waga</th><th>Przeciwdzia&#322;anie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Brak &#380;ywego sztormu do test&oacute;w</strong><br><span style="color:var(--ink-3)">Basen jest dzi&#347; pusty, ale Lowell min&#261;&#322; 9 dni temu</span></td><td><span class="lvl" style="background:var(--l1-bg);color:var(--l1)">niska</span></td><td>G&#322;&oacute;wny fixture testowy to archiwalne biuletyny <strong>Hurricane Lowell (wrzesie&#324; 2026)</strong> &mdash; ten sam sezon, realne dane o 92&nbsp;% awarii pr&#261;du na Kaua&#699;i i pierwszym tornado watch w historii stanu, z impaktem na O&#699;ahu i Maui z Waszej trasy. Uzupe&#322;niaj&#261;co Douglas (2020) i Lane (2018). Dodatkowo tryb &bdquo;symulacja&rdquo; wymuszaj&#261;cy dowolny poziom do testu powiadomie&#324;.</td></tr>
+        <tr><td><strong>Parsowanie sto&#380;ka z shapefile</strong><br><span style="color:var(--ink-3)">Kana&#322; GIS podaje ZIP-y z shapefile, nie GeoJSON</span></td><td><span class="lvl" style="background:var(--l2-bg);color:var(--l2)">&#347;rednia</span></td><td>Bierz warianty KMZ i konwertuj przez <code>togeojson</code> &mdash; prostsze ni&#380; shapefile. Je&#347;li konwersja zawiedzie, mapa degraduje si&#281; do znacznika pozycji i dystansu, co nadal odpowiada na g&#322;&oacute;wne pytanie.</td></tr>
+        <tr><td><strong>Ograniczenie ruchu na api.weather.gov</strong></td><td><span class="lvl" style="background:var(--l1-bg);color:var(--l1)">niska</span></td><td>Nag&#322;&oacute;wek <code>User-Agent</code> z adresem kontaktowym, obs&#322;uga <code>ETag</code>, odpytywanie co 5 minut z jednego adresu IP GitHub Actions.</td></tr>
+        <tr><td><strong>Brak zasi&#281;gu na miejscu</strong></td><td><span class="lvl" style="background:var(--l2-bg);color:var(--l2)">&#347;rednia</span></td><td>Offline-first jako za&#322;o&#380;enie, nie dodatek. Telegram dzia&#322;a przy bardzo s&#322;abym &#322;&#261;czu. PDF awaryjny pobrany przed wylotem.</td></tr>
+        <tr><td><strong>Rozrost zakresu</strong><br><span style="color:var(--ink-3)">Najbardziej prawdopodobna przyczyna niedowiezienia</span></td><td><span class="lvl" style="background:var(--l4-bg);color:var(--l4)">wysoka</span></td><td>Twarda bramka 25 wrze&#347;nia. Lista &bdquo;Won&rsquo;t&rdquo; jest zamkni&#281;ta i nie podlega negocjacji przed wylotem.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="call" style="margin-top:1.5rem">
+    <span class="k">Koszt</span>
+    <p><strong>0 USD miesi&#281;cznie.</strong> Wszystkie &#378;r&oacute;d&#322;a NOAA s&#261; publiczne i bez kluczy. GitHub Actions, Cloudflare Pages, Telegram Bot API i kafle OSM mieszcz&#261; si&#281; w darmowych limitach przy jednym u&#380;ytkowniku i odpytywaniu co 10 minut. Jedyny opcjonalny wydatek to w&#322;asna domena, oko&#322;o 12 USD rocznie.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="warn">
+    <b>Zastrze&#380;enie, kt&oacute;re musi by&#263; widoczne tak&#380;e w samej aplikacji</b>
+    <p>Makani Watch jest narz&#281;dziem pomocniczym i nie zast&#281;puje oficjalnych komunikat&oacute;w. Przy poziomie 4 i wy&#380;szym jedynym wi&#261;&#380;&#261;cym &#378;r&oacute;d&#322;em s&#261;: Hawaii Emergency Management Agency, lokalne rozg&#322;o&#347;nie radiowe i NOAA Weather Radio. Aplikacja ma o tym przypomina&#263; na ekranie, a nie w regulaminie.</p>
+  </div>
+  <p>Wszystkie dane i endpointy w tym dokumencie zosta&#322;y zweryfikowane bezpo&#347;rednim odpytaniem 17 wrze&#347;nia 2026 roku.</p>
+  <div class="srcs">
+    <a href="https://www.washingtonpost.com/weather/2026/09/08/hurricane-lowell-sideswipes-hawaii-drenching-niihau-kauai/">WaPo &middot; Lowell impact</a>
+    <a href="https://www.civilbeat.org/2026/09/hurricane-lowell-hit-kauai-hard-but-worst-fears-averted/">Civil Beat &middot; Lowell po fakcie</a>
+    <a href="https://dod.hawaii.gov/hiema/hurricane-lowell-updates/">HIEMA &middot; Lowell updates</a>
+    <a href="https://www.nhc.noaa.gov/index-cp.xml">nhc.noaa.gov/index-cp.xml</a>
+    <a href="https://www.nhc.noaa.gov/gis-cp.xml">nhc.noaa.gov/gis-cp.xml</a>
+    <a href="https://www.nhc.noaa.gov/CurrentStorms.json">CurrentStorms.json</a>
+    <a href="https://api.weather.gov/alerts/active?area=HI">api.weather.gov/alerts</a>
+    <a href="https://www.weather.gov/documentation/services-web-alerts">dokumentacja NWS</a>
+    <a href="https://vercel.com/docs/cron-jobs/usage-and-pricing">limity Vercel Cron</a>
+    <a href="https://www.ndbc.noaa.gov/">NDBC</a>
+    <a href="https://www.weather.gov/safety/hurricane-ww">NWS &middot; watch vs warning</a>
+  </div>
+</footer>
+
+</div>

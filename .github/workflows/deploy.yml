@@ -1,0 +1,58 @@
+name: Refresh data and deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every 10 minutes. GitHub may delay scheduled runs under load, but a
+    # weather-watch app doesn't need to-the-second precision.
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install ingest dependencies
+        run: npm ci
+
+      - name: Run ingest (fetch live NOAA data)
+        run: npm run ingest
+
+      - name: Commit refreshed snapshot
+        run: |
+          git config user.name "makani-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/snapshot.json web/public/snapshot.json
+          git diff --cached --quiet || git commit -m "chore: refresh snapshot [skip ci]"
+          git push
+
+      - name: Install web dependencies
+        working-directory: web
+        run: npm ci
+
+      - name: Build web
+        working-directory: web
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
