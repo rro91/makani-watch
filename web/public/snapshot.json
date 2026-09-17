@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-17T19:15:11.491Z",
+  "computedAt": "2026-09-17T22:16:35.763Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7,10 +7,27 @@
   "recommendation": "Jest aktywne ostrzeżenie gdzieś na Hawajach — sprawdź niżej, czy dotyczy Waszych wysp i dat. Zwykle nic nie trzeba jeszcze zmieniać.",
   "scopeLabel": "Cała Hawaje — 43 strefy NWS (jeszcze nie zawężone do Waszej trasy)",
   "reasons": [
+    "Flood Advisory aktywne — \"Flood Advisory issued September 17 at 11:14AM HST until September 17 at 12:30PM HST by NWS Honolulu HI\"",
     "Flood Watch aktywne (HIZ001, HIZ003, HIZ004, HIZ006, HIZ007, HIZ009, HIZ010, HIZ011, HIZ015, HIZ016, HIZ017, HIZ018, HIZ022, HIZ023, HIZ026, HIZ027, HIZ028, HIZ029, HIZ030, HIZ031, HIZ032, HIZ033, HIZ034, HIZ035, HIZ036, HIZ037, HIZ038, HIZ039, HIZ040, HIZ041, HIZ042, HIZ043, HIZ044, HIZ045, HIZ046, HIZ047, HIZ048, HIZ049, HIZ050, HIZ051, HIZ052, HIZ053, HIZ054) — \"Flood Watch issued September 17 at 3:15AM HST until September 18 at 6:00AM HST by NWS Honolulu HI\"",
     "Prognoza CPHC: 80% szans na nowy cyklon w ciągu 7 dni"
   ],
   "alerts": [
+    {
+      "id": "urn:oid:2.49.0.1.840.0.e4313b5fabdce5305c95a4738b440311f1532344.001.1",
+      "event": "Flood Advisory",
+      "severity": "Minor",
+      "urgency": "Expected",
+      "certainty": "Likely",
+      "headline": "Flood Advisory issued September 17 at 11:14AM HST until September 17 at 12:30PM HST by NWS Honolulu HI",
+      "description": "* WHAT...Flooding caused by excessive rainfall continues.\n\n* WHERE...The island of Hawaii in Hawaii County...\n\n* WHEN...Until 1230 PM HST.\n\n* IMPACTS...Minor flooding on roads, poor drainage areas, and in\nstreams.\n\n* ADDITIONAL DETAILS...\n- At 1113 AM HST, Doppler radar indicated heavy rain over the North\nKohala, South Kohala, Hamakua, North Hilo, and South Hilo\nDistricts of the Big Island. Rain was falling at a rate of 0.5 to\n2.0 inch per hour. Minor flooding is ongoing or expected to begin\nshortly in the advisory area.\n- Some locations that will experience flooding include...\nHilo, Waikoloa Village, Kapaau, Honokaa, Paauilo, Pohakuloa Camp,\nKamuela, Ookala, Kukuihaele, Waipio Valley, Laupahoehoe and\nWaimanu Valley.",
+      "instruction": "Stay away from streams, drainage ditches and low lying areas prone to\nflooding.",
+      "areaDesc": "Hawaii in Hawaii, HI",
+      "zones": [],
+      "effective": "2026-09-17T11:14:00-10:00",
+      "expires": "2026-09-17T12:30:00-10:00",
+      "senderName": "NWS Honolulu HI",
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.e4313b5fabdce5305c95a4738b440311f1532344.001.1"
+    },
     {
       "id": "urn:oid:2.49.0.1.840.0.cd5e07b644c2fb83e2ef2cf2067d094ddb255fbf.001.1",
       "event": "Flood Watch",
@@ -80,55 +97,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.491Z",
+      "fetchedAt": "2026-09-17T22:16:35.763Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.515Z",
+      "fetchedAt": "2026-09-17T22:16:35.805Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.516Z",
+      "fetchedAt": "2026-09-17T22:16:35.806Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.517Z",
+      "fetchedAt": "2026-09-17T22:16:35.807Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.519Z",
+      "fetchedAt": "2026-09-17T22:16:35.810Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.520Z",
+      "fetchedAt": "2026-09-17T22:16:35.811Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.521Z",
+      "fetchedAt": "2026-09-17T22:16:35.812Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.522Z",
+      "fetchedAt": "2026-09-17T22:16:35.814Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-17T19:15:11.523Z",
+      "fetchedAt": "2026-09-17T22:16:35.815Z",
       "ageSeconds": 0
     }
   ],
@@ -471,26 +488,26 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.7,
+      "seasM": 1.5,
       "peakPeriodSec": 7,
-      "waterTempC": 26.8,
-      "observedAt": "2026-09-17T18:26:00Z"
+      "waterTempC": 26.9,
+      "observedAt": "2026-09-17T21:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2,
+      "seasM": 1.9,
       "peakPeriodSec": 9,
-      "waterTempC": 27.5,
-      "observedAt": "2026-09-17T18:26:00Z"
+      "waterTempC": 27.6,
+      "observedAt": "2026-09-17T21:56:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
       "seasM": 2.1,
-      "peakPeriodSec": 10,
+      "peakPeriodSec": 8,
       "waterTempC": 27.2,
-      "observedAt": "2026-09-17T18:26:00Z"
+      "observedAt": "2026-09-17T21:26:00Z"
     }
   }
 }
