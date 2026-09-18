@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-18T00:29:09.582Z",
+  "computedAt": "2026-09-18T05:06:52.788Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7,37 +7,38 @@
   "recommendation": "Jest aktywne ostrzeżenie gdzieś na Hawajach — sprawdź niżej, czy dotyczy Waszych wysp i dat. Zwykle nic nie trzeba jeszcze zmieniać.",
   "scopeLabel": "Cała Hawaje — 43 strefy NWS (jeszcze nie zawężone do Waszej trasy)",
   "reasons": [
-    "Flood Advisory aktywne — \"Flood Advisory issued September 17 at 12:31PM HST until September 17 at 3:30PM HST by NWS Honolulu HI\"",
-    "Flood Watch aktywne (HIZ001, HIZ003, HIZ004, HIZ006, HIZ007, HIZ009, HIZ010, HIZ011, HIZ015, HIZ016, HIZ017, HIZ018, HIZ022, HIZ023, HIZ026, HIZ027, HIZ028, HIZ029, HIZ030, HIZ031, HIZ032, HIZ033, HIZ034, HIZ035, HIZ036, HIZ037, HIZ038, HIZ039, HIZ040, HIZ041, HIZ042, HIZ043, HIZ044, HIZ045, HIZ046, HIZ047, HIZ048, HIZ049, HIZ050, HIZ051, HIZ052, HIZ053, HIZ054) — \"Flood Watch issued September 17 at 3:15AM HST until September 18 at 6:00AM HST by NWS Honolulu HI\"",
+    "Flood Advisory aktywne — \"Flood Advisory issued September 17 at 7:02PM HST until September 17 at 8:15PM HST by NWS Honolulu HI\"",
+    "Flood Watch aktywne (HIZ001, HIZ003, HIZ004, HIZ006, HIZ007, HIZ009, HIZ010, HIZ011, HIZ029, HIZ030, HIZ031, HIZ032, HIZ033, HIZ034, HIZ035, HIZ036) — \"Flood Watch issued September 17 at 5:40PM HST until September 18 at 6:00AM HST by NWS Honolulu HI\"",
+    "Flood Watch aktywne (HIZ015, HIZ016, HIZ017, HIZ018, HIZ022, HIZ023, HIZ026, HIZ027, HIZ028, HIZ037, HIZ038, HIZ039, HIZ040, HIZ041, HIZ042, HIZ043, HIZ044, HIZ045, HIZ046, HIZ047, HIZ048, HIZ049, HIZ050, HIZ051, HIZ052, HIZ053, HIZ054) — \"Flood Watch issued September 17 at 5:40PM HST until September 18 at 6:00AM HST by NWS Honolulu HI\"",
     "Prognoza CPHC: 80% szans na nowy cyklon w ciągu 7 dni"
   ],
   "alerts": [
     {
-      "id": "urn:oid:2.49.0.1.840.0.b1871a3b59b2ddcacaea66bf318a37d7b25d7f91.001.1",
+      "id": "urn:oid:2.49.0.1.840.0.f2b7dcabd783e564e5008228ad490fdb3114f6d6.001.1",
       "event": "Flood Advisory",
       "severity": "Minor",
       "urgency": "Expected",
       "certainty": "Likely",
-      "headline": "Flood Advisory issued September 17 at 12:31PM HST until September 17 at 3:30PM HST by NWS Honolulu HI",
-      "description": "* WHAT...Flooding caused by excessive rainfall is expected.\n\n* WHERE...The island of Hawaii in Hawaii County...\n\n* WHEN...Until 330 PM HST.\n\n* IMPACTS...Minor flooding on roads, poor drainage areas, and in\nstreams.\n\n* ADDITIONAL DETAILS...\n- At 1227 PM HST, Doppler radar indicated heavy rain over the North\nKona, South Kona, and Kau Districts of the Big Island. Rain was\nfalling at a rate of 1 to 1.5 inches per hour. Minor flooding is\nongoing or expected to begin shortly in the advisory area.\n- Some locations that will experience flooding include...\nKailua-Kona, Captain Cook, Honaunau, Kealakekua, Kainaliu,\nHonalo, Kahaluu-Keauhou, Holualoa, Kalaoa, Milolii and Hawaii\nVolcanoes Park Kahuku Unit.",
+      "headline": "Flood Advisory issued September 17 at 7:02PM HST until September 17 at 8:15PM HST by NWS Honolulu HI",
+      "description": "* WHAT...Flooding caused by excessive rainfall continues.\n\n* WHERE...The island of Hawaii in Hawaii County...\n\n* WHEN...Until 815 PM HST.\n\n* IMPACTS...Minor flooding on roads, poor drainage areas, and in\nstreams. Some low-water crossings may become impassable.\n\n* ADDITIONAL DETAILS...\n- At 656 PM HST, Doppler radar and automated rain gauges continue\nto indicate heavy rain over North Hilo, South Hilo, and Puna\nDistricts of the Big Island. Local stream gauges upstream of Hilo\nhave shown rather rapid rises over the past hour at Honolii\nStream and Wailuku River. Minor flooding is ongoing or expected\nto begin shortly in the advisory area. Rain was falling at a rate\nof 1 to 3 inches per hour.\n- Some locations that will experience flooding include...\nHilo, Hawaiian Paradise Park, Volcano, Glenwood, Mountain View,\nHawaii Volcanoes National Park, Hawaiian Acres, Keaau,\nOrchidlands Estates, Papaikou and Pepeekeo.",
       "instruction": "Stay away from streams, drainage ditches and low lying areas prone to\nflooding.",
       "areaDesc": "Hawaii in Hawaii, HI",
       "zones": [],
-      "effective": "2026-09-17T12:31:00-10:00",
-      "expires": "2026-09-17T15:30:00-10:00",
+      "effective": "2026-09-17T19:02:00-10:00",
+      "expires": "2026-09-17T20:15:00-10:00",
       "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.b1871a3b59b2ddcacaea66bf318a37d7b25d7f91.001.1"
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.f2b7dcabd783e564e5008228ad490fdb3114f6d6.001.1"
     },
     {
-      "id": "urn:oid:2.49.0.1.840.0.cd5e07b644c2fb83e2ef2cf2067d094ddb255fbf.001.1",
+      "id": "urn:oid:2.49.0.1.840.0.e430d9b6ba91319e4d463fc108a9c7181b66e0bf.002.1",
       "event": "Flood Watch",
       "severity": "Severe",
       "urgency": "Future",
       "certainty": "Possible",
-      "headline": "Flood Watch issued September 17 at 3:15AM HST until September 18 at 6:00AM HST by NWS Honolulu HI",
-      "description": "Remnant moisture from former Tropical Storm Norbert will bring\nperiods of moderate to heavy showers to mainly windward sides of the\nHawaiian Islands through late tonight.\n\n* WHAT...Flash flooding caused by excessive rainfall continues to be\npossible.\n\n* WHERE...All main Hawaiian Islands.\n\n* WHEN...Through late tonight.\n\n* IMPACTS...Flood prone roads and other low lying areas may be closed\ndue to elevated runoff and overflowing streams. Urban areas may\nreceive more significant flooding and property damage due to rapid\nrunoff.\n\n* ADDITIONAL DETAILS...\n- A band of remnant moisture from Norbert will move west across the\nislands through Friday, bringing moderate to locally heavy\nshowers to mainly windward sides of the islands. There is a\nslight chance of thunderstorms as well, which could produce\nbriefly higher rain rates, increasing the risk of flash flooding.",
+      "headline": "Flood Watch issued September 17 at 5:40PM HST until September 18 at 6:00AM HST by NWS Honolulu HI",
+      "description": "Remnant moisture from former Tropical Storm Norbert will bring\nperiods of moderate to heavy showers to mainly windward sides of the\nHawaiian Islands through late tonight.\n\n* WHAT...Flash flooding caused by excessive rainfall continues to be\npossible.\n\n* WHERE...Kauai, Niihau and Oahu.\n\n* WHEN...Through late tonight.\n\n* IMPACTS...Flood prone roads and other low lying areas may be closed\ndue to elevated runoff and overflowing streams. Urban areas may\nreceive more significant flooding and property damage due to rapid\nrunoff.\n\n* ADDITIONAL DETAILS...\n- A band of remnant moisture from Norbert will move west across the\nislands through Friday, bringing moderate to locally heavy\nshowers to mainly windward sides of the islands. There is a\nslight chance of thunderstorms as well, which could produce\nbriefly higher rain rates, increasing the risk of flash flooding.",
       "instruction": "You should monitor later forecasts and be prepared to take action\nshould Flash Flood Warnings be issued.",
-      "areaDesc": "Niihau; Kauai Southwest; Kauai Mountains; Waianae Coast; Oahu North Shore; Olomana; Central Oahu; Waianae Mountains; Lanai Mauka; Kahoolawe; Maui Windward West; Maui Leeward West; Haleakala Summit; Kona; Kohala; Big Island Interior; Big Island Summit; Kauai North; Kauai East; Kauai South; East Honolulu; Honolulu Metro; Ewa Plain; Koolau Windward; Koolau Leeward; Molokai Windward; Molokai Southeast; Molokai North; Molokai West; Molokai Leeward South; Lanai Windward; Lanai Leeward; Lanai South; Maui Central Valley North; Maui Central Valley South; Windward Haleakala; Kipahulu; South Maui/Upcountry; South Haleakala; Big Island South; Big Island Southeast; Big Island East; Big Island North",
+      "areaDesc": "Niihau; Kauai Southwest; Kauai Mountains; Waianae Coast; Oahu North Shore; Olomana; Central Oahu; Waianae Mountains; Kauai North; Kauai East; Kauai South; East Honolulu; Honolulu Metro; Ewa Plain; Koolau Windward; Koolau Leeward",
       "zones": [
         "HIZ001",
         "HIZ003",
@@ -47,6 +48,31 @@
         "HIZ009",
         "HIZ010",
         "HIZ011",
+        "HIZ029",
+        "HIZ030",
+        "HIZ031",
+        "HIZ032",
+        "HIZ033",
+        "HIZ034",
+        "HIZ035",
+        "HIZ036"
+      ],
+      "effective": "2026-09-17T17:40:00-10:00",
+      "expires": "2026-09-18T06:00:00-10:00",
+      "senderName": "NWS Honolulu HI",
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.e430d9b6ba91319e4d463fc108a9c7181b66e0bf.002.1"
+    },
+    {
+      "id": "urn:oid:2.49.0.1.840.0.e430d9b6ba91319e4d463fc108a9c7181b66e0bf.001.1",
+      "event": "Flood Watch",
+      "severity": "Severe",
+      "urgency": "Future",
+      "certainty": "Possible",
+      "headline": "Flood Watch issued September 17 at 5:40PM HST until September 18 at 6:00AM HST by NWS Honolulu HI",
+      "description": "Remnant moisture from former Tropical Storm Norbert will bring\nperiods of moderate to heavy showers to mainly windward sides of the\nHawaiian Islands through late tonight.\n\n* WHAT...Flash flooding caused by excessive rainfall continues to be\npossible.\n\n* WHERE...Maui, Lanai, Molokai, The Big Island and Kahoolawe.\n\n* WHEN...Through late tonight.\n\n* IMPACTS...Flood prone roads and other low lying areas may be closed\ndue to elevated runoff and overflowing streams. Urban areas may\nreceive more significant flooding and property damage due to rapid\nrunoff.\n\n* ADDITIONAL DETAILS...\n- A band of remnant moisture from Norbert will move west across the\nislands through Friday, bringing moderate to locally heavy\nshowers and isolated thunderstorms to mainly windward sides of\nthe islands. Thunderstorms could produce briefly higher rain\nrates, increasing the risk of flash flooding.",
+      "instruction": "You should monitor later forecasts and be prepared to take action\nshould Flash Flood Warnings be issued.",
+      "areaDesc": "Lanai Mauka; Kahoolawe; Maui Windward West; Maui Leeward West; Haleakala Summit; Kona; Kohala; Big Island Interior; Big Island Summit; Molokai Windward; Molokai Southeast; Molokai North; Molokai West; Molokai Leeward South; Lanai Windward; Lanai Leeward; Lanai South; Maui Central Valley North; Maui Central Valley South; Windward Haleakala; Kipahulu; South Maui/Upcountry; South Haleakala; Big Island South; Big Island Southeast; Big Island East; Big Island North",
+      "zones": [
         "HIZ015",
         "HIZ016",
         "HIZ017",
@@ -56,14 +82,6 @@
         "HIZ026",
         "HIZ027",
         "HIZ028",
-        "HIZ029",
-        "HIZ030",
-        "HIZ031",
-        "HIZ032",
-        "HIZ033",
-        "HIZ034",
-        "HIZ035",
-        "HIZ036",
         "HIZ037",
         "HIZ038",
         "HIZ039",
@@ -83,10 +101,10 @@
         "HIZ053",
         "HIZ054"
       ],
-      "effective": "2026-09-17T03:15:00-10:00",
-      "expires": "2026-09-17T18:00:00-10:00",
+      "effective": "2026-09-17T17:40:00-10:00",
+      "expires": "2026-09-18T06:00:00-10:00",
       "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.cd5e07b644c2fb83e2ef2cf2067d094ddb255fbf.001.1"
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.e430d9b6ba91319e4d463fc108a9c7181b66e0bf.001.1"
     }
   ],
   "storms": [],
@@ -97,55 +115,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.583Z",
+      "fetchedAt": "2026-09-18T05:06:52.788Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.610Z",
+      "fetchedAt": "2026-09-18T05:06:52.824Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.611Z",
+      "fetchedAt": "2026-09-18T05:06:52.826Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.611Z",
+      "fetchedAt": "2026-09-18T05:06:52.827Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.613Z",
+      "fetchedAt": "2026-09-18T05:06:52.829Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.613Z",
+      "fetchedAt": "2026-09-18T05:06:52.830Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.614Z",
+      "fetchedAt": "2026-09-18T05:06:52.831Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.615Z",
+      "fetchedAt": "2026-09-18T05:06:52.833Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-18T00:29:09.616Z",
+      "fetchedAt": "2026-09-18T05:06:52.834Z",
       "ageSeconds": 0
     }
   ],
@@ -489,25 +507,25 @@
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
       "seasM": 1.5,
-      "peakPeriodSec": 7,
-      "waterTempC": 26.9,
-      "observedAt": "2026-09-17T23:56:00Z"
+      "peakPeriodSec": 8,
+      "waterTempC": 26.7,
+      "observedAt": "2026-09-18T04:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 1.9,
-      "peakPeriodSec": 10,
+      "seasM": 2.2,
+      "peakPeriodSec": 9,
       "waterTempC": 27.7,
-      "observedAt": "2026-09-17T23:56:00Z"
+      "observedAt": "2026-09-18T04:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
-      "seasM": 2,
-      "peakPeriodSec": 10,
-      "waterTempC": 27.2,
-      "observedAt": "2026-09-17T23:56:00Z"
+      "seasM": 1.9,
+      "peakPeriodSec": 8,
+      "waterTempC": 26.9,
+      "observedAt": "2026-09-18T04:26:00Z"
     }
   }
 }
