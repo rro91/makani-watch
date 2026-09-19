@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-19T16:41:52.057Z",
+  "computedAt": "2026-09-19T18:59:28.240Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -27,60 +27,60 @@
   ],
   "outlookFormation48h": 80,
   "outlookFormation7day": 80,
-  "outlookText": "442 \nACPN50 PHFO 191148\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 AM HST Sat Sep 19 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nWestern East Pacific (EP98):\nDisorganized showers and thunderstorms continue to persist in\nassociation with an area of low pressure located well southwest of\nthe southern tip of the Baja California Peninsula. Environmental\nconditions are conducive for development, and a tropical depression\nis expected to form over the next several days as it moves westward\nto west-northwestward at 10 to 15 mph across the western East\nPacific.\n* Formation chance through 48 hours...high...80 percent.\n* Formation chance through 7 days...high...80 percent.\n\nWell East-Southeast of the Hawaiian Islands (Former TD 15-E):\nShowers and thunderstorms associated with the remnants of Tropical\nDepression Fifteen-E, located well east of the Hawaiian Islands,\nremain disorganized. Environmental conditions appear conducive for\nsome development of this system next week as it moves westward to\nwest-southwestward, and a tropical depression could form well to the\nsouth or southeast of the Hawaiian Islands towards the middle to\nlatter portion of next week.\n* Formation chance through 48 hours...low...10 percent.\n* Formation chance through 7 days...medium...50 percent.\n\n$$\nForecaster Katz/Berg\nNNNN",
+  "outlookText": "000\nACPN50 PHFO 191737\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sat Sep 19 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nWestern East Pacific (EP98):\nA broad area of low pressure located well southwest of the southern\ntip of the Baja California Peninsula continues to produce\ndisorganized showers and thunderstorms. Environmental conditions are\nconducive for development, and a tropical depression is expected to\nform over the next several days as it moves westward to\nwest-northwestward at 10 to 15 mph across the western East Pacific.\n* Formation chance through 48 hours...high...80 percent.\n* Formation chance through 7 days...high...80 percent.\n\nWell East-Southeast of the Hawaiian Islands (Former TD 15-E):\nShowers and thunderstorms associated with the remnants of Tropical\nDepression Fifteen-E, located well east of the Hawaiian Islands,\nremain persistent, but disorganized. Environmental conditions appear\nconducive for some development of this system next week as it moves\nwestward to west-southwestward, and a tropical depression could form\nwell to the south or southeast of the Hawaiian Islands towards the\nmiddle to latter portion of next week.\n* Formation chance through 48 hours...low...10 percent.\n* Formation chance through 7 days...medium...60 percent.\n\n$$\nForecaster Katz/Berg\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.057Z",
+      "fetchedAt": "2026-09-19T18:59:28.240Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.093Z",
+      "fetchedAt": "2026-09-19T18:59:28.271Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.094Z",
+      "fetchedAt": "2026-09-19T18:59:28.272Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.095Z",
+      "fetchedAt": "2026-09-19T18:59:28.274Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.098Z",
+      "fetchedAt": "2026-09-19T18:59:28.276Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.099Z",
+      "fetchedAt": "2026-09-19T18:59:28.277Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.100Z",
+      "fetchedAt": "2026-09-19T18:59:28.279Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.102Z",
+      "fetchedAt": "2026-09-19T18:59:28.280Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-19T16:41:52.104Z",
+      "fetchedAt": "2026-09-19T18:59:28.281Z",
       "ageSeconds": 0
     }
   ],
@@ -423,26 +423,26 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.4,
-      "peakPeriodSec": 8,
+      "seasM": 1.6,
+      "peakPeriodSec": 7,
       "waterTempC": 26.9,
-      "observedAt": "2026-09-19T15:56:00Z"
+      "observedAt": "2026-09-19T18:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.3,
+      "seasM": 2.4,
       "peakPeriodSec": 9,
-      "waterTempC": 27.1,
-      "observedAt": "2026-09-19T15:56:00Z"
+      "waterTempC": 27.3,
+      "observedAt": "2026-09-19T18:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
-      "seasM": 1.9,
-      "peakPeriodSec": 9,
+      "seasM": 2.1,
+      "peakPeriodSec": 10,
       "waterTempC": 26.7,
-      "observedAt": "2026-09-19T15:56:00Z"
+      "observedAt": "2026-09-19T18:26:00Z"
     }
   }
 }
