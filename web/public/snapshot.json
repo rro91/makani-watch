@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-20T16:06:53.716Z",
+  "computedAt": "2026-09-20T18:46:38.770Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -40,60 +40,60 @@
   ],
   "outlookFormation48h": null,
   "outlookFormation7day": 60,
-  "outlookText": "594 \nACPN50 PHFO 201145\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 AM HST Sun Sep 20 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on newly formed\nTropical Storm Odalys, located located over a thousand miles\nsouthwest of the southern tip of Baja California.\n\nWell East-Southeast of the Hawaiian Islands (Former TD 15-E):\nShowers and thunderstorms associated with the remnants of Tropical\nDepression Fifteen-E, located well east-southeast of the Hawaiian\nIslands, remain limited. Environmental conditions appear conducive\nfor some development of this system by the middle to latter portion\nof this week as it moves westward to west-southwestward, and a\ntropical depression could form to the south or southeast of the\nHawaiian Islands once the environment becomes more favorable.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...medium...60 percent.\n\n&&\nPublic Advisories on Tropical Storm Odalys are issued under WMO\nheader WTPZ31 KNHC and under AWIPS header MIATCPEP1.\nForecast Advisories on Tropical Storm Odalys are issued under WMO\nheader WTPZ21 KNHC and under AWIPS header MIATCMEP1.\n\nHigh Seas Forecasts issued by the National Weather Service\ncan be found under AWIPS header NFDHSFEPI, WMO header FZPN02\nKWBC, and on the web at ocean.weather.gov/shtml/NFDHSFEPI.php\n\n$$\nForecaster Katz/Pasch\nNNNN",
+  "outlookText": "614 \nACPN50 PHFO 201741\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sun Sep 20 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical\nStorm Odalys, located located over a thousand miles southwest of the\nsouthern tip of Baja California.\n\nWell East-Southeast of the Hawaiian Islands (Former TD 15-E):\nShowers and thunderstorms associated with the remnants of Tropical\nDepression Fifteen-E, located well east-southeast of the Hawaiian\nIslands, remain limited. Environmental conditions appear conducive\nfor some development of this system by the middle to latter portion\nof this week as the system moves westward to west-southwestward, and\na tropical depression could form to the south or southeast of the\nHawaiian Islands once the environment becomes more favorable.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...medium...60 percent.\n\n&&\nPublic Advisories on Tropical Storm Odalys are issued under WMO\nheader WTPZ31 KNHC and under AWIPS header MIATCPEP1.\nForecast Advisories on Tropical Storm Odalys are issued under WMO\nheader WTPZ21 KNHC and under AWIPS header MIATCMEP1.\n\nHigh Seas Forecasts issued by the National Weather Service\ncan be found under AWIPS header NFDHSFEPI, WMO header FZPN02\nKWBC, and on the web at ocean.weather.gov/shtml/NFDHSFEPI.php\n\n$$\nForecaster Katz/Pasch\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.716Z",
+      "fetchedAt": "2026-09-20T18:46:38.770Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.749Z",
+      "fetchedAt": "2026-09-20T18:46:38.801Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.750Z",
+      "fetchedAt": "2026-09-20T18:46:38.803Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.751Z",
+      "fetchedAt": "2026-09-20T18:46:38.804Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.753Z",
+      "fetchedAt": "2026-09-20T18:46:38.806Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.754Z",
+      "fetchedAt": "2026-09-20T18:46:38.807Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.756Z",
+      "fetchedAt": "2026-09-20T18:46:38.809Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.758Z",
+      "fetchedAt": "2026-09-20T18:46:38.810Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-20T16:06:53.759Z",
+      "fetchedAt": "2026-09-20T18:46:38.812Z",
       "ageSeconds": 0
     }
   ],
@@ -436,26 +436,26 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.3,
+      "seasM": 1.2,
       "peakPeriodSec": 7,
-      "waterTempC": 26.8,
-      "observedAt": "2026-09-20T15:26:00Z"
+      "waterTempC": 26.9,
+      "observedAt": "2026-09-20T17:56:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.4,
+      "seasM": 2.3,
       "peakPeriodSec": 10,
-      "waterTempC": 27.5,
-      "observedAt": "2026-09-20T15:26:00Z"
+      "waterTempC": 27.4,
+      "observedAt": "2026-09-20T18:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
       "seasM": 2.1,
-      "peakPeriodSec": 10,
+      "peakPeriodSec": 9,
       "waterTempC": 26.5,
-      "observedAt": "2026-09-20T15:26:00Z"
+      "observedAt": "2026-09-20T17:56:00Z"
     }
   }
 }
