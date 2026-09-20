@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-20T21:05:41.988Z",
+  "computedAt": "2026-09-20T23:13:30.292Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -47,7 +47,7 @@
       "movementDir": "30",
       "movementMph": 8,
       "lastUpdate": "2026-09-20T21:00:00.000Z",
-      "publicAdvisoryUrl": null,
+      "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "distanceKmToTrip": null
     }
   ],
@@ -58,55 +58,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:41.988Z",
+      "fetchedAt": "2026-09-20T23:13:30.292Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.036Z",
+      "fetchedAt": "2026-09-20T23:13:30.320Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.037Z",
+      "fetchedAt": "2026-09-20T23:13:30.321Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.038Z",
+      "fetchedAt": "2026-09-20T23:13:30.322Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.041Z",
+      "fetchedAt": "2026-09-20T23:13:30.324Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.042Z",
+      "fetchedAt": "2026-09-20T23:13:30.325Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.043Z",
+      "fetchedAt": "2026-09-20T23:13:30.326Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.045Z",
+      "fetchedAt": "2026-09-20T23:13:30.327Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-20T21:05:42.047Z",
+      "fetchedAt": "2026-09-20T23:13:30.328Z",
       "ageSeconds": 0
     }
   ],
@@ -449,26 +449,26 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.3,
+      "seasM": 1.4,
       "peakPeriodSec": 7,
-      "waterTempC": 27,
-      "observedAt": "2026-09-20T20:26:00Z"
+      "waterTempC": 27.1,
+      "observedAt": "2026-09-20T22:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.1,
-      "peakPeriodSec": 10,
-      "waterTempC": 27.4,
-      "observedAt": "2026-09-20T20:26:00Z"
+      "seasM": 2.2,
+      "peakPeriodSec": 9,
+      "waterTempC": 27.5,
+      "observedAt": "2026-09-20T22:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
       "seasM": 1.9,
-      "peakPeriodSec": 11,
+      "peakPeriodSec": 10,
       "waterTempC": 26.6,
-      "observedAt": "2026-09-20T20:26:00Z"
+      "observedAt": "2026-09-20T22:26:00Z"
     }
   }
 }
