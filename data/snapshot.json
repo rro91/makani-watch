@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-21T13:20:39.291Z",
+  "computedAt": "2026-09-21T18:52:24.397Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -7,7 +7,7 @@
   "recommendation": "Coś może się tworzyć, ale to na razie dni i setki kilometrów od Waszej trasy. Sprawdzaj raz dziennie.",
   "scopeLabel": "Cała Hawaje — 43 strefy NWS (jeszcze nie zawężone do Waszej trasy)",
   "reasons": [
-    "Prognoza CPHC: 80% szans na nowy cyklon w ciągu 7 dni"
+    "Prognoza CPHC: 90% szans na nowy cyklon w ciągu 7 dni"
   ],
   "alerts": [],
   "storms": [
@@ -16,11 +16,11 @@
       "binNumber": "AT1",
       "name": "Fay",
       "classification": "TS",
-      "intensityKmh": 102,
-      "pressureMb": "997",
-      "movementDir": "155",
-      "movementMph": 2,
-      "lastUpdate": "2026-09-21T09:00:00.000Z",
+      "intensityKmh": 83,
+      "pressureMb": "1000",
+      "movementDir": "180",
+      "movementMph": 5,
+      "lastUpdate": "2026-09-21T15:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
       "distanceKmToTrip": null
     },
@@ -30,10 +30,10 @@
       "name": "Odalys",
       "classification": "TS",
       "intensityKmh": 74,
-      "pressureMb": "1004",
+      "pressureMb": "1003",
       "movementDir": "310",
-      "movementMph": 13,
-      "lastUpdate": "2026-09-21T09:00:00.000Z",
+      "movementMph": 12,
+      "lastUpdate": "2026-09-21T15:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "distanceKmToTrip": null
     },
@@ -41,72 +41,72 @@
       "id": "ep172026",
       "binNumber": "EP2",
       "name": "Polo",
-      "classification": "TS",
-      "intensityKmh": 83,
-      "pressureMb": "1001",
-      "movementDir": "55",
+      "classification": "HU",
+      "intensityKmh": 130,
+      "pressureMb": "977",
+      "movementDir": "100",
       "movementMph": 5,
-      "lastUpdate": "2026-09-21T12:00:00.000Z",
+      "lastUpdate": "2026-09-21T18:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "distanceKmToTrip": null
     }
   ],
-  "outlookFormation48h": 20,
-  "outlookFormation7day": 80,
-  "outlookText": "000\nACPN50 PHFO 211128\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 AM HST Mon Sep 21 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical\nStorm Odalys, located located well west-southwest of the southern\ntip of Baja California, and on Tropical Storm Polo, located a few\nhundred miles south of Manzanillo, Mexico.\n\nEast-Southeast of the Hawaiian Islands (Former TD 15-E):\nShowers and thunderstorms have increased in association with the\nremnants of Tropical Depression Fifteen-E, located several hundred\nmiles to the east-southeast of the Hawaiian Islands.  Environmental\nconditions are forecast to become more conducive for development of\nthis system by the middle to latter portion of this week, and a\ntropical depression is likely to form by that time to the south or\nsoutheast of the Hawaiian Islands as the system moves generally\nwestward at 10 to 15 mph.\n* Formation chance through 48 hours...low...20 percent.\n* Formation chance through 7 days...high...80 percent.\n\n&&\n\nPublic Advisories on Tropical Storm Polo are issued\nunder WMO header WTPZ32 KNHC and under AWIPS header MIATCPEP2.\nForecast/Advisories on Tropical Storm Polo are issued\nunder WMO header WTPZ22 KNHC and under AWIPS header MIATCMEP2.\n\n$$\nForecaster Blake\nNNNN",
+  "outlookFormation48h": 40,
+  "outlookFormation7day": 90,
+  "outlookText": "000\nACPN50 PHFO 211756\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Mon Sep 21 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical\nStorm Odalys, located located well west-southwest of the southern\ntip of Baja California, and on recently upgraded Hurricane Polo,\nlocated a few hundred miles south of Manzanillo, Mexico.\n\nEast-Southeast of the Hawaiian Islands (Former TD 15-E):\nSatellite-wind data indicate the low-level circulation of the\nremnants of Tropical Depression Fifteen-E has become better\ndefined, located several hundred miles to the east-southeast of the\nHawaiian Islands.  Environmental conditions are forecast to become\nconducive for further development, and a tropical depression is\nlikely to form around midweek while it moves slowly west-\nnorthwestward or northwestward.  Interests in the Hawaiian\nIslands should monitor the progress of this system.\n* Formation chance through 48 hours...medium...40 percent.\n* Formation chance through 7 days...high...90 percent.\n\n&&\n\nPublic Advisories on Polo are issued under WMO header WTPZ32 KNHC\nand under AWIPS header MIATCPEP2.\nForecast/Advisories on Polo are issued under WMO header WTPZ22 KNHC\nand under AWIPS header MIATCMEP2.\n\n$$\nForecaster Blake\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.291Z",
+      "fetchedAt": "2026-09-21T18:52:24.397Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.316Z",
+      "fetchedAt": "2026-09-21T18:52:24.428Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.317Z",
+      "fetchedAt": "2026-09-21T18:52:24.429Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.318Z",
+      "fetchedAt": "2026-09-21T18:52:24.431Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.319Z",
+      "fetchedAt": "2026-09-21T18:52:24.433Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.320Z",
+      "fetchedAt": "2026-09-21T18:52:24.434Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.321Z",
+      "fetchedAt": "2026-09-21T18:52:24.436Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.323Z",
+      "fetchedAt": "2026-09-21T18:52:24.437Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-21T13:20:39.324Z",
+      "fetchedAt": "2026-09-21T18:52:24.439Z",
       "ageSeconds": 0
     }
   ],
@@ -449,26 +449,26 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.2,
+      "seasM": 1.1,
       "peakPeriodSec": 7,
       "waterTempC": 27,
-      "observedAt": "2026-09-21T12:56:00Z"
+      "observedAt": "2026-09-21T18:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.2,
+      "seasM": 2.1,
       "peakPeriodSec": 9,
-      "waterTempC": 27.5,
-      "observedAt": "2026-09-21T12:56:00Z"
+      "waterTempC": 27.2,
+      "observedAt": "2026-09-21T18:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
-      "seasM": 2.1,
+      "seasM": 1.9,
       "peakPeriodSec": 9,
       "waterTempC": 26.5,
-      "observedAt": "2026-09-21T12:56:00Z"
+      "observedAt": "2026-09-21T18:26:00Z"
     }
   }
 }
