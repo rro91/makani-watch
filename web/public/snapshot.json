@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-22T01:09:14.281Z",
+  "computedAt": "2026-09-22T06:15:22.319Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -16,11 +16,11 @@
       "binNumber": "AT1",
       "name": "Fay",
       "classification": "TS",
-      "intensityKmh": 74,
-      "pressureMb": "1004",
-      "movementDir": "210",
-      "movementMph": 3,
-      "lastUpdate": "2026-09-21T21:00:00.000Z",
+      "intensityKmh": 65,
+      "pressureMb": "1008",
+      "movementDir": "215",
+      "movementMph": 8,
+      "lastUpdate": "2026-09-22T03:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
       "distanceKmToTrip": null
     },
@@ -31,9 +31,9 @@
       "classification": "TS",
       "intensityKmh": 83,
       "pressureMb": "1002",
-      "movementDir": "310",
-      "movementMph": 8,
-      "lastUpdate": "2026-09-21T21:00:00.000Z",
+      "movementDir": "295",
+      "movementMph": 7,
+      "lastUpdate": "2026-09-22T03:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
       "distanceKmToTrip": null
     },
@@ -42,71 +42,71 @@
       "binNumber": "EP2",
       "name": "Polo",
       "classification": "HU",
-      "intensityKmh": 148,
-      "pressureMb": "971",
-      "movementDir": "90",
-      "movementMph": 6,
-      "lastUpdate": "2026-09-22T00:00:00.000Z",
+      "intensityKmh": 213,
+      "pressureMb": "955",
+      "movementDir": "105",
+      "movementMph": 5,
+      "lastUpdate": "2026-09-22T06:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "distanceKmToTrip": null
     }
   ],
-  "outlookFormation48h": 60,
+  "outlookFormation48h": 70,
   "outlookFormation7day": 90,
-  "outlookText": "000\nACPN50 PHFO 212340\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Mon Sep 21 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical\nStorm Odalys, located well west-southwest of the southern tip of\nBaja California, and on Hurricane Polo, located a few hundred miles\nsouth-southeast of Manzanillo, Mexico.\n\nSoutheast of the Hawaiian Islands (Former TD 15-E):\nThe remnants of Tropical Depression Fifteen-E, located several\nhundred miles southeast of the Hawaiian Islands, continue to produce\nshowers and thunderstorms that are starting to show signs of\norganization. Environmental conditions are forecast to be conducive\nfor further development, and a tropical depression is likely to form\naround midweek while it moves slowly west-northwestward or\nnorthwestward. Interests in the Hawaiian Islands should monitor the\nprogress of this system.\n* Formation chance through 48 hours...medium...60 percent.\n* Formation chance through 7 days...high...90 percent.\n\n$$\nForecaster Papin\nNNNN",
+  "outlookText": "561 \nACPN50 PHFO 220518\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 PM HST Mon Sep 21 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical\nStorm Odalys, located well west-southwest of the southern tip of\nBaja California, and on Hurricane Polo, located a few hundred miles\nsouth-southeast of Manzanillo, Mexico.\n\nSoutheast of the Hawaiian Islands (Former TD 15-E):\nThe remnants of Tropical Depression Fifteen-E, located several\nhundred miles southeast of the Hawaiian Islands, continue to produce\nshowers and thunderstorms that are gradually becoming better\norganized. Environmental conditions are forecast to be conducive for\nfurther development, and a tropical depression is likely to form\nduring the next day or two while the system moves slowly\nwest-northwestward or northwestward. Interests in the Hawaiian\nIslands should monitor the progress of this system.\n* Formation chance through 48 hours...high...70 percent.\n* Formation chance through 7 days...high...90 percent.\n\n$$\nForecaster Kelly\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.281Z",
+      "fetchedAt": "2026-09-22T06:15:22.319Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.310Z",
+      "fetchedAt": "2026-09-22T06:15:22.343Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.311Z",
+      "fetchedAt": "2026-09-22T06:15:22.344Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.312Z",
+      "fetchedAt": "2026-09-22T06:15:22.345Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.314Z",
+      "fetchedAt": "2026-09-22T06:15:22.347Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.315Z",
+      "fetchedAt": "2026-09-22T06:15:22.348Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.316Z",
+      "fetchedAt": "2026-09-22T06:15:22.349Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.318Z",
+      "fetchedAt": "2026-09-22T06:15:22.350Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T01:09:14.319Z",
+      "fetchedAt": "2026-09-22T06:15:22.351Z",
       "ageSeconds": 0
     }
   ],
@@ -449,18 +449,18 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.1,
-      "peakPeriodSec": 6,
+      "seasM": 0.9,
+      "peakPeriodSec": 7,
       "waterTempC": 27,
-      "observedAt": "2026-09-22T00:26:00Z"
+      "observedAt": "2026-09-22T05:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 1.9,
+      "seasM": 2.2,
       "peakPeriodSec": 9,
-      "waterTempC": 27.8,
-      "observedAt": "2026-09-22T00:26:00Z"
+      "waterTempC": 27.7,
+      "observedAt": "2026-09-22T05:56:00Z"
     },
     "Maui": {
       "stationId": "51205",
@@ -468,7 +468,7 @@
       "seasM": 1.7,
       "peakPeriodSec": 9,
       "waterTempC": 26.6,
-      "observedAt": "2026-09-22T00:26:00Z"
+      "observedAt": "2026-09-22T05:26:00Z"
     }
   }
 }
