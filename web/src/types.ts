@@ -58,6 +58,8 @@ export interface Storm {
   binNumber: string | null;
   name: string;
   classification: string;
+  classificationLabel: string;
+  category: number | null;
   intensityKmh: number | null;
   pressureMb: number | null;
   lat: number | null;

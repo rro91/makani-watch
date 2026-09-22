@@ -31,6 +31,13 @@ const OUTAGE_LABELS = ["niskie", "umiarkowane", "wysokie", "bardzo wysokie"] as 
 // A rough estimate, not measured outage data — no Hawaii utility publishes a
 // free/public live outage-count API, so this is derived from forecast wind
 // gusts (the thing that actually snaps power lines and drops trees on them).
+// Lower distance = more red. 1600 km is the same cutoff the rule engine uses
+// to bump the threat level, so "green" here really does mean "not a factor".
+export function distanceColor(km: number): string {
+  const level = 3 - levelFromBreakpoints(km, [800, 1600, 3000]);
+  return `var(${LEVEL_VAR[level as 0 | 1 | 2 | 3]})`;
+}
+
 export function outageRisk(gustKmh: number): { level: 0 | 1 | 2 | 3; label: string; color: string } {
   const level = levelFromBreakpoints(gustKmh, [40, 70, 110]);
   return { level, label: OUTAGE_LABELS[level], color: `var(${LEVEL_VAR[level]})` };

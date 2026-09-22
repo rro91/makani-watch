@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { Alert, Island, Mode, ThreatLevel, ThreatSnapshot } from "./types";
 import MapView from "./MapView";
 import IslandTabs from "./IslandTabs";
-import { gustColor, outageRisk, precipColor, waveColor, windColor } from "./risk";
+import { distanceColor, gustColor, outageRisk, precipColor, waveColor, windColor } from "./risk";
 import { fetchLiveAlertsHI } from "./liveAlerts";
 import { computeThreatLevel } from "./rules";
 
@@ -382,18 +382,37 @@ export default function App() {
             </p>
           )}
           {snapshot.storms.length === 0 ? (
-            <div className="empty">Brak aktywnych cyklonów w basenie.</div>
+            <div className="empty">Brak aktywnych cyklonów na Pacyfiku Wschodnim/Centralnym.</div>
           ) : (
-            snapshot.storms.map((s) => (
-              <div className="alert-card" key={s.id}>
-                <span className="event">
-                  {s.name} · {s.classification} · {s.intensityKmh ?? "?"} km/h
-                </span>
-                <span className="meta">
-                  {s.distanceKmToTrip != null ? `~${s.distanceKmToTrip} km od trasy` : ""}
-                </span>
-              </div>
-            ))
+            [...snapshot.storms]
+              .sort((a, b) => (a.distanceKmToTrip ?? Infinity) - (b.distanceKmToTrip ?? Infinity))
+              .map((s) => (
+                <div className="alert-card" key={s.id}>
+                  <span className="event">
+                    {s.name} · {s.classificationLabel}
+                    {s.category != null ? ` (kategoria ${s.category})` : ""} ·{" "}
+                    {s.intensityKmh ?? "?"} km/h wiatru
+                  </span>
+                  <span className="meta">
+                    {s.distanceKmToTrip != null ? (
+                      <>
+                        <b style={{ color: distanceColor(s.distanceKmToTrip) }}>
+                          ~{s.distanceKmToTrip.toLocaleString("pl-PL")} km
+                        </b>{" "}
+                        od Waszej trasy
+                        {s.distanceKmToTrip > 1600 && " — za daleko, by bezpośrednio zagrażać"}
+                      </>
+                    ) : (
+                      "odległość nieznana"
+                    )}
+                  </span>
+                  {s.publicAdvisoryUrl && (
+                    <a href={s.publicAdvisoryUrl} target="_blank" rel="noreferrer">
+                      oficjalny komunikat NHC →
+                    </a>
+                  )}
+                </div>
+              ))
           )}
         </div>
       </div>

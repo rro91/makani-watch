@@ -2,22 +2,45 @@ import type { Storm } from "../types.js";
 
 const USER_AGENT = "makani-watch/0.1 (rafal.lukasz.rostkowski@gmail.com)";
 
-// Schema: NHC Tropical Cyclone Status JSON File Reference (nhc.noaa.gov, 2019).
+// Live schema differs from NHC's own 2019 PDF reference doc: numbers arrive
+// as strings, and the numeric coordinate fields are camelCase
+// (latitudeNumeric), not snake_case (latitude_numeric) as documented.
+// Verified against a live pull on 2026-09-22.
 interface RawStorm {
   id: string;
   binNumber: string | null;
   name: string;
   classification: string;
-  intensity: number | null;
-  pressure: number | null;
-  latitude: string | null;
-  longitude: string | null;
-  latitude_numeric: number | null;
-  longitude_numeric: number | null;
+  intensity: string | null;
+  pressure: string | null;
+  latitudeNumeric: number | null;
+  longitudeNumeric: number | null;
   movementDir: number | null;
   movementSpeed: number | null;
   lastUpdate: string | null;
   publicAdvisory: { url: string } | null;
+}
+
+const CLASSIFICATION_LABELS: Record<string, string> = {
+  TD: "Depresja tropikalna",
+  STD: "Subtropikalna depresja",
+  TS: "Sztorm tropikalny",
+  HU: "Huragan",
+  STS: "Sztorm subtropikalny",
+  PTC: "Potencjalny cyklon tropikalny",
+  PC: "Cyklon post-tropikalny",
+  TY: "Tajfun",
+};
+
+// Saffir-Simpson scale (knots), only meaningful once NHC calls it a hurricane.
+function saffirSimpsonCategory(classification: string, knots: number): number | null {
+  if (classification !== "HU") return null;
+  if (knots >= 137) return 5;
+  if (knots >= 113) return 4;
+  if (knots >= 96) return 3;
+  if (knots >= 83) return 2;
+  if (knots >= 64) return 1;
+  return null;
 }
 
 export async function fetchCurrentStorms(): Promise<Storm[]> {
@@ -29,21 +52,32 @@ export async function fetchCurrentStorms(): Promise<Storm[]> {
   }
   const json = (await res.json()) as { activeStorms: RawStorm[] };
 
-  return json.activeStorms.map((s) => ({
-    id: s.id,
-    binNumber: s.binNumber,
-    name: s.name,
-    classification: s.classification,
-    intensityKmh: s.intensity != null ? Math.round(s.intensity * 1.852) : null,
-    pressureMb: s.pressure,
-    lat: s.latitude_numeric,
-    lon: s.longitude_numeric,
-    movementDir: s.movementDir != null ? String(s.movementDir) : null,
-    movementMph: s.movementSpeed,
-    lastUpdate: s.lastUpdate,
-    publicAdvisoryUrl: s.publicAdvisory?.url ?? null,
-    distanceKmToTrip: null, // filled in by the rule engine once trip context is known
-  } satisfies Storm));
+  // Atlantic ("al...") storms are a different ocean and cannot physically
+  // affect Hawaii; only show Eastern/Central Pacific systems.
+  const pacificStorms = json.activeStorms.filter(
+    (s) => /^(ep|cp)/i.test(s.id),
+  );
+
+  return pacificStorms.map((s) => {
+    const knots = s.intensity != null ? Number(s.intensity) : null;
+    return {
+      id: s.id,
+      binNumber: s.binNumber,
+      name: s.name,
+      classification: s.classification,
+      classificationLabel: CLASSIFICATION_LABELS[s.classification] ?? s.classification,
+      category: knots != null ? saffirSimpsonCategory(s.classification, knots) : null,
+      intensityKmh: knots != null ? Math.round(knots * 1.852) : null,
+      pressureMb: s.pressure != null ? Number(s.pressure) : null,
+      lat: s.latitudeNumeric,
+      lon: s.longitudeNumeric,
+      movementDir: s.movementDir != null ? String(s.movementDir) : null,
+      movementMph: s.movementSpeed,
+      lastUpdate: s.lastUpdate,
+      publicAdvisoryUrl: s.publicAdvisory?.url ?? null,
+      distanceKmToTrip: null, // filled in by the rule engine once trip context is known
+    } satisfies Storm;
+  });
 }
 
 export interface CpacOutlook {

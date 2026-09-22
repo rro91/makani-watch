@@ -151,7 +151,7 @@ export function computeThreatLevel(ctx: RuleContext): RuleResult {
       if (storm.distanceKmToTrip <= 1600) {
         if (level < 2) level = 2;
         reasons.push(
-          `Aktywny cyklon ${storm.name} (${storm.classification}) ~${storm.distanceKmToTrip} km od trasy`,
+          `Aktywny cyklon ${storm.name} (${storm.classificationLabel}) ~${storm.distanceKmToTrip} km od trasy`,
         );
       }
     }

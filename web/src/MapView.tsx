@@ -132,7 +132,7 @@ export default function MapView({
         if (storm.lat == null || storm.lon == null) continue;
         L.marker([storm.lat, storm.lon])
           .bindTooltip(
-            `${storm.name} · ${storm.classification} · ${storm.intensityKmh ?? "?"} km/h`,
+            `${storm.name} · ${storm.classificationLabel} · ${storm.intensityKmh ?? "?"} km/h${storm.distanceKmToTrip != null ? ` · ~${storm.distanceKmToTrip} km od trasy` : ""}`,
           )
           .addTo(layerGroup);
       }
