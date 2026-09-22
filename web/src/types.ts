@@ -69,6 +69,13 @@ export interface Storm {
   lastUpdate: string | null;
   publicAdvisoryUrl: string | null;
   distanceKmToTrip: number | null;
+  track: StormTrackPoint[];
+}
+
+export interface StormTrackPoint {
+  lat: number;
+  lon: number;
+  capturedAt: string;
 }
 
 export interface SourceHealth {

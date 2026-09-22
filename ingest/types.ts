@@ -57,6 +57,12 @@ export interface Alert {
   sourceUrl: string;
 }
 
+export interface StormTrackPoint {
+  lat: number;
+  lon: number;
+  capturedAt: string;
+}
+
 export interface Storm {
   id: string;
   binNumber: string | null;
@@ -73,6 +79,9 @@ export interface Storm {
   lastUpdate: string | null;
   publicAdvisoryUrl: string | null;
   distanceKmToTrip: number | null;
+  /** Last few observed positions (oldest first), accumulated across ingest
+   * runs — NHC's live feed only gives current position, not history. */
+  track: StormTrackPoint[];
 }
 
 export interface SourceHealth {

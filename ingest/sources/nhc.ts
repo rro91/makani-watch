@@ -76,6 +76,7 @@ export async function fetchCurrentStorms(): Promise<Storm[]> {
       lastUpdate: s.lastUpdate,
       publicAdvisoryUrl: s.publicAdvisory?.url ?? null,
       distanceKmToTrip: null, // filled in by the rule engine once trip context is known
+      track: [], // filled in by run.ts, which merges in prior-run history
     } satisfies Storm;
   });
 }

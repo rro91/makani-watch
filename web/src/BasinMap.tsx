@@ -14,6 +14,34 @@ function cssVar(name: string): string {
 // glance instead of requiring a click.
 const NEAR_KM = 1600;
 
+// Fixed on-map length for the movement-direction arrow, not scaled to actual
+// speed — a slow storm's real hourly displacement would be imperceptible at
+// basin zoom, and a fast one's would overshoot the frame.
+const ARROW_LENGTH_KM = 350;
+
+function destinationPoint(
+  lat: number,
+  lon: number,
+  bearingDeg: number,
+  distanceKm: number,
+): [number, number] {
+  const R = 6371;
+  const bearing = (bearingDeg * Math.PI) / 180;
+  const lat1 = (lat * Math.PI) / 180;
+  const lon1 = (lon * Math.PI) / 180;
+  const angDist = distanceKm / R;
+  const lat2 = Math.asin(
+    Math.sin(lat1) * Math.cos(angDist) + Math.cos(lat1) * Math.sin(angDist) * Math.cos(bearing),
+  );
+  const lon2 =
+    lon1 +
+    Math.atan2(
+      Math.sin(bearing) * Math.sin(angDist) * Math.cos(lat1),
+      Math.cos(angDist) - Math.sin(lat1) * Math.sin(lat2),
+    );
+  return [(lat2 * 180) / Math.PI, (lon2 * 180) / Math.PI];
+}
+
 export default function BasinMap({
   storms,
   tripSegments,
@@ -83,12 +111,54 @@ export default function BasinMap({
       const point: [number, number] = [storm.lat, storm.lon];
       bounds.extend(point);
       const isNear = storm.distanceKmToTrip != null && storm.distanceKmToTrip <= NEAR_KM;
+      const stormColor = isNear ? near : far;
+
+      // Fading trail: oldest observed positions smallest/faintest, growing
+      // toward the current position (drawn separately, full size below).
+      const trail = storm.track.slice(0, -1);
+      trail.forEach((p, i) => {
+        bounds.extend([p.lat, p.lon]);
+        const t = (i + 1) / (trail.length + 1); // 0 (oldest) .. ~1 (newest)
+        L.circleMarker([p.lat, p.lon], {
+          radius: 3 + t * 4,
+          color: stormColor,
+          fillColor: stormColor,
+          fillOpacity: 0.15 + t * 0.55,
+          weight: 0,
+        }).addTo(layerGroup);
+      });
+      if (storm.track.length > 1) {
+        L.polyline(
+          storm.track.map((p): [number, number] => [p.lat, p.lon]),
+          { color: stormColor, weight: 1.5, opacity: 0.5, dashArray: "3 4" },
+        ).addTo(layerGroup);
+      }
+
+      // Movement-direction arrow, straight from NHC's advisory — a fixed
+      // visual length so it reads the same for a crawling and a fast storm.
+      const bearing = storm.movementDir != null ? Number(storm.movementDir) : null;
+      if (bearing != null && !Number.isNaN(bearing)) {
+        const tip = destinationPoint(storm.lat, storm.lon, bearing, ARROW_LENGTH_KM);
+        bounds.extend(tip);
+        L.polyline([point, tip], { color: stormColor, weight: 2, opacity: 0.8 }).addTo(
+          layerGroup,
+        );
+        L.marker(tip, {
+          icon: L.divIcon({
+            className: "",
+            html: `<div style="width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:11px solid ${stormColor};transform:rotate(${bearing}deg);"></div>`,
+            iconSize: [10, 11],
+            iconAnchor: [5, 6],
+          }),
+          interactive: false,
+        }).addTo(layerGroup);
+      }
 
       L.circleMarker(point, {
         radius: 7,
-        color: isNear ? near : far,
-        fillColor: isNear ? near : far,
-        fillOpacity: 0.85,
+        color: stormColor,
+        fillColor: stormColor,
+        fillOpacity: 0.9,
         weight: 2,
       })
         .bindTooltip(

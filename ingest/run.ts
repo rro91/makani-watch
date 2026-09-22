@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -54,6 +54,42 @@ async function withHealth<T>(
   }
 }
 
+const TRACK_HISTORY_LENGTH = 4;
+
+// NHC's live feed only gives each storm's current position, not its recent
+// track — so we accumulate it ourselves, run over run, by reading back the
+// snapshot this same script wrote last time.
+async function loadPreviousTracks(
+  path: string,
+): Promise<Map<string, Storm["track"]>> {
+  try {
+    const raw = await readFile(path, "utf-8");
+    const previous = JSON.parse(raw) as ThreatSnapshot;
+    return new Map(previous.storms.map((s) => [s.id, s.track ?? []]));
+  } catch {
+    return new Map(); // no previous snapshot yet (first run) — start fresh
+  }
+}
+
+function withTrack(
+  storm: Storm,
+  previousTracks: Map<string, Storm["track"]>,
+  capturedAt: string,
+): Storm {
+  if (storm.lat == null || storm.lon == null) {
+    return { ...storm, track: previousTracks.get(storm.id) ?? [] };
+  }
+  const prior = previousTracks.get(storm.id) ?? [];
+  const last = prior[prior.length - 1];
+  const samePosition = last && last.lat === storm.lat && last.lon === storm.lon;
+  const track = samePosition
+    ? prior
+    : [...prior, { lat: storm.lat, lon: storm.lon, capturedAt }].slice(
+        -TRACK_HISTORY_LENGTH,
+      );
+  return { ...storm, track };
+}
+
 async function main() {
   const now = new Date();
   const todayIso = now.toISOString().slice(0, 10);
@@ -87,8 +123,12 @@ async function main() {
     ]);
 
   const alerts = alertsResult.value ?? [];
-  const storms: Storm[] = stormsResult.value ?? [];
   const outlook = outlookResult.value;
+
+  const previousTracks = await loadPreviousTracks(OUT_PATHS[0]!);
+  const storms: Storm[] = (stormsResult.value ?? []).map((s) =>
+    withTrack(s, previousTracks, now.toISOString()),
+  );
 
   const forecastByIsland = {} as Record<Island, DailyForecast[]>;
   const buoyByIsland = {} as Record<Island, BuoyReading | null>;

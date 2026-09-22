@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-22T12:45:15.443Z",
+  "computedAt": "2026-09-22T12:50:32.697Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -26,7 +26,14 @@
       "movementMph": 7,
       "lastUpdate": "2026-09-22T09:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
-      "distanceKmToTrip": 2991
+      "distanceKmToTrip": 2991,
+      "track": [
+        {
+          "lat": 14.7,
+          "lon": -130.4,
+          "capturedAt": "2026-09-22T12:50:32.697Z"
+        }
+      ]
     },
     {
       "id": "ep172026",
@@ -43,7 +50,14 @@
       "movementMph": 6,
       "lastUpdate": "2026-09-22T12:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
-      "distanceKmToTrip": 5982
+      "distanceKmToTrip": 5982,
+      "track": [
+        {
+          "lat": 14.5,
+          "lon": -101.5,
+          "capturedAt": "2026-09-22T12:50:32.697Z"
+        }
+      ]
     }
   ],
   "outlookFormation48h": 70,
@@ -53,55 +67,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.443Z",
+      "fetchedAt": "2026-09-22T12:50:32.697Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.494Z",
+      "fetchedAt": "2026-09-22T12:50:32.741Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.495Z",
+      "fetchedAt": "2026-09-22T12:50:32.743Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.496Z",
+      "fetchedAt": "2026-09-22T12:50:32.743Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.498Z",
+      "fetchedAt": "2026-09-22T12:50:32.745Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.499Z",
+      "fetchedAt": "2026-09-22T12:50:32.745Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.500Z",
+      "fetchedAt": "2026-09-22T12:50:32.747Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.502Z",
+      "fetchedAt": "2026-09-22T12:50:32.747Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:45:15.503Z",
+      "fetchedAt": "2026-09-22T12:50:32.748Z",
       "ageSeconds": 0
     }
   ],
