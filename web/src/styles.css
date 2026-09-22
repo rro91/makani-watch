@@ -422,6 +422,14 @@ details.reasons li:first-child {
   box-shadow: var(--shadow);
 }
 
+.basin-map {
+  height: 20rem;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
 .forecast-list {
   display: flex;
   flex-direction: column;

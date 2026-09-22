@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Alert, Island, Mode, ThreatLevel, ThreatSnapshot } from "./types";
 import MapView from "./MapView";
+import BasinMap from "./BasinMap";
 import IslandTabs from "./IslandTabs";
 import { distanceColor, gustColor, outageRisk, precipColor, waveColor, windColor } from "./risk";
 import { fetchLiveAlertsHI } from "./liveAlerts";
@@ -414,6 +415,11 @@ export default function App() {
                 </div>
               ))
           )}
+        </div>
+
+        <div className="section span-6">
+          <h2>Mapa basenu — Hawaje i cyklony</h2>
+          <BasinMap storms={snapshot.storms} tripSegments={snapshot.tripSegments} />
         </div>
       </div>
 
