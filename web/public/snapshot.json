@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-22T12:51:22.536Z",
+  "computedAt": "2026-09-22T16:38:13.645Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -20,18 +20,23 @@
       "category": null,
       "intensityKmh": 102,
       "pressureMb": 998,
-      "lat": 14.7,
-      "lon": -130.4,
-      "movementDir": "340",
-      "movementMph": 7,
-      "lastUpdate": "2026-09-22T09:00:00.000Z",
+      "lat": 14.9,
+      "lon": -130.5,
+      "movementDir": "355",
+      "movementMph": 5,
+      "lastUpdate": "2026-09-22T15:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
-      "distanceKmToTrip": 2991,
+      "distanceKmToTrip": 2973,
       "track": [
         {
           "lat": 14.7,
           "lon": -130.4,
           "capturedAt": "2026-09-22T12:50:32.697Z"
+        },
+        {
+          "lat": 14.9,
+          "lon": -130.5,
+          "capturedAt": "2026-09-22T16:38:13.645Z"
         }
       ]
     },
@@ -42,20 +47,25 @@
       "classification": "HU",
       "classificationLabel": "Huragan",
       "category": 5,
-      "intensityKmh": 259,
-      "pressureMb": 926,
-      "lat": 14.5,
-      "lon": -101.5,
-      "movementDir": "100",
-      "movementMph": 6,
-      "lastUpdate": "2026-09-22T12:00:00.000Z",
+      "intensityKmh": 269,
+      "pressureMb": 920,
+      "lat": 14.7,
+      "lon": -101.6,
+      "movementDir": "360",
+      "movementMph": 2,
+      "lastUpdate": "2026-09-22T15:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
-      "distanceKmToTrip": 5982,
+      "distanceKmToTrip": 5966,
       "track": [
         {
           "lat": 14.5,
           "lon": -101.5,
           "capturedAt": "2026-09-22T12:50:32.697Z"
+        },
+        {
+          "lat": 14.7,
+          "lon": -101.6,
+          "capturedAt": "2026-09-22T16:38:13.645Z"
         }
       ]
     }
@@ -67,55 +77,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.536Z",
+      "fetchedAt": "2026-09-22T16:38:13.645Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.599Z",
+      "fetchedAt": "2026-09-22T16:38:13.669Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.600Z",
+      "fetchedAt": "2026-09-22T16:38:13.670Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.601Z",
+      "fetchedAt": "2026-09-22T16:38:13.671Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.603Z",
+      "fetchedAt": "2026-09-22T16:38:13.672Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.604Z",
+      "fetchedAt": "2026-09-22T16:38:13.673Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.605Z",
+      "fetchedAt": "2026-09-22T16:38:13.674Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.607Z",
+      "fetchedAt": "2026-09-22T16:38:13.675Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:51:22.608Z",
+      "fetchedAt": "2026-09-22T16:38:13.676Z",
       "ageSeconds": 0
     }
   ],
@@ -459,25 +469,25 @@
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
       "seasM": 1.1,
-      "peakPeriodSec": 7,
+      "peakPeriodSec": 13,
       "waterTempC": 27,
-      "observedAt": "2026-09-22T11:56:00Z"
+      "observedAt": "2026-09-22T15:56:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.1,
-      "peakPeriodSec": 9,
-      "waterTempC": 27.6,
-      "observedAt": "2026-09-22T11:56:00Z"
+      "seasM": 2.2,
+      "peakPeriodSec": 8,
+      "waterTempC": 27.1,
+      "observedAt": "2026-09-22T15:56:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
-      "seasM": 1.9,
+      "seasM": 1.8,
       "peakPeriodSec": 9,
       "waterTempC": 26.6,
-      "observedAt": "2026-09-22T12:26:00Z"
+      "observedAt": "2026-09-22T15:56:00Z"
     }
   }
 }
