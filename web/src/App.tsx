@@ -202,6 +202,35 @@ export default function App() {
       </div>
 
       <div className="dashboard">
+        <div className="section span-6">
+          <h2>Aktywne alerty ({displayAlerts.length})</h2>
+          {displayAlerts.length === 0 ? (
+            <div className="empty">Brak aktywnych alertów NWS.</div>
+          ) : (
+            <div className="alert-list">
+              {displayAlerts.map((a) => (
+                <details className="alert-card alert-collapsible" key={a.id}>
+                  <summary>
+                    <span className="summary-text">
+                      <span className="event">{a.event}</span>
+                      <span className="meta">
+                        {a.zones.length} stref · wydano {hst(a.effective)}
+                      </span>
+                    </span>
+                  </summary>
+                  <div className="alert-body">
+                    <span className="desc">{a.description}</span>
+                    {a.instruction && <span className="instruction">{a.instruction}</span>}
+                    <a href={a.sourceUrl} target="_blank" rel="noreferrer">
+                      oryginał NWS →
+                    </a>
+                  </div>
+                </details>
+              ))}
+            </div>
+          )}
+        </div>
+
         <div className="section span-2">
           <h2>Twoja trasa</h2>
             <div className="trip-strip">
@@ -224,6 +253,58 @@ export default function App() {
         <div className="section span-4">
           <h2>Mapa stref</h2>
           <MapView snapshot={snapshot} alerts={displayAlerts} />
+        </div>
+
+        <div className="section span-6">
+          <h2>Cyklony ({snapshot.storms.length})</h2>
+          {snapshot.outlookFormation7day != null && (
+            <p
+              style={{
+                margin: "-0.3rem 0 0.7rem",
+                fontSize: "0.78rem",
+                color: "var(--ink-3)",
+                lineHeight: 1.5,
+              }}
+            >
+              Szansa, że w ciągu 7 dni w tym rejonie Pacyfiku uformuje się nowy
+              cyklon (wg codziennej prognozy CPHC): {snapshot.outlookFormation7day}%
+            </p>
+          )}
+          {snapshot.storms.length === 0 ? (
+            <div className="empty">Brak aktywnych cyklonów na Pacyfiku Wschodnim/Centralnym.</div>
+          ) : (
+            <div className="storm-grid">
+              {[...snapshot.storms]
+                .sort((a, b) => (a.distanceKmToTrip ?? Infinity) - (b.distanceKmToTrip ?? Infinity))
+                .map((s) => (
+                  <div className="alert-card" key={s.id}>
+                    <span className="event">
+                      {s.name} · {s.classificationLabel}
+                      {s.category != null ? ` (kategoria ${s.category})` : ""} ·{" "}
+                      {s.intensityKmh ?? "?"} km/h wiatru
+                    </span>
+                    <span className="meta">
+                      {s.distanceKmToTrip != null ? (
+                        <>
+                          <b style={{ color: distanceColor(s.distanceKmToTrip) }}>
+                            ~{s.distanceKmToTrip.toLocaleString("pl-PL")} km
+                          </b>{" "}
+                          od Waszej trasy
+                          {s.distanceKmToTrip > 1600 && " — za daleko, by bezpośrednio zagrażać"}
+                        </>
+                      ) : (
+                        "odległość nieznana"
+                      )}
+                    </span>
+                    {s.publicAdvisoryUrl && (
+                      <a href={s.publicAdvisoryUrl} target="_blank" rel="noreferrer">
+                        oficjalny komunikat NHC →
+                      </a>
+                    )}
+                  </div>
+                ))}
+            </div>
+          )}
         </div>
 
         <div className="section span-6">
@@ -343,80 +424,6 @@ export default function App() {
       </div>
 
       <div className="dashboard">
-        <div className="section span-3">
-          <h2>
-            Aktywne alerty ({displayAlerts.length})
-          </h2>
-          {displayAlerts.length === 0 ? (
-            <div className="empty">Brak aktywnych alertów NWS.</div>
-          ) : (
-            displayAlerts.map((a) => (
-              <div className="alert-card" key={a.id}>
-                <span className="event">{a.event}</span>
-                <span className="meta">
-                  {a.zones.length} stref · wydano {hst(a.effective)} · pełny czas
-                  obowiązywania w treści poniżej
-                </span>
-                <span className="desc">{a.description}</span>
-                {a.instruction && <span className="instruction">{a.instruction}</span>}
-                <a href={a.sourceUrl} target="_blank" rel="noreferrer">
-                  oryginał NWS →
-                </a>
-              </div>
-            ))
-          )}
-        </div>
-
-        <div className="section span-3">
-          <h2>Cyklony ({snapshot.storms.length})</h2>
-          {snapshot.outlookFormation7day != null && (
-            <p
-              style={{
-                margin: "-0.3rem 0 0.7rem",
-                fontSize: "0.78rem",
-                color: "var(--ink-3)",
-                lineHeight: 1.5,
-              }}
-            >
-              Szansa, że w ciągu 7 dni w tym rejonie Pacyfiku uformuje się nowy
-              cyklon (wg codziennej prognozy CPHC): {snapshot.outlookFormation7day}%
-            </p>
-          )}
-          {snapshot.storms.length === 0 ? (
-            <div className="empty">Brak aktywnych cyklonów na Pacyfiku Wschodnim/Centralnym.</div>
-          ) : (
-            [...snapshot.storms]
-              .sort((a, b) => (a.distanceKmToTrip ?? Infinity) - (b.distanceKmToTrip ?? Infinity))
-              .map((s) => (
-                <div className="alert-card" key={s.id}>
-                  <span className="event">
-                    {s.name} · {s.classificationLabel}
-                    {s.category != null ? ` (kategoria ${s.category})` : ""} ·{" "}
-                    {s.intensityKmh ?? "?"} km/h wiatru
-                  </span>
-                  <span className="meta">
-                    {s.distanceKmToTrip != null ? (
-                      <>
-                        <b style={{ color: distanceColor(s.distanceKmToTrip) }}>
-                          ~{s.distanceKmToTrip.toLocaleString("pl-PL")} km
-                        </b>{" "}
-                        od Waszej trasy
-                        {s.distanceKmToTrip > 1600 && " — za daleko, by bezpośrednio zagrażać"}
-                      </>
-                    ) : (
-                      "odległość nieznana"
-                    )}
-                  </span>
-                  {s.publicAdvisoryUrl && (
-                    <a href={s.publicAdvisoryUrl} target="_blank" rel="noreferrer">
-                      oficjalny komunikat NHC →
-                    </a>
-                  )}
-                </div>
-              ))
-          )}
-        </div>
-
         <div className="section span-6">
           <h2>Mapa basenu — Hawaje i cyklony</h2>
           <BasinMap storms={snapshot.storms} tripSegments={snapshot.tripSegments} />
