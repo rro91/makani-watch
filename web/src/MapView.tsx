@@ -20,7 +20,13 @@ const ISLAND_CENTER: Record<Island, [number, number]> = {
   Maui: [20.8, -156.33],
 };
 
-export default function MapView({ snapshot }: { snapshot: ThreatSnapshot }) {
+export default function MapView({
+  snapshot,
+  alerts,
+}: {
+  snapshot: ThreatSnapshot;
+  alerts: Alert[];
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
   const layerGroupRef = useRef<L.LayerGroup | null>(null);
@@ -73,7 +79,7 @@ export default function MapView({ snapshot }: { snapshot: ThreatSnapshot }) {
       // zone id -> event names of every alert covering it (usually just one,
       // but a zone can carry more than one active alert at once)
       const zoneAlerts = new Map<string, string[]>();
-      for (const a of snapshot.alerts as Alert[]) {
+      for (const a of alerts) {
         for (const z of a.zones) {
           zoneAlerts.set(z, [...(zoneAlerts.get(z) ?? []), a.event]);
         }
@@ -135,7 +141,7 @@ export default function MapView({ snapshot }: { snapshot: ThreatSnapshot }) {
     return () => {
       cancelled = true;
     };
-  }, [snapshot, displayIsland]);
+  }, [snapshot, alerts, displayIsland]);
 
   return (
     <div>

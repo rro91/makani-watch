@@ -1,8 +1,20 @@
 import { useEffect, useState } from "react";
-import type { Island, Mode, ThreatLevel, ThreatSnapshot } from "./types";
+import type { Alert, Island, Mode, ThreatLevel, ThreatSnapshot } from "./types";
 import MapView from "./MapView";
 import IslandTabs from "./IslandTabs";
 import { gustColor, outageRisk, precipColor, waveColor, windColor } from "./risk";
+import { fetchLiveAlertsHI } from "./liveAlerts";
+import { computeThreatLevel } from "./rules";
+
+interface LiveOverride {
+  level: ThreatLevel;
+  levelLabel: string;
+  recommendation: string;
+  scopeLabel: string;
+  reasons: string[];
+  alerts: Alert[];
+  fetchedAt: string;
+}
 
 const LEVEL_COLOR: Record<ThreatLevel, string> = {
   0: "var(--l0)",
@@ -52,6 +64,8 @@ export default function App() {
   const [snapshot, setSnapshot] = useState<ThreatSnapshot | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [forecastIslandSel, setForecastIslandSel] = useState<Island | null>(null);
+  const [live, setLive] = useState<LiveOverride | null>(null);
+  const [liveError, setLiveError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}snapshot.json`, { cache: "no-store" })
@@ -62,6 +76,38 @@ export default function App() {
       .then((data: ThreatSnapshot) => setSnapshot(data))
       .catch((err) => setError(err instanceof Error ? err.message : String(err)));
   }, []);
+
+  // The committed snapshot only refreshes when GitHub Actions' cron happens
+  // to fire (unreliable for sub-hourly schedules — see deploy.yml). Alerts
+  // are the most time-critical piece and api.weather.gov is CORS-open, so
+  // fetch them fresh on every visit and recompute the level from that,
+  // instead of waiting on the snapshot for the thing that matters most.
+  useEffect(() => {
+    if (!snapshot) return;
+    const activeSegment =
+      snapshot.tripSegments.find((s) => s.island === snapshot.currentIsland) ?? null;
+    fetchLiveAlertsHI()
+      .then((alerts) => {
+        const result = computeThreatLevel({
+          mode: snapshot.mode,
+          currentIsland: snapshot.currentIsland,
+          activeSegment,
+          alerts,
+          storms: snapshot.storms,
+          outlookFormation7day: snapshot.outlookFormation7day,
+        });
+        setLive({
+          level: result.level,
+          levelLabel: result.levelLabel,
+          recommendation: result.recommendation,
+          scopeLabel: result.scopeLabel,
+          reasons: result.reasons,
+          alerts: result.relevantAlerts,
+          fetchedAt: new Date().toISOString(),
+        });
+      })
+      .catch((err) => setLiveError(err instanceof Error ? err.message : String(err)));
+  }, [snapshot]);
 
   if (error) {
     return (
@@ -86,6 +132,13 @@ export default function App() {
   const activeForecast = snapshot.forecastByIsland[activeForecastIsland] ?? [];
   const activeBuoy = snapshot.buoyByIsland[activeForecastIsland] ?? null;
 
+  const displayLevel = live?.level ?? snapshot.level;
+  const displayLevelLabel = live?.levelLabel ?? snapshot.levelLabel;
+  const displayRecommendation = live?.recommendation ?? snapshot.recommendation;
+  const displayScopeLabel = live?.scopeLabel ?? snapshot.scopeLabel;
+  const displayReasons = live?.reasons ?? snapshot.reasons;
+  const displayAlerts = live?.alerts ?? snapshot.alerts;
+
   return (
     <div className="app">
       <div className="topbar">
@@ -99,14 +152,14 @@ export default function App() {
       <div
         className="level-band"
         style={{
-          background: LEVEL_BG[snapshot.level],
-          color: LEVEL_COLOR[snapshot.level],
+          background: LEVEL_BG[displayLevel],
+          color: LEVEL_COLOR[displayLevel],
         }}
       >
-        <span className="num">{snapshot.level}</span>
-        <span className="label">{snapshot.levelLabel}</span>
+        <span className="num">{displayLevel}</span>
+        <span className="label">{displayLevelLabel}</span>
         <span className="rec" style={{ color: "var(--ink)" }}>
-          {snapshot.recommendation}
+          {displayRecommendation}
         </span>
         <span
           className="scope"
@@ -117,7 +170,22 @@ export default function App() {
             color: "var(--ink-2)",
           }}
         >
-          Zakres: {snapshot.scopeLabel}
+          Zakres: {displayScopeLabel}
+        </span>
+        <span
+          className="scope"
+          style={{
+            fontFamily: "IBM Plex Mono, monospace",
+            fontSize: "0.72rem",
+            letterSpacing: "0.02em",
+            color: "var(--ink-2)",
+          }}
+        >
+          {live
+            ? `Ostatnia aktualizacja: ${ageLabel(live.fetchedAt)} (alerty na żywo)`
+            : liveError
+              ? `Ostatnia aktualizacja: ${ageLabel(snapshot.computedAt)} (dane na żywo niedostępne — ${liveError})`
+              : `Ostatnia aktualizacja: ${ageLabel(snapshot.computedAt)}`}
         </span>
       </div>
 
@@ -125,7 +193,7 @@ export default function App() {
         <details className="reasons">
           <summary>Dlaczego ten poziom</summary>
           <ul>
-            {snapshot.reasons.map((r, i) => (
+            {displayReasons.map((r, i) => (
               <li key={i}>{r}</li>
             ))}
           </ul>
@@ -154,7 +222,7 @@ export default function App() {
 
         <div className="section span-4">
           <h2>Mapa stref</h2>
-          <MapView snapshot={snapshot} />
+          <MapView snapshot={snapshot} alerts={displayAlerts} />
         </div>
 
         <div className="section span-6">
@@ -276,12 +344,12 @@ export default function App() {
       <div className="dashboard">
         <div className="section span-3">
           <h2>
-            Aktywne alerty ({snapshot.alerts.length})
+            Aktywne alerty ({displayAlerts.length})
           </h2>
-          {snapshot.alerts.length === 0 ? (
+          {displayAlerts.length === 0 ? (
             <div className="empty">Brak aktywnych alertów NWS.</div>
           ) : (
-            snapshot.alerts.map((a) => (
+            displayAlerts.map((a) => (
               <div className="alert-card" key={a.id}>
                 <span className="event">{a.event}</span>
                 <span className="meta">
@@ -344,8 +412,20 @@ export default function App() {
           </div>
         ))}
         <div className="source-row">
-          <span>snapshot obliczony</span>
+          <span>snapshot obliczony (serwer, co kilka godzin)</span>
           <span>{ageLabel(snapshot.computedAt)}</span>
+        </div>
+        <div className="source-row">
+          <span>
+            <span
+              className="dot"
+              style={{ background: live ? "var(--l0)" : "var(--l3)" }}
+            />
+            alerty NWS (na żywo, przy otwarciu)
+          </span>
+          <span>
+            {live ? ageLabel(live.fetchedAt) : liveError ? `błąd: ${liveError}` : "ładowanie…"}
+          </span>
         </div>
       </div>
     </div>
