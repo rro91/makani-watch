@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-22T19:53:21.189Z",
+  "computedAt": "2026-09-22T22:49:36.167Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -18,15 +18,15 @@
       "classification": "TS",
       "classificationLabel": "Sztorm tropikalny",
       "category": null,
-      "intensityKmh": 102,
-      "pressureMb": 998,
-      "lat": 14.9,
-      "lon": -130.5,
-      "movementDir": "355",
-      "movementMph": 5,
-      "lastUpdate": "2026-09-22T15:00:00.000Z",
+      "intensityKmh": 111,
+      "pressureMb": 994,
+      "lat": 15.1,
+      "lon": -130.1,
+      "movementDir": "60",
+      "movementMph": 3,
+      "lastUpdate": "2026-09-22T21:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
-      "distanceKmToTrip": 2973,
+      "distanceKmToTrip": 3008,
       "track": [
         {
           "lat": 14.7,
@@ -37,6 +37,11 @@
           "lat": 14.9,
           "lon": -130.5,
           "capturedAt": "2026-09-22T16:38:13.645Z"
+        },
+        {
+          "lat": 15.1,
+          "lon": -130.1,
+          "capturedAt": "2026-09-22T22:49:36.167Z"
         }
       ]
     },
@@ -53,7 +58,7 @@
       "lon": -101.5,
       "movementDir": null,
       "movementMph": null,
-      "lastUpdate": "2026-09-22T19:00:00.000Z",
+      "lastUpdate": "2026-09-22T21:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
       "distanceKmToTrip": 5979,
       "track": [
@@ -82,55 +87,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.190Z",
+      "fetchedAt": "2026-09-22T22:49:36.167Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.214Z",
+      "fetchedAt": "2026-09-22T22:49:36.227Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.215Z",
+      "fetchedAt": "2026-09-22T22:49:36.228Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.216Z",
+      "fetchedAt": "2026-09-22T22:49:36.229Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.218Z",
+      "fetchedAt": "2026-09-22T22:49:36.231Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.219Z",
+      "fetchedAt": "2026-09-22T22:49:36.232Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.220Z",
+      "fetchedAt": "2026-09-22T22:49:36.234Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.221Z",
+      "fetchedAt": "2026-09-22T22:49:36.235Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T19:53:21.222Z",
+      "fetchedAt": "2026-09-22T22:49:36.237Z",
       "ageSeconds": 0
     }
   ],
@@ -473,26 +478,26 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.1,
-      "peakPeriodSec": 12,
-      "waterTempC": 27.1,
-      "observedAt": "2026-09-22T19:26:00Z"
+      "seasM": 1.2,
+      "peakPeriodSec": 13,
+      "waterTempC": 27.2,
+      "observedAt": "2026-09-22T21:56:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.3,
-      "peakPeriodSec": 9,
-      "waterTempC": 27.2,
-      "observedAt": "2026-09-22T19:26:00Z"
+      "seasM": 2.7,
+      "peakPeriodSec": 10,
+      "waterTempC": 27.6,
+      "observedAt": "2026-09-22T22:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
-      "seasM": 1.8,
-      "peakPeriodSec": 8,
-      "waterTempC": 26.7,
-      "observedAt": "2026-09-22T19:26:00Z"
+      "seasM": 2.1,
+      "peakPeriodSec": 9,
+      "waterTempC": 26.6,
+      "observedAt": "2026-09-22T22:26:00Z"
     }
   }
 }
