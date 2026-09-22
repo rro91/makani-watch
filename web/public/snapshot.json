@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-22T12:38:01.333Z",
+  "computedAt": "2026-09-22T12:45:15.443Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 1,
@@ -53,55 +53,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.333Z",
+      "fetchedAt": "2026-09-22T12:45:15.443Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.371Z",
+      "fetchedAt": "2026-09-22T12:45:15.494Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.373Z",
+      "fetchedAt": "2026-09-22T12:45:15.495Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.374Z",
+      "fetchedAt": "2026-09-22T12:45:15.496Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.377Z",
+      "fetchedAt": "2026-09-22T12:45:15.498Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.378Z",
+      "fetchedAt": "2026-09-22T12:45:15.499Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.379Z",
+      "fetchedAt": "2026-09-22T12:45:15.500Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.381Z",
+      "fetchedAt": "2026-09-22T12:45:15.502Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-22T12:38:01.382Z",
+      "fetchedAt": "2026-09-22T12:45:15.503Z",
       "ageSeconds": 0
     }
   ],
@@ -460,10 +460,10 @@
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
-      "seasM": 1.7,
+      "seasM": 1.9,
       "peakPeriodSec": 9,
       "waterTempC": 26.6,
-      "observedAt": "2026-09-22T11:56:00Z"
+      "observedAt": "2026-09-22T12:26:00Z"
     }
   }
 }
