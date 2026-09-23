@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-23T07:57:16.285Z",
+  "computedAt": "2026-09-23T07:58:55.312Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7387,55 +7387,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.285Z",
+      "fetchedAt": "2026-09-23T07:58:55.312Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.324Z",
+      "fetchedAt": "2026-09-23T07:58:55.352Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.326Z",
+      "fetchedAt": "2026-09-23T07:58:55.353Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.327Z",
+      "fetchedAt": "2026-09-23T07:58:55.354Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.330Z",
+      "fetchedAt": "2026-09-23T07:58:55.359Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.332Z",
+      "fetchedAt": "2026-09-23T07:58:55.360Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.336Z",
+      "fetchedAt": "2026-09-23T07:58:55.361Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.338Z",
+      "fetchedAt": "2026-09-23T07:58:55.362Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:57:16.340Z",
+      "fetchedAt": "2026-09-23T07:58:55.364Z",
       "ageSeconds": 0
     }
   ],
@@ -7778,10 +7778,10 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.3,
-      "peakPeriodSec": 12,
-      "waterTempC": 27.2,
-      "observedAt": "2026-09-23T06:56:00Z"
+      "seasM": 1.2,
+      "peakPeriodSec": 11,
+      "waterTempC": 27.1,
+      "observedAt": "2026-09-23T07:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
@@ -7800,11 +7800,11 @@
       "observedAt": "2026-09-23T07:26:00Z"
     }
   },
-  "aiBriefing": "Rodzina podróżująca po Hawajach w dniach 2-12 października napotka zagrożenie związane z potencjalnym cyklonem tropikalnym. System znajduje się kilkaset kilometrów na południowy wschód od Big Island i może się rozwinąć w ciągu najbliższych dni. Prognoza wskazuje 90% szans na powstanie burzy w ciągu 7 dni. Główne niebezpieczeństwo to intensywne opady deszczu i możliwość powodzi na Big Island i Maui, zwłaszcza na stronach wystawionej na wiatr (windward). Drogi w terenach niskich mogą być zamknięte, a miasta mogą doświadczyć poważnych zalań. Rodzina powinna monitorować aktualizacje pogody i być gotowa do zmiany planów, szczególnie na Big Island (5-8 października) i Maui (8-12 października).",
+  "aiBriefing": "Rodzina podróżuje do Hawajów w okresie zagrożenia powodziowego. Nieorganizowany system pogodowy na południe od Big Island ma 90% szans na zaformowanie się w cyklon w ciągu 7 dni. Począwszy od środy 25 września do soboty 28 września na terenie Big Island, Maui, Molokai i Lanai spodziewane są intensywne opady deszczu, które mogą spowodować powodzie błyskawiczne i osuwiska, szczególnie na słonecznych zboczach. Ścieżki turystyczne, drogi nisko położone i strumienie mogą zostać zamknięte. Poziom zagrożenia 2 (podwyższony) oznacza, że rodzina powinna monitorować prognozy, unikać obszarów zagrożonych powodziami i być przygotowana na możliwe utrudnienia w komunikacji i przejezdności dróg.",
   "aiUnnamedSystem": {
-    "description": "Remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast of the Big Island of Hawaii, with 90% chance of tropical depression formation within 48 hours to 7 days. System moving slowly west-northwestward with heavy rain forecast over southeastern Hawaiian Islands from Wednesday through Saturday.",
-    "approxLat": 18.5,
-    "approxLon": -154.8,
+    "description": "Remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast of the Big Island of Hawaii, with 90% chance of forming into tropical depression/cyclone within 7 days",
+    "approxLat": 17.5,
+    "approxLon": -154.5,
     "uncertaintyKm": 500,
     "confidence": "medium"
   }
