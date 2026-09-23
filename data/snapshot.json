@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-23T05:20:21.882Z",
+  "computedAt": "2026-09-23T05:24:29.406Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7377,60 +7377,60 @@
   ],
   "outlookFormation48h": 90,
   "outlookFormation7day": 90,
-  "outlookText": "000\nACPN50 PHFO 222328\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Tue Sep 22 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Major\nHurricane Polo, located less than 200 miles offshore of southern\nMexico, and on Tropical Storm Odalys, located well west-southwest of\nthe southern tip of Baja California.\n\nSoutheast of the Hawaiian Islands (Former TD 15-E):\nShowers and thunderstorms associated with the remnants of Tropical\nDepression Fifteen-E, located roughly 430 miles south-southeast of\nSouth Point, Hawaii, are gradually becoming better organized.\nEnvironmental conditions are conducive for development, and a\ntropical depression is expected to form in a day or so, while the\nsystem moves slowly west-northwestward. Heavy rains associated with\nthis system are forecast to spread over the southeastern Hawaiian\nIslands starting on Wednesday and continuing through Saturday,\npossibly resulting in life-threatening flash flooding and mudslides\nfor portions of the Big Island and Maui. Interests in the Hawaiian\nIslands should continue to monitor the progress of this system.\n* Formation chance through 48 hours...high...90 percent.\n* Formation chance through 7 days...high...90 percent.\n\n$$\nForecaster Hagen\nNNNN",
+  "outlookText": "000\nACPN50 PHFO 230520\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 PM HST Tue Sep 22 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nPolo, about 200 miles offshore of southern Mexico, and on Tropical\nStorm Odalys, located well west-southwest of the southern tip of\nBaja California.\n\nSoutheast of the Hawaiian Islands (Former TD 15-E):\nShowers and thunderstorms associated with the remnants of Tropical\nDepression Fifteen-E, located a few hundred miles south-southeast\nthe Big Island of Hawaii, have become better organized.\nEnvironmental conditions remain conducive for development, and a\ntropical depression could form tonight or Wednesday while the system\nmoves slowly west-northwestward. Heavy rains associated with this\nsystem are forecast to spread over the southeastern Hawaiian Islands\nstarting on Wednesday and continuing through Saturday, possibly\nresulting in life-threatening flash flooding and mudslides for\nportions of the Big Island and Maui. Interests in the Hawaiian\nIslands should continue to monitor the progress of this system.\n* Formation chance through 48 hours...high...90 percent.\n* Formation chance through 7 days...high...90 percent.\n\n$$\nForecaster Kelly\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.883Z",
+      "fetchedAt": "2026-09-23T05:24:29.407Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.929Z",
+      "fetchedAt": "2026-09-23T05:24:29.462Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.931Z",
+      "fetchedAt": "2026-09-23T05:24:29.463Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.932Z",
+      "fetchedAt": "2026-09-23T05:24:29.464Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.934Z",
+      "fetchedAt": "2026-09-23T05:24:29.466Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.935Z",
+      "fetchedAt": "2026-09-23T05:24:29.467Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.936Z",
+      "fetchedAt": "2026-09-23T05:24:29.469Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.937Z",
+      "fetchedAt": "2026-09-23T05:24:29.470Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:20:21.938Z",
+      "fetchedAt": "2026-09-23T05:24:29.471Z",
       "ageSeconds": 0
     }
   ],
