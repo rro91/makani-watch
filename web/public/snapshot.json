@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-23T05:24:29.406Z",
+  "computedAt": "2026-09-23T05:47:11.282Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7382,55 +7382,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.407Z",
+      "fetchedAt": "2026-09-23T05:47:11.282Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.462Z",
+      "fetchedAt": "2026-09-23T05:47:11.332Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.463Z",
+      "fetchedAt": "2026-09-23T05:47:11.333Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.464Z",
+      "fetchedAt": "2026-09-23T05:47:11.335Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.466Z",
+      "fetchedAt": "2026-09-23T05:47:11.336Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.467Z",
+      "fetchedAt": "2026-09-23T05:47:11.337Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.469Z",
+      "fetchedAt": "2026-09-23T05:47:11.338Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.470Z",
+      "fetchedAt": "2026-09-23T05:47:11.339Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:24:29.471Z",
+      "fetchedAt": "2026-09-23T05:47:11.340Z",
       "ageSeconds": 0
     }
   ],
@@ -7781,10 +7781,10 @@
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 3.1,
+      "seasM": 3.3,
       "peakPeriodSec": 10,
       "waterTempC": 27.8,
-      "observedAt": "2026-09-23T04:56:00Z"
+      "observedAt": "2026-09-23T05:26:00Z"
     },
     "Maui": {
       "stationId": "51205",

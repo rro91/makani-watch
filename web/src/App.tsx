@@ -52,6 +52,23 @@ function hst(iso: string | null): string {
   }).format(new Date(iso)) + " HST";
 }
 
+// Strip the AFOS/WMO product header and forecaster sign-off from a raw NWS
+// text bulletin, keeping the actual forecast prose. Deliberately light-touch
+// (not a full parser) — the exact wording of these bulletins shifts as a
+// system develops, so we show the whole remaining text rather than trying
+// to regex out "just the Hawaii part," which would silently go blank the
+// day NHC phrases it differently.
+function cleanOutlookText(raw: string): string {
+  const lines = raw.split("\n");
+  // NWS text products always open with a fixed header block (sequence
+  // number, WMO/AWIPS codes) followed by a blank line before the real
+  // bulletin — skip past that first blank line rather than trying to match
+  // the header codes themselves, which vary.
+  const blankIndex = lines.findIndex((l) => l.trim() === "");
+  const body = blankIndex >= 0 ? lines.slice(blankIndex + 1) : lines;
+  return body.join("\n").replace(/\$\$[\s\S]*$/, "").trim();
+}
+
 function ageLabel(iso: string): string {
   const ms = Date.now() - new Date(iso).getTime();
   const min = Math.round(ms / 60000);
@@ -257,18 +274,31 @@ export default function App() {
 
         <div className="section span-6">
           <h2>Cyklony ({snapshot.storms.length})</h2>
-          {snapshot.outlookFormation7day != null && (
-            <p
-              style={{
-                margin: "-0.3rem 0 0.7rem",
-                fontSize: "0.78rem",
-                color: "var(--ink-3)",
-                lineHeight: 1.5,
-              }}
+          {snapshot.outlookText && (
+            <details
+              className="alert-card alert-collapsible outlook-callout"
+              open={snapshot.outlookFormation7day != null && snapshot.outlookFormation7day >= 40}
+              style={{ marginBottom: "0.9rem" }}
             >
-              Szansa, że w ciągu 7 dni w tym rejonie Pacyfiku uformuje się nowy
-              cyklon (wg codziennej prognozy CPHC): {snapshot.outlookFormation7day}%
-            </p>
+              <summary>
+                <span className="summary-text">
+                  <span className="event">
+                    Prognoza formowania CPHC
+                    {snapshot.outlookFormation7day != null &&
+                      ` — ${snapshot.outlookFormation7day}% w 7 dni`}
+                  </span>
+                  <span className="meta">
+                    Systemy bez własnej nazwy i pozycji nie pojawiają się na mapie
+                    poniżej — kliknij, żeby przeczytać pełny tekst
+                  </span>
+                </span>
+              </summary>
+              <div className="alert-body">
+                <span className="desc" style={{ whiteSpace: "pre-line" }}>
+                  {cleanOutlookText(snapshot.outlookText)}
+                </span>
+              </div>
+            </details>
           )}
           {snapshot.storms.length === 0 ? (
             <div className="empty">Brak aktywnych cyklonów na Pacyfiku Wschodnim/Centralnym.</div>
