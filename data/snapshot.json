@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-23T05:48:44.793Z",
+  "computedAt": "2026-09-23T05:56:04.826Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7387,55 +7387,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.794Z",
+      "fetchedAt": "2026-09-23T05:56:04.826Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.827Z",
+      "fetchedAt": "2026-09-23T05:56:04.890Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.828Z",
+      "fetchedAt": "2026-09-23T05:56:04.892Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.830Z",
+      "fetchedAt": "2026-09-23T05:56:04.893Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.832Z",
+      "fetchedAt": "2026-09-23T05:56:04.895Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.833Z",
+      "fetchedAt": "2026-09-23T05:56:04.896Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.835Z",
+      "fetchedAt": "2026-09-23T05:56:04.897Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.837Z",
+      "fetchedAt": "2026-09-23T05:56:04.899Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T05:48:44.838Z",
+      "fetchedAt": "2026-09-23T05:56:04.900Z",
       "ageSeconds": 0
     }
   ],
@@ -7781,7 +7781,7 @@
       "seasM": 1.4,
       "peakPeriodSec": 12,
       "waterTempC": 27.2,
-      "observedAt": "2026-09-23T04:56:00Z"
+      "observedAt": "2026-09-23T05:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
@@ -7795,9 +7795,9 @@
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
       "seasM": 2.5,
-      "peakPeriodSec": 12,
+      "peakPeriodSec": 10,
       "waterTempC": 26.8,
-      "observedAt": "2026-09-23T04:56:00Z"
+      "observedAt": "2026-09-23T05:26:00Z"
     }
   }
 }
