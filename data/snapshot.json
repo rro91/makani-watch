@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-23T07:55:10.128Z",
+  "computedAt": "2026-09-23T07:57:16.285Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7387,55 +7387,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.128Z",
+      "fetchedAt": "2026-09-23T07:57:16.285Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.174Z",
+      "fetchedAt": "2026-09-23T07:57:16.324Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.175Z",
+      "fetchedAt": "2026-09-23T07:57:16.326Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.176Z",
+      "fetchedAt": "2026-09-23T07:57:16.327Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.180Z",
+      "fetchedAt": "2026-09-23T07:57:16.330Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.181Z",
+      "fetchedAt": "2026-09-23T07:57:16.332Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.182Z",
+      "fetchedAt": "2026-09-23T07:57:16.336Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.184Z",
+      "fetchedAt": "2026-09-23T07:57:16.338Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:55:10.185Z",
+      "fetchedAt": "2026-09-23T07:57:16.340Z",
       "ageSeconds": 0
     }
   ],
@@ -7800,12 +7800,12 @@
       "observedAt": "2026-09-23T07:26:00Z"
     }
   },
-  "aiBriefing": "Przed Waszą podróżą do Hawajów (Oahu 2-5 października, Big Island 5-8 października, Maui 8-12 października) system pogodowy na południe od Big Island może się zorganizować w cyklon. Natychmiast po opuszczeniu Oahu trafiicie w obszar zagrożenia powodziami — szczególnie Big Island i Maui są narażone na ulewne deszcze od środy do soboty. Level 2 oznacza podwyższone zagrożenie, które powinno Was zaniepokoić, ale nie przekreśla podróży — musicie monitorować aktualizacje prognoz i być gotowi do zmiany planów, jeśli pojawi się ostrzeżenie przed flash floodami. Wędrówki po górskich terenach i wąskich dolinach należy zaplanować ostrożnie, a drogi mogą być czasowo zamknięte.",
+  "aiBriefing": "Rodzina podróżująca po Hawajach w dniach 2-12 października napotka zagrożenie związane z potencjalnym cyklonem tropikalnym. System znajduje się kilkaset kilometrów na południowy wschód od Big Island i może się rozwinąć w ciągu najbliższych dni. Prognoza wskazuje 90% szans na powstanie burzy w ciągu 7 dni. Główne niebezpieczeństwo to intensywne opady deszczu i możliwość powodzi na Big Island i Maui, zwłaszcza na stronach wystawionej na wiatr (windward). Drogi w terenach niskich mogą być zamknięte, a miasta mogą doświadczyć poważnych zalań. Rodzina powinna monitorować aktualizacje pogody i być gotowa do zmiany planów, szczególnie na Big Island (5-8 października) i Maui (8-12 października).",
   "aiUnnamedSystem": {
-    "description": "Resztki tropikalnego układu depresji (Former TD 15-E), które mogą się zorganizować w depresję tropikalną. 90% szans na formowanie w ciągu 48 godzin i 7 dni. System porusza się powoli w kierunku północno-zachodnim. Prognozuje się ulewne deszcze na południowo-wschodnim Big Island i Maui od środy do soboty, mogące spowodować niebezpieczne błyskawiczne powodzie i osuwiska.",
-    "approxLat": 18.8,
-    "approxLon": -155.5,
-    "uncertaintyKm": 300,
+    "description": "Remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast of the Big Island of Hawaii, with 90% chance of tropical depression formation within 48 hours to 7 days. System moving slowly west-northwestward with heavy rain forecast over southeastern Hawaiian Islands from Wednesday through Saturday.",
+    "approxLat": 18.5,
+    "approxLon": -154.8,
+    "uncertaintyKm": 500,
     "confidence": "medium"
   }
 }
