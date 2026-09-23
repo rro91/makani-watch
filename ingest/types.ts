@@ -63,6 +63,11 @@ export interface StormTrackPoint {
   capturedAt: string;
 }
 
+export interface WindRadiusRing {
+  knots: number;
+  ring: [number, number][];
+}
+
 export interface Storm {
   id: string;
   binNumber: string | null;
@@ -82,6 +87,9 @@ export interface Storm {
   /** Last few observed positions (oldest first), accumulated across ingest
    * runs — NHC's live feed only gives current position, not history. */
   track: StormTrackPoint[];
+  /** Real current wind-field extent from NHC's own advisory (not a guess);
+   * empty when NHC hasn't published one for this storm. */
+  windRadii: WindRadiusRing[];
 }
 
 export interface SourceHealth {

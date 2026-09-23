@@ -1,4 +1,5 @@
 import type { Storm } from "../types.js";
+import { fetchWindRadii } from "./windRadii.js";
 
 const USER_AGENT = "makani-watch/0.1 (rafal.lukasz.rostkowski@gmail.com)";
 
@@ -19,6 +20,7 @@ interface RawStorm {
   movementSpeed: number | null;
   lastUpdate: string | null;
   publicAdvisory: { url: string } | null;
+  initialWindExtent: { kmzFile: string } | null;
 }
 
 const CLASSIFICATION_LABELS: Record<string, string> = {
@@ -58,27 +60,43 @@ export async function fetchCurrentStorms(): Promise<Storm[]> {
     (s) => /^(ep|cp)/i.test(s.id),
   );
 
-  return pacificStorms.map((s) => {
-    const knots = s.intensity != null ? Number(s.intensity) : null;
-    return {
-      id: s.id,
-      binNumber: s.binNumber,
-      name: s.name,
-      classification: s.classification,
-      classificationLabel: CLASSIFICATION_LABELS[s.classification] ?? s.classification,
-      category: knots != null ? saffirSimpsonCategory(s.classification, knots) : null,
-      intensityKmh: knots != null ? Math.round(knots * 1.852) : null,
-      pressureMb: s.pressure != null ? Number(s.pressure) : null,
-      lat: s.latitudeNumeric,
-      lon: s.longitudeNumeric,
-      movementDir: s.movementDir != null ? String(s.movementDir) : null,
-      movementMph: s.movementSpeed,
-      lastUpdate: s.lastUpdate,
-      publicAdvisoryUrl: s.publicAdvisory?.url ?? null,
-      distanceKmToTrip: null, // filled in by the rule engine once trip context is known
-      track: [], // filled in by run.ts, which merges in prior-run history
-    } satisfies Storm;
-  });
+  return Promise.all(
+    pacificStorms.map(async (s) => {
+      const knots = s.intensity != null ? Number(s.intensity) : null;
+
+      // Not every storm has a published wind field (weak/disorganized
+      // systems often don't) — degrade to an empty extent rather than
+      // failing the whole storm.
+      let windRadii: Storm["windRadii"] = [];
+      if (s.initialWindExtent?.kmzFile) {
+        try {
+          windRadii = await fetchWindRadii(s.initialWindExtent.kmzFile);
+        } catch {
+          windRadii = [];
+        }
+      }
+
+      return {
+        id: s.id,
+        binNumber: s.binNumber,
+        name: s.name,
+        classification: s.classification,
+        classificationLabel: CLASSIFICATION_LABELS[s.classification] ?? s.classification,
+        category: knots != null ? saffirSimpsonCategory(s.classification, knots) : null,
+        intensityKmh: knots != null ? Math.round(knots * 1.852) : null,
+        pressureMb: s.pressure != null ? Number(s.pressure) : null,
+        lat: s.latitudeNumeric,
+        lon: s.longitudeNumeric,
+        movementDir: s.movementDir != null ? String(s.movementDir) : null,
+        movementMph: s.movementSpeed,
+        lastUpdate: s.lastUpdate,
+        publicAdvisoryUrl: s.publicAdvisory?.url ?? null,
+        distanceKmToTrip: null, // filled in by the rule engine once trip context is known
+        track: [], // filled in by run.ts, which merges in prior-run history
+        windRadii,
+      } satisfies Storm;
+    }),
+  );
 }
 
 export interface CpacOutlook {

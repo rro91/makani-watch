@@ -308,6 +308,16 @@ export default function App() {
         </div>
 
         <div className="section span-6">
+          <h2>Mapa basenu — Hawaje i cyklony</h2>
+          <div className="legend">
+            <span><i style={{ background: "var(--l1)" }} /> wiatr 34+ kt</span>
+            <span><i style={{ background: "var(--l2)" }} /> wiatr 50+ kt</span>
+            <span><i style={{ background: "var(--l3)" }} /> wiatr huraganowy 64+ kt</span>
+          </div>
+          <BasinMap storms={snapshot.storms} tripSegments={snapshot.tripSegments} />
+        </div>
+
+        <div className="section span-6">
           <h2>Prognoza 7 dni</h2>
             <IslandTabs
               segments={snapshot.tripSegments}
@@ -421,13 +431,6 @@ export default function App() {
               <div className="empty">Brak danych z boi.</div>
             )}
           </div>
-      </div>
-
-      <div className="dashboard">
-        <div className="section span-6">
-          <h2>Mapa basenu — Hawaje i cyklony</h2>
-          <BasinMap storms={snapshot.storms} tripSegments={snapshot.tripSegments} />
-        </div>
       </div>
 
       <div className="sources">

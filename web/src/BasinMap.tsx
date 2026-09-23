@@ -90,6 +90,11 @@ export default function BasinMap({
     const accent = cssVar("--accent") || "#0b6e7a";
     const near = cssVar("--l3") || "#be3419";
     const far = cssVar("--l1") || "#8e7200";
+    const radiusColor: Record<number, string> = {
+      34: cssVar("--l1") || "#8e7200",
+      50: cssVar("--l2") || "#b85b15",
+      64: cssVar("--l3") || "#be3419",
+    };
 
     L.circleMarker(HAWAII_CENTER, {
       radius: 9,
@@ -112,6 +117,23 @@ export default function BasinMap({
       bounds.extend(point);
       const isNear = storm.distanceKmToTrip != null && storm.distanceKmToTrip <= NEAR_KM;
       const stormColor = isNear ? near : far;
+
+      // Real current wind-field extent from NHC's own advisory (not an
+      // estimate) — draw widest/weakest (34kt) first so the 64kt core sits
+      // on top. Sorted descending by knots so smaller rings draw last.
+      for (const { knots, ring } of [...storm.windRadii].sort((a, b) => b.knots - a.knots)) {
+        const color = radiusColor[knots] ?? far;
+        ring.forEach((p) => bounds.extend(p));
+        L.polygon(ring, {
+          color,
+          weight: 1,
+          opacity: 0.6,
+          fillColor: color,
+          fillOpacity: 0.12,
+        })
+          .bindTooltip(`${storm.name} — wiatr ${knots}+ kt w tym zasięgu`)
+          .addTo(layerGroup);
+      }
 
       // Fading trail: oldest observed positions smallest/faintest, growing
       // toward the current position (drawn separately, full size below).

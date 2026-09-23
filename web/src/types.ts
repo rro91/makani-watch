@@ -70,12 +70,18 @@ export interface Storm {
   publicAdvisoryUrl: string | null;
   distanceKmToTrip: number | null;
   track: StormTrackPoint[];
+  windRadii: WindRadiusRing[];
 }
 
 export interface StormTrackPoint {
   lat: number;
   lon: number;
   capturedAt: string;
+}
+
+export interface WindRadiusRing {
+  knots: number;
+  ring: [number, number][];
 }
 
 export interface SourceHealth {
