@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-23T08:08:54.256Z",
+  "computedAt": "2026-09-23T08:10:43.455Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7387,55 +7387,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.256Z",
+      "fetchedAt": "2026-09-23T08:10:43.455Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.289Z",
+      "fetchedAt": "2026-09-23T08:10:43.488Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.290Z",
+      "fetchedAt": "2026-09-23T08:10:43.490Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.292Z",
+      "fetchedAt": "2026-09-23T08:10:43.492Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.295Z",
+      "fetchedAt": "2026-09-23T08:10:43.494Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.296Z",
+      "fetchedAt": "2026-09-23T08:10:43.495Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.300Z",
+      "fetchedAt": "2026-09-23T08:10:43.499Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.301Z",
+      "fetchedAt": "2026-09-23T08:10:43.500Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T08:08:54.303Z",
+      "fetchedAt": "2026-09-23T08:10:43.502Z",
       "ageSeconds": 0
     }
   ],
@@ -7800,6 +7800,12 @@
       "observedAt": "2026-09-23T07:26:00Z"
     }
   },
-  "aiBriefing": null,
-  "aiUnnamedSystem": null
+  "aiBriefing": "Obecnie (23 września) obowiązuje ostrzeżenie przed powodzią dla wschodniej części stanu, w tym Big Island i Maui, ważne do 26 września — to przez rozwijający się system tropikalny (przyszłe „Nolo”), który może przynieść ulewne deszcze i podtopienia. Wasza podróż zaczyna się dopiero 2 października, czyli za 9 dni, więc to konkretne zdarzenie powinno się zakończyć na długo przed Waszym przylotem. Nie ma więc powodu wiązać obecnego ostrzeżenia z Waszymi datami na Oahu, Big Island i Maui. Poziom zagrożenia 2 („Podwyższony”) odzwierciedla to, że sytuacja jest aktualnie realna i warto ją obserwować, ale nie dotyczy bezpośrednio Waszej trasy. Warto jednak śledzić prognozy bliżej wylotu, bo sezon huraganów na Pacyfiku wciąż trwa i mogą pojawić się nowe systemy.",
+  "aiUnnamedSystem": {
+    "description": "Była depresja tropikalna Fifteen-E, kilkaset mil na południowy-wschód od Big Island, poruszająca się na zachód-północny-zachód",
+    "approxLat": 17.5,
+    "approxLon": -152,
+    "uncertaintyKm": 500,
+    "confidence": "low"
+  }
 }
