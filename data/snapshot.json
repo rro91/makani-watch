@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-23T07:58:55.312Z",
+  "computedAt": "2026-09-23T08:08:54.256Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 2,
@@ -7387,55 +7387,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.312Z",
+      "fetchedAt": "2026-09-23T08:08:54.256Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.352Z",
+      "fetchedAt": "2026-09-23T08:08:54.289Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.353Z",
+      "fetchedAt": "2026-09-23T08:08:54.290Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.354Z",
+      "fetchedAt": "2026-09-23T08:08:54.292Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.359Z",
+      "fetchedAt": "2026-09-23T08:08:54.295Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.360Z",
+      "fetchedAt": "2026-09-23T08:08:54.296Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.361Z",
+      "fetchedAt": "2026-09-23T08:08:54.300Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.362Z",
+      "fetchedAt": "2026-09-23T08:08:54.301Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-23T07:58:55.364Z",
+      "fetchedAt": "2026-09-23T08:08:54.303Z",
       "ageSeconds": 0
     }
   ],
@@ -7800,12 +7800,6 @@
       "observedAt": "2026-09-23T07:26:00Z"
     }
   },
-  "aiBriefing": "Rodzina podróżuje do Hawajów w okresie zagrożenia powodziowego. Nieorganizowany system pogodowy na południe od Big Island ma 90% szans na zaformowanie się w cyklon w ciągu 7 dni. Począwszy od środy 25 września do soboty 28 września na terenie Big Island, Maui, Molokai i Lanai spodziewane są intensywne opady deszczu, które mogą spowodować powodzie błyskawiczne i osuwiska, szczególnie na słonecznych zboczach. Ścieżki turystyczne, drogi nisko położone i strumienie mogą zostać zamknięte. Poziom zagrożenia 2 (podwyższony) oznacza, że rodzina powinna monitorować prognozy, unikać obszarów zagrożonych powodziami i być przygotowana na możliwe utrudnienia w komunikacji i przejezdności dróg.",
-  "aiUnnamedSystem": {
-    "description": "Remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast of the Big Island of Hawaii, with 90% chance of forming into tropical depression/cyclone within 7 days",
-    "approxLat": 17.5,
-    "approxLon": -154.5,
-    "uncertaintyKm": 500,
-    "confidence": "medium"
-  }
+  "aiBriefing": null,
+  "aiUnnamedSystem": null
 }
