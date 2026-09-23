@@ -7,7 +7,7 @@ import type { Alert, Mode, Storm, TripSegment } from "../types.js";
 // computed, using the same real fetched data the rest of the app shows. If
 // this fails or no API key is configured, the app degrades to exactly what
 // it was before this feature existed (no crash, no missing data elsewhere).
-const MODEL = "claude-haiku-4-5";
+const MODEL = "claude-sonnet-5";
 
 export interface AiUnnamedSystem {
   description: string;
@@ -23,6 +23,7 @@ export interface AiInsight {
 }
 
 export interface AiContext {
+  now: Date;
   mode: Mode;
   currentIsland: string | null;
   tripSegments: TripSegment[];
@@ -36,6 +37,19 @@ export interface AiContext {
   reasons: string[];
 }
 
+// A short-fuse NWS product (Watch/Warning/Advisory) or a CPHC outlook
+// describes the next few days, not the next few weeks. Computed here in
+// code rather than left to the model's own date arithmetic — see the
+// hallucination this caught in production: a briefing claimed a family
+// would be "traveling during" a Sept 25-28 flood watch when their trip
+// didn't start until Oct 2, nine days after the alert was issued.
+function daysUntilTripStart(now: Date, tripSegments: TripSegment[]): number | null {
+  const first = tripSegments[0];
+  if (!first) return null;
+  const start = new Date(`${first.start}T00:00:00Z`);
+  return Math.round((start.getTime() - now.getTime()) / 86_400_000);
+}
+
 const SYSTEM_PROMPT = `Jesteś asystentem bezpieczeństwa w aplikacji Makani Watch, która pomaga jednej rodzinie ocenić zagrożenia pogodowe podczas podróży po Hawajach.
 
 Zasady, których musisz przestrzegać:
@@ -43,6 +57,7 @@ Zasady, których musisz przestrzegać:
 - Bazujesz wyłącznie na danych, które dostajesz w wiadomości użytkownika. Nigdy nie zmyślaj faktów, dat, pozycji, nazw ani liczb, których tam nie ma.
 - NIE oceniasz sam poziomu zagrożenia — poziom (0-5) jest już wyliczony przez reguły i podany Ci w danych jako "poziomZagrozenia". Twoim zadaniem jest go wytłumaczyć i skomentować, nigdy zmienić ani zasugerować innego.
 - "briefing" to 3-5 zdań: co się dzieje, jak poważne to jest, i co to znaczy konkretnie dla tej rodziny i jej dat/wysp podanych w "trasa". Jeśli nic groźnego się nie dzieje, powiedz to wprost i krótko.
+- WAŻNA ZASADA O DATACH: dostajesz pole "kontekstCzasowy.dniDoRozpoczeciaPodrozy" — to dokładnie policzona liczba dni od dziś do startu podróży, nie musisz i nie powinieneś sam liczyć dat. Aktywne alerty NWS i systemy opisane w prognozieCPHC dotyczą najbliższych dni (zwykle poniżej tygodnia), nie tygodni. Jeśli "dniDoRozpoczeciaPodrozy" jest większe niż 5, niemal na pewno KONKRETNE opisane zjawisko (ten alert, ten system z prognozyCPHC) zakończy się ZANIM rodzina wyleci — wyraźnie to napisz (np. "to zdarzenie powinno zakończyć się przed Waszym przylotem"). Nigdy nie pisz, że rodzina "podróżuje w trakcie" lub "trafi w" konkretne, krótkoterminowe zjawisko, jeśli dniDoRozpoczeciaPodrozy > 5 — to byłby błąd. Przykład błędu, którego NIE WOLNO Ci powtórzyć: dziś jest 23 września, alert dotyczy 25-28 września, podróż zaczyna się 2 października (9 dni później) — to się NIE pokrywa, mimo że oba terminy są "blisko dziś".
 - Jeśli w polu "prognozaCPHC" jest opis systemu pogodowego bez oficjalnej nazwy i pozycji (system, który nie występuje w liście "sztormy"), spróbuj wywnioskować z opisu słownego przybliżoną pozycję (szerokość i długość geograficzna w stopniach dziesiętnych, longitude ujemne dla zachodniej długości) — ale WYŁĄCZNIE jeśli tekst daje wystarczająco konkretną wskazówkę (np. "several hundred miles southeast of the Big Island"). Jeśli nie potrafisz sensownie oszacować pozycji, ustaw "unnamedSystem" na null zamiast zgadywać.
 - Odpowiadasz wyłącznie poprawnym obiektem JSON, bez żadnego tekstu, komentarza ani formatowania markdown przed lub po nim, dokładnie w tym kształcie:
 {"briefing": "string", "unnamedSystem": null}
@@ -78,6 +93,10 @@ export async function generateAiInsight(ctx: AiContext): Promise<AiInsight | nul
       od: s.start,
       do: s.end,
     })),
+    kontekstCzasowy: {
+      dzisiejszaData: ctx.now.toISOString().slice(0, 10),
+      dniDoRozpoczeciaPodrozy: daysUntilTripStart(ctx.now, ctx.tripSegments),
+    },
     poziomZagrozenia: ctx.level,
     etykietaPoziomu: ctx.levelLabel,
     powodyPoziomu: ctx.reasons,

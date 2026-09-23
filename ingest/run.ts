@@ -163,6 +163,7 @@ async function main() {
       : alerts;
 
   const aiInsight = await generateAiInsight({
+    now,
     mode,
     currentIsland: activeSegment?.island ?? null,
     tripSegments: TRIP_SEGMENTS,
