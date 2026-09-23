@@ -119,4 +119,16 @@ export interface ThreatSnapshot {
   defaultForecastIsland: Island;
   forecastByIsland: Record<Island, DailyForecast[]>;
   buoyByIsland: Record<Island, BuoyReading | null>;
+  /** AI-generated explanation of the (already rule-computed) level — null
+   * when no ANTHROPIC_API_KEY is configured or the call failed. */
+  aiBriefing: string | null;
+  aiUnnamedSystem: AiUnnamedSystem | null;
+}
+
+export interface AiUnnamedSystem {
+  description: string;
+  approxLat: number;
+  approxLon: number;
+  uncertaintyKm: number;
+  confidence: "low" | "medium" | "high";
 }

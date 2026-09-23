@@ -207,6 +207,19 @@ export default function App() {
         </span>
       </div>
 
+      {snapshot.aiBriefing && (
+        <div className="section">
+          <div className="ai-briefing">
+            <span className="ai-briefing-label">Podsumowanie AI</span>
+            <p>{snapshot.aiBriefing}</p>
+            <span className="ai-briefing-note">
+              Wygenerowane automatycznie z tych samych danych, które widzisz niżej —
+              nie ustala poziomu zagrożenia, tylko go tłumaczy.
+            </span>
+          </div>
+        </div>
+      )}
+
       <div className="section">
         <details className="reasons">
           <summary>Dlaczego ten poziom</summary>
@@ -343,8 +356,15 @@ export default function App() {
             <span><i style={{ background: "var(--l1)" }} /> wiatr 34+ kt</span>
             <span><i style={{ background: "var(--l2)" }} /> wiatr 50+ kt</span>
             <span><i style={{ background: "var(--l3)" }} /> wiatr huraganowy 64+ kt</span>
+            {snapshot.aiUnnamedSystem && (
+              <span><i style={{ background: "var(--l5)" }} /> pozycja AI (przybliżona)</span>
+            )}
           </div>
-          <BasinMap storms={snapshot.storms} tripSegments={snapshot.tripSegments} />
+          <BasinMap
+            storms={snapshot.storms}
+            tripSegments={snapshot.tripSegments}
+            aiUnnamedSystem={snapshot.aiUnnamedSystem}
+          />
         </div>
 
         <div className="section span-6">

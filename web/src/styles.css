@@ -202,6 +202,38 @@ body {
   margin: 1.6rem 1.25rem 0;
 }
 
+.ai-briefing {
+  background: linear-gradient(155deg, var(--accent-soft), var(--surface) 70%);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.ai-briefing-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ai-briefing p {
+  font-family: "Source Serif 4", serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.ai-briefing-note {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--ink-3);
+}
+
 .section h2 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;

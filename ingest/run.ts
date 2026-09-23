@@ -16,6 +16,7 @@ import { fetchActiveAlertsHI } from "./sources/nws.js";
 import { fetchCurrentStorms, fetchCpacOutlook } from "./sources/nhc.js";
 import { fetchForecast } from "./sources/forecast.js";
 import { fetchBuoy } from "./sources/buoy.js";
+import { generateAiInsight } from "./sources/ai.js";
 import { computeThreatLevel } from "./rules.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -156,6 +157,25 @@ async function main() {
     outlookFormation7day: outlook?.formation7day ?? null,
   });
 
+  const relevantAlerts =
+    mode === "on-location" && activeSegment
+      ? alerts.filter((a) => a.zones.some((z) => activeSegment.zones.includes(z)))
+      : alerts;
+
+  const aiInsight = await generateAiInsight({
+    mode,
+    currentIsland: activeSegment?.island ?? null,
+    tripSegments: TRIP_SEGMENTS,
+    alerts: relevantAlerts,
+    storms: rule.storms,
+    outlookText: outlook?.text ?? null,
+    outlookFormation48h: outlook?.formation48h ?? null,
+    outlookFormation7day: outlook?.formation7day ?? null,
+    level: rule.level,
+    levelLabel: rule.levelLabel,
+    reasons: rule.reasons,
+  });
+
   const snapshot: ThreatSnapshot = {
     computedAt: now.toISOString(),
     mode,
@@ -165,12 +185,7 @@ async function main() {
     recommendation: rule.recommendation,
     scopeLabel: rule.scopeLabel,
     reasons: rule.reasons,
-    alerts:
-      mode === "on-location" && activeSegment
-        ? alerts.filter((a) =>
-            a.zones.some((z) => activeSegment.zones.includes(z)),
-          )
-        : alerts,
+    alerts: relevantAlerts,
     storms: rule.storms,
     outlookFormation48h: outlook?.formation48h ?? null,
     outlookFormation7day: outlook?.formation7day ?? null,
@@ -185,6 +200,8 @@ async function main() {
     defaultForecastIsland,
     forecastByIsland,
     buoyByIsland,
+    aiBriefing: aiInsight?.briefing ?? null,
+    aiUnnamedSystem: aiInsight?.unnamedSystem ?? null,
   };
 
   for (const path of OUT_PATHS) {
@@ -196,6 +213,9 @@ async function main() {
     `[makani-watch] mode=${mode} island=${snapshot.currentIsland ?? "-"} level=${snapshot.level} (${snapshot.levelLabel})`,
   );
   console.log(`[makani-watch] reasons: ${rule.reasons.join(" | ")}`);
+  console.log(
+    `[makani-watch] AI briefing: ${aiInsight ? "generated" : "skipped (no key or failed)"}`,
+  );
   for (const s of snapshot.sources) {
     console.log(
       `[makani-watch] source ${s.source}: ${s.ok ? "ok" : `FAILED (${s.error})`}`,

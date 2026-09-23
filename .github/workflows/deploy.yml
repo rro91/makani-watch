@@ -32,6 +32,8 @@ jobs:
         run: npm ci
 
       - name: Run ingest (fetch live NOAA data)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run ingest
 
       - name: Commit refreshed snapshot

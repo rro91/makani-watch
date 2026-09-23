@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import type { Storm, TripSegment } from "./types";
+import type { AiUnnamedSystem, Storm, TripSegment } from "./types";
 
 const HAWAII_CENTER: [number, number] = [20.5, -157];
 
@@ -45,9 +45,11 @@ function destinationPoint(
 export default function BasinMap({
   storms,
   tripSegments,
+  aiUnnamedSystem,
 }: {
   storms: Storm[];
   tripSegments: TripSegment[];
+  aiUnnamedSystem: AiUnnamedSystem | null;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
@@ -110,6 +112,37 @@ export default function BasinMap({
       .addTo(layerGroup);
 
     const bounds = L.latLngBounds([HAWAII_CENTER]);
+
+    // AI-estimated position of a system with no official NHC coordinates
+    // yet (see ingest/sources/ai.ts) — deliberately drawn as a fuzzy,
+    // dashed, unfilled-looking circle so it can never be mistaken for a
+    // real tracked storm above.
+    if (aiUnnamedSystem) {
+      const aiColor = cssVar("--l5") || "#6b2a83";
+      const center: [number, number] = [aiUnnamedSystem.approxLat, aiUnnamedSystem.approxLon];
+      bounds.extend(center);
+      L.circle(center, {
+        radius: aiUnnamedSystem.uncertaintyKm * 1000,
+        color: aiColor,
+        weight: 1.5,
+        dashArray: "4 5",
+        opacity: 0.7,
+        fillColor: aiColor,
+        fillOpacity: 0.08,
+      })
+        .bindTooltip(
+          `AI (przybliżenie, pewność: ${aiUnnamedSystem.confidence}) — ${aiUnnamedSystem.description}`,
+        )
+        .addTo(layerGroup);
+      L.circleMarker(center, {
+        radius: 4,
+        color: aiColor,
+        fillColor: aiColor,
+        fillOpacity: 0.6,
+        weight: 1,
+        dashArray: "2 2",
+      }).addTo(layerGroup);
+    }
 
     for (const storm of storms) {
       if (storm.lat == null || storm.lon == null) continue;
@@ -199,7 +232,7 @@ export default function BasinMap({
     } else {
       map.setView(HAWAII_CENTER, 5);
     }
-  }, [storms, tripSegments]);
+  }, [storms, tripSegments, aiUnnamedSystem]);
 
   return <div ref={containerRef} className="basin-map" />;
 }

@@ -111,4 +111,14 @@ export interface ThreatSnapshot {
   defaultForecastIsland: Island;
   forecastByIsland: Record<Island, DailyForecast[]>;
   buoyByIsland: Record<Island, BuoyReading | null>;
+  aiBriefing: string | null;
+  aiUnnamedSystem: AiUnnamedSystem | null;
+}
+
+export interface AiUnnamedSystem {
+  description: string;
+  approxLat: number;
+  approxLon: number;
+  uncertaintyKm: number;
+  confidence: "low" | "medium" | "high";
 }
