@@ -17,7 +17,7 @@ import { fetchCurrentStorms, fetchCpacOutlook } from "./sources/nhc.js";
 import { fetchForecast } from "./sources/forecast.js";
 import { fetchBuoy } from "./sources/buoy.js";
 import { generateAiInsight } from "./sources/ai.js";
-import { computeThreatLevel } from "./rules.js";
+import { computeThreatLevel, haversineKm } from "./rules.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATHS = [
@@ -162,7 +162,7 @@ async function main() {
       ? alerts.filter((a) => a.zones.some((z) => activeSegment.zones.includes(z)))
       : alerts;
 
-  const aiInsight = await generateAiInsight({
+  let aiInsight = await generateAiInsight({
     now,
     mode,
     currentIsland: activeSegment?.island ?? null,
@@ -176,6 +176,24 @@ async function main() {
     levelLabel: rule.levelLabel,
     reasons: rule.reasons,
   });
+
+  // Don't trust the model to notice on its own that a system it's
+  // estimating a fuzzy position for has since been officially designated
+  // and now has a real tracked entry (observed in production: an AI
+  // estimate for "the future Nolo" kept showing after NHC started tracking
+  // it as Fifteen-E, ~400 km from the AI's own guess — same system, two
+  // markers on the map). Deterministic proximity check instead.
+  if (aiInsight?.unnamedSystem) {
+    const DEDUP_KM = 800;
+    const { approxLat, approxLon } = aiInsight.unnamedSystem;
+    const nowRedundant = rule.storms.some((s) => {
+      if (s.lat == null || s.lon == null) return false;
+      return haversineKm({ lat: approxLat, lon: approxLon }, { lat: s.lat, lon: s.lon }) <= DEDUP_KM;
+    });
+    if (nowRedundant) {
+      aiInsight = { ...aiInsight, unnamedSystem: null };
+    }
+  }
 
   const snapshot: ThreatSnapshot = {
     computedAt: now.toISOString(),

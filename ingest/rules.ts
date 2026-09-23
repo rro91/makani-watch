@@ -69,7 +69,7 @@ const EVENT_LEVEL: Array<{ pattern: RegExp; level: ThreatLevel; label: string }>
   { pattern: /flood advisory/i, level: 1, label: "Flood Advisory aktywne" },
 ];
 
-function haversineKm(
+export function haversineKm(
   a: { lat: number; lon: number },
   b: { lat: number; lon: number },
 ): number {

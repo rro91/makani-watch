@@ -354,6 +354,7 @@ export default function App() {
         <div className="section span-6">
           <h2>Mapa basenu — Hawaje i cyklony</h2>
           <div className="legend">
+            <span><i style={{ background: "var(--l0)" }} /> słabszy niż 34 kt</span>
             <span><i style={{ background: "var(--l1)" }} /> wiatr 34+ kt</span>
             <span><i style={{ background: "var(--l2)" }} /> wiatr 50+ kt</span>
             <span><i style={{ background: "var(--l3)" }} /> wiatr huraganowy 64+ kt</span>

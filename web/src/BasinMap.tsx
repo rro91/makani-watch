@@ -9,11 +9,6 @@ function cssVar(name: string): string {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 }
 
-// Storms this far or closer actually matter to the rule engine (see
-// ingest/rules.ts) — color the marker accordingly so distance reads at a
-// glance instead of requiring a click.
-const NEAR_KM = 1600;
-
 // Fixed on-map length for the movement-direction arrow, not scaled to actual
 // speed — a slow storm's real hourly displacement would be imperceptible at
 // basin zoom, and a fast one's would overshoot the frame.
@@ -90,13 +85,26 @@ export default function BasinMap({
     layerGroup.clearLayers();
 
     const accent = cssVar("--accent") || "#0b6e7a";
-    const near = cssVar("--l3") || "#be3419";
-    const far = cssVar("--l1") || "#8e7200";
-    const radiusColor: Record<number, string> = {
-      34: cssVar("--l1") || "#8e7200",
-      50: cssVar("--l2") || "#b85b15",
-      64: cssVar("--l3") || "#be3419",
-    };
+    const l0 = cssVar("--l0") || "#1f7a5c";
+    const l1 = cssVar("--l1") || "#8e7200";
+    const l2 = cssVar("--l2") || "#b85b15";
+    const l3 = cssVar("--l3") || "#be3419";
+    const radiusColor: Record<number, string> = { 34: l1, 50: l2, 64: l3 };
+
+    // One color language for the whole map: how strong the storm itself is
+    // (same 34/50/64kt scale as the wind-field rings, explained in the
+    // legend) — not how far it is from the trip. A weaker, closer system
+    // used to get the same "danger red" as a stronger, distant hurricane
+    // just because it was nearer, which contradicted the wind-speed legend
+    // right next to it.
+    function intensityColor(intensityKmh: number | null): string {
+      if (intensityKmh == null) return l1;
+      const knots = intensityKmh / 1.852;
+      if (knots >= 64) return l3;
+      if (knots >= 50) return l2;
+      if (knots >= 34) return l1;
+      return l0;
+    }
 
     L.circleMarker(HAWAII_CENTER, {
       radius: 9,
@@ -148,14 +156,13 @@ export default function BasinMap({
       if (storm.lat == null || storm.lon == null) continue;
       const point: [number, number] = [storm.lat, storm.lon];
       bounds.extend(point);
-      const isNear = storm.distanceKmToTrip != null && storm.distanceKmToTrip <= NEAR_KM;
-      const stormColor = isNear ? near : far;
+      const stormColor = intensityColor(storm.intensityKmh);
 
       // Real current wind-field extent from NHC's own advisory (not an
       // estimate) — draw widest/weakest (34kt) first so the 64kt core sits
       // on top. Sorted descending by knots so smaller rings draw last.
       for (const { knots, ring } of [...storm.windRadii].sort((a, b) => b.knots - a.knots)) {
-        const color = radiusColor[knots] ?? far;
+        const color = radiusColor[knots] ?? l1;
         ring.forEach((p) => bounds.extend(p));
         L.polygon(ring, {
           color,
