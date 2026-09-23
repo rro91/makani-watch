@@ -123,7 +123,13 @@ export async function generateAiInsight(ctx: AiContext): Promise<AiInsight | nul
   try {
     const response = await client.messages.create({
       model: MODEL,
-      max_tokens: 1024,
+      max_tokens: 2048,
+      // A structured-summarization task like this doesn't need deep
+      // reasoning, and Sonnet 5 runs adaptive thinking by default even
+      // without the `thinking` param — low effort keeps that (billed,
+      // max_tokens-consuming) thinking budget small so it can't crowd out
+      // the actual JSON response (see the truncation this caused above).
+      output_config: { effort: "low" },
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: JSON.stringify(payload) }],
     });
