@@ -301,8 +301,9 @@ export default function App() {
                       ` — ${snapshot.outlookFormation7day}% w 7 dni`}
                   </span>
                   <span className="meta">
-                    Systemy bez własnej nazwy i pozycji nie pojawiają się na mapie
-                    poniżej — kliknij, żeby przeczytać pełny tekst
+                    {snapshot.aiUnnamedSystem
+                      ? "System bez oficjalnej pozycji NHC — na mapie poniżej jako przybliżenie AI (fioletowy przerywany okrąg), nie prawdziwy punkt — kliknij, żeby przeczytać pełny tekst"
+                      : "System bez własnej nazwy i pozycji nie pojawia się na mapie poniżej — kliknij, żeby przeczytać pełny tekst"}
                   </span>
                 </span>
               </summary>
