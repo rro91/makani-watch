@@ -131,16 +131,21 @@ export async function generateAiInsight(ctx: AiContext): Promise<AiInsight | nul
       typeof candidate.description === "string" &&
       isPlausibleBasinPosition(candidate.approxLat, candidate.approxLon)
     ) {
+      // Verified empirically: the model tends to place the point much
+      // closer to the named reference island than "a few hundred miles"
+      // (the phrasing NHC actually uses) implies, while self-reporting a
+      // tight uncertainty that doesn't cover its own error. Don't trust the
+      // model's own uncertainty claim — floor it at the low end of what
+      // "a few hundred miles" means, and never call that "high" confidence.
+      const MIN_UNCERTAINTY_KM = 500;
+      const reportedUncertainty =
+        typeof candidate.uncertaintyKm === "number" ? candidate.uncertaintyKm : 0;
       unnamedSystem = {
         description: candidate.description,
         approxLat: candidate.approxLat,
         approxLon: candidate.approxLon,
-        uncertaintyKm:
-          typeof candidate.uncertaintyKm === "number" ? candidate.uncertaintyKm : 300,
-        confidence:
-          candidate.confidence === "high" || candidate.confidence === "medium"
-            ? candidate.confidence
-            : "low",
+        uncertaintyKm: Math.max(reportedUncertainty, MIN_UNCERTAINTY_KM),
+        confidence: candidate.confidence === "medium" ? "medium" : "low",
       };
     }
 
