@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-24T10:30:27.994Z",
+  "computedAt": "2026-09-24T10:39:59.372Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 3,
@@ -10571,55 +10571,55 @@
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:27.994Z",
+      "fetchedAt": "2026-09-24T10:39:59.373Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.016Z",
+      "fetchedAt": "2026-09-24T10:39:59.408Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.017Z",
+      "fetchedAt": "2026-09-24T10:39:59.410Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.018Z",
+      "fetchedAt": "2026-09-24T10:39:59.411Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.022Z",
+      "fetchedAt": "2026-09-24T10:39:59.414Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.022Z",
+      "fetchedAt": "2026-09-24T10:39:59.415Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.023Z",
+      "fetchedAt": "2026-09-24T10:39:59.416Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.024Z",
+      "fetchedAt": "2026-09-24T10:39:59.418Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-24T10:30:28.025Z",
+      "fetchedAt": "2026-09-24T10:39:59.419Z",
       "ageSeconds": 0
     }
   ],
@@ -10984,6 +10984,12 @@
       "observedAt": "2026-09-24T09:56:00Z"
     }
   },
-  "aiBriefing": null,
-  "aiUnnamedSystem": null
+  "aiBriefing": "Obecnie na Hawajach jest aktywny Hurricane Watch i Flood Watch z powodu sztormu tropikalnego Nolo, który zbliża się do Big Island i ma przynieść groźne wiatry, ulewne deszcze i możliwe powodzie w najbliższych dniach (piątek-sobota). To poważna sytuacja, ale dotyczy okresu zanim Wasza podróż się zacznie – wyruszacie za 8 dni (2 października), więc to konkretne zdarzenie powinno zakończyć się na długo przed Waszym przylotem na Oahu. Poziom zagrożenia 3 (Watch) odzwierciedla obecne zagrożenie dla mieszkańców Hawajów teraz, a nie prognozę na Wasze daty podróży. Mimo to warto śledzić rozwój sytuacji na bieżąco – jeśli szkody z Nolo (np. uszkodzona infrastruktura na Big Island) będą duże, mogą mieć pewien wpływ jeszcze przez kilka dni po przejściu sztormu, choć to już inny rodzaj ryzyka niż sam sztorm. W CPHC wspomniano też o możliwym nowym systemie formującym się w ciągu weekendu daleko na wschód-południowy wschód od Hawajów (szansa 20% w 7 dni) – to na razie tylko potencjalność, niepewna i niepowiązana bezpośrednio z Waszą trasą.",
+  "aiUnnamedSystem": {
+    "description": "Potencjalny obszar niskiego ciśnienia, który może uformować się w ciągu weekendu ok. 1000 mil (ok. 1600 km) na wschód-południowy wschód od Hawajów, poruszający się na północny wschód, pozostający z dala od wysp. Szansa rozwoju w 7 dni: 20%.",
+    "approxLat": 14,
+    "approxLon": -141.3,
+    "uncertaintyKm": 500,
+    "confidence": "low"
+  }
 }
