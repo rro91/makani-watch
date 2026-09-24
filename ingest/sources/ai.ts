@@ -1,4 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
+import { z } from "zod";
 import type { Alert, Mode, Storm, TripSegment } from "../types.js";
 
 // This is the ONLY place in the app where a threat judgement is phrased by
@@ -50,6 +52,23 @@ function daysUntilTripStart(now: Date, tripSegments: TripSegment[]): number | nu
   return Math.round((start.getTime() - now.getTime()) / 86_400_000);
 }
 
+// The response shape is enforced server-side via output_config.format
+// below (client.messages.parse) — this schema IS the contract, not just
+// documentation of one. Two production JSON.parse failures (a truncated
+// string, then a malformed one) before this existed, zero since.
+const AiInsightSchema = z.object({
+  briefing: z.string(),
+  unnamedSystem: z
+    .object({
+      description: z.string(),
+      approxLat: z.number(),
+      approxLon: z.number(),
+      uncertaintyKm: z.number(),
+      confidence: z.enum(["low", "medium", "high"]),
+    })
+    .nullable(),
+});
+
 const SYSTEM_PROMPT = `Jesteś asystentem bezpieczeństwa w aplikacji Makani Watch, która pomaga jednej rodzinie ocenić zagrożenia pogodowe podczas podróży po Hawajach.
 
 Zasady, których musisz przestrzegać:
@@ -58,19 +77,7 @@ Zasady, których musisz przestrzegać:
 - NIE oceniasz sam poziomu zagrożenia — poziom (0-5) jest już wyliczony przez reguły i podany Ci w danych jako "poziomZagrozenia". Twoim zadaniem jest go wytłumaczyć i skomentować, nigdy zmienić ani zasugerować innego.
 - "briefing" to 3-5 zdań: co się dzieje, jak poważne to jest, i co to znaczy konkretnie dla tej rodziny i jej dat/wysp podanych w "trasa". Jeśli nic groźnego się nie dzieje, powiedz to wprost i krótko.
 - WAŻNA ZASADA O DATACH: dostajesz pole "kontekstCzasowy.dniDoRozpoczeciaPodrozy" — to dokładnie policzona liczba dni od dziś do startu podróży, nie musisz i nie powinieneś sam liczyć dat. Aktywne alerty NWS i systemy opisane w prognozieCPHC dotyczą najbliższych dni (zwykle poniżej tygodnia), nie tygodni. Jeśli "dniDoRozpoczeciaPodrozy" jest większe niż 5, niemal na pewno KONKRETNE opisane zjawisko (ten alert, ten system z prognozyCPHC) zakończy się ZANIM rodzina wyleci — wyraźnie to napisz (np. "to zdarzenie powinno zakończyć się przed Waszym przylotem"). Nigdy nie pisz, że rodzina "podróżuje w trakcie" lub "trafi w" konkretne, krótkoterminowe zjawisko, jeśli dniDoRozpoczeciaPodrozy > 5 — to byłby błąd. Przykład błędu, którego NIE WOLNO Ci powtórzyć: dziś jest 23 września, alert dotyczy 25-28 września, podróż zaczyna się 2 października (9 dni później) — to się NIE pokrywa, mimo że oba terminy są "blisko dziś".
-- Jeśli w polu "prognozaCPHC" jest opis systemu pogodowego bez oficjalnej nazwy i pozycji (system, który nie występuje w liście "sztormy"), spróbuj wywnioskować z opisu słownego przybliżoną pozycję (szerokość i długość geograficzna w stopniach dziesiętnych, longitude ujemne dla zachodniej długości) — ale WYŁĄCZNIE jeśli tekst daje wystarczająco konkretną wskazówkę (np. "several hundred miles southeast of the Big Island"). Jeśli nie potrafisz sensownie oszacować pozycji, ustaw "unnamedSystem" na null zamiast zgadywać.
-- Odpowiadasz wyłącznie poprawnym obiektem JSON, bez żadnego tekstu, komentarza ani formatowania markdown przed lub po nim, dokładnie w tym kształcie:
-{"briefing": "string", "unnamedSystem": null}
-albo
-{"briefing": "string", "unnamedSystem": {"description": "string", "approxLat": number, "approxLon": number, "uncertaintyKm": number, "confidence": "low"|"medium"|"high"}}`;
-
-function stripCodeFence(text: string): string {
-  return text
-    .trim()
-    .replace(/^```(?:json)?\n?/, "")
-    .replace(/\n?```$/, "")
-    .trim();
-}
+- Jeśli w polu "prognozaCPHC" jest opis systemu pogodowego bez oficjalnej nazwy i pozycji (system, który nie występuje w liście "sztormy"), spróbuj wywnioskować z opisu słownego przybliżoną pozycję (szerokość i długość geograficzna w stopniach dziesiętnych, longitude ujemne dla zachodniej długości) — ale WYŁĄCZNIE jeśli tekst daje wystarczająco konkretną wskazówkę (np. "several hundred miles southeast of the Big Island"). Jeśli nie potrafisz sensownie oszacować pozycji, lub jeśli ten sam system już występuje w liście "sztormy" pod jakąkolwiek nazwą, ustaw "unnamedSystem" na null.`;
 
 // Central/Eastern Pacific basin sanity box — rejects an obviously
 // hallucinated position (e.g. on land, wrong hemisphere) rather than
@@ -121,41 +128,24 @@ export async function generateAiInsight(ctx: AiContext): Promise<AiInsight | nul
   };
 
   try {
-    const response = await client.messages.create({
+    const response = await client.messages.parse({
       model: MODEL,
       max_tokens: 2048,
       // A structured-summarization task like this doesn't need deep
       // reasoning, and Sonnet 5 runs adaptive thinking by default even
       // without the `thinking` param — low effort keeps that (billed,
-      // max_tokens-consuming) thinking budget small so it can't crowd out
-      // the actual JSON response (see the truncation this caused above).
-      output_config: { effort: "low" },
+      // max_tokens-consuming) thinking budget small.
+      output_config: { effort: "low", format: zodOutputFormat(AiInsightSchema) },
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: JSON.stringify(payload) }],
     });
 
-    const textBlock = response.content.find(
-      (b): b is Anthropic.TextBlock => b.type === "text",
-    );
-    if (!textBlock) return null;
-
-    const parsed = JSON.parse(stripCodeFence(textBlock.text)) as {
-      briefing?: unknown;
-      unnamedSystem?: unknown;
-    };
-    if (typeof parsed.briefing !== "string" || parsed.briefing.trim() === "") {
-      return null;
-    }
+    const parsed = response.parsed_output;
+    if (!parsed || parsed.briefing.trim() === "") return null;
 
     let unnamedSystem: AiUnnamedSystem | null = null;
-    const candidate = parsed.unnamedSystem as Partial<AiUnnamedSystem> | null;
-    if (
-      candidate &&
-      typeof candidate.approxLat === "number" &&
-      typeof candidate.approxLon === "number" &&
-      typeof candidate.description === "string" &&
-      isPlausibleBasinPosition(candidate.approxLat, candidate.approxLon)
-    ) {
+    const candidate = parsed.unnamedSystem;
+    if (candidate && isPlausibleBasinPosition(candidate.approxLat, candidate.approxLon)) {
       // Verified empirically: the model tends to place the point much
       // closer to the named reference island than "a few hundred miles"
       // (the phrasing NHC actually uses) implies, while self-reporting a
@@ -163,13 +153,9 @@ export async function generateAiInsight(ctx: AiContext): Promise<AiInsight | nul
       // model's own uncertainty claim — floor it at the low end of what
       // "a few hundred miles" means, and never call that "high" confidence.
       const MIN_UNCERTAINTY_KM = 500;
-      const reportedUncertainty =
-        typeof candidate.uncertaintyKm === "number" ? candidate.uncertaintyKm : 0;
       unnamedSystem = {
-        description: candidate.description,
-        approxLat: candidate.approxLat,
-        approxLon: candidate.approxLon,
-        uncertaintyKm: Math.max(reportedUncertainty, MIN_UNCERTAINTY_KM),
+        ...candidate,
+        uncertaintyKm: Math.max(candidate.uncertaintyKm, MIN_UNCERTAINTY_KM),
         confidence: candidate.confidence === "medium" ? "medium" : "low",
       };
     }
