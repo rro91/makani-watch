@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-09-24T22:42:22.199Z",
+  "computedAt": "2026-09-25T00:56:07.064Z",
   "mode": "before-trip",
   "currentIsland": null,
   "level": 4,
@@ -7,9 +7,9 @@
   "recommendation": "Poważne ostrzeżenie aktywne na Hawajach. Śledź rozwój sytuacji i miej kontakt z liniami lotniczymi, jeśli się nie uspokoi do wylotu.",
   "scopeLabel": "Cała Hawaje — 43 strefy NWS (jeszcze nie zawężone do Waszej trasy)",
   "reasons": [
-    "Tropical Storm Warning aktywne (HIZ026) — \"Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
-    "Tropical Storm Watch aktywne (HIZ047) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Warning aktywne (HIZ027) — \"Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
+    "Tropical Storm Watch aktywne (HIZ047) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
+    "Tropical Storm Warning aktywne (HIZ026) — \"Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ050) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Hurricane Watch aktywne (HIZ026) — \"Hurricane Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Hurricane Watch aktywne (HIZ053) — \"Hurricane Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
@@ -25,16 +25,15 @@
     "Tropical Storm Watch aktywne (HIZ049) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Warning aktywne (HIZ028) — \"Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Warning aktywne (HIZ053) — \"Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
-    "Tropical Storm Watch aktywne (HIZ015) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
+    "Hurricane Watch aktywne (HIZ028) — \"Hurricane Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Warning aktywne (HIZ023) — \"Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ042) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
-    "Tropical Storm Watch aktywne (HIZ038) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ044) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
+    "Tropical Storm Watch aktywne (HIZ038) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ037) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ041) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ040) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ022) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
-    "Hurricane Watch aktywne (HIZ028) — \"Hurricane Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Warning aktywne (HIZ051) — \"Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ048) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ039) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
@@ -42,8 +41,9 @@
     "Hurricane Watch aktywne (HIZ052) — \"Hurricane Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ016) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Tropical Storm Watch aktywne (HIZ043) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
+    "Tropical Storm Watch aktywne (HIZ015) — \"Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI\"",
     "Flood Watch aktywne (HIZ015, HIZ016, HIZ017, HIZ018, HIZ022, HIZ023, HIZ026, HIZ027, HIZ028, HIZ037, HIZ038, HIZ039, HIZ040, HIZ041, HIZ042, HIZ043, HIZ044, HIZ045, HIZ046, HIZ047, HIZ048, HIZ049, HIZ050, HIZ051, HIZ052, HIZ053, HIZ054) — \"Flood Watch issued September 24 at 4:48AM HST until September 26 at 6:00PM HST by NWS Honolulu HI\"",
-    "Aktywny cyklon Nolo (Sztorm tropikalny) ~736 km od trasy",
+    "Aktywny cyklon Nolo (Sztorm tropikalny) ~738 km od trasy",
     "Prognoza CPHC: 40% szans na nowy cyklon w ciągu 7 dni"
   ],
   "alerts": [
@@ -92,22 +92,22 @@
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.fafe07510c29228570d48ba4034cf6f8eebed234.001.1"
     },
     {
-      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.025.2",
+      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.026.2",
       "event": "Tropical Storm Warning",
       "severity": "Severe",
       "urgency": "Immediate",
       "certainty": "Likely",
       "headline": "Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI",
-      "description": "A Tropical Storm Warning means tropical storm-force winds are\nexpected somewhere within this area within the next 36 hours\n\n* LOCATIONS AFFECTED\n- Kawaihae\n- Waikoloa Village\n- Mahukona\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 30-40 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: early Saturday\nmorning until Sunday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 74\nto 110 mph\n- The wind threat has increased from the previous assessment.\n- PLAN: Plan for life-threatening wind of equivalent CAT 1 or\n2 hurricane force.\n- PREPARE: Efforts to protect life and property should now be\nrigorously underway. Prepare for considerable wind damage.\n- ACT: Act now to complete preparations before the wind\nbecomes hazardous.\n\n- POTENTIAL IMPACTS: Extensive\n- Considerable roof damage to sturdy buildings, with some\nhaving window, door, and garage door failures leading to\nstructural damage. Mobile homes severely damaged, with some\ndestroyed. Damage accentuated by airborne projectiles.\nLocations may be uninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within\nurban or heavily wooded places. Several bridges, causeways,\nand access routes impassable.\n- Large areas with power and communications outages.\n\n* STORM SURGE\n- LATEST LOCAL FORECAST: Localized storm surge possible\n- Peak Storm Surge Inundation: The potential for 1-3 feet\nabove ground somewhere within surge prone areas\n- Window of concern: Begins early Friday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for storm\nsurge flooding greater than 1 foot above ground\n- The storm surge threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for storm surge flooding greater than 1 foot\nabove ground.\n- PREPARE: Complete preparations for storm surge flooding,\nespecially in low-lying vulnerable areas, before conditions\nbecome unsafe.\n- ACT: Leave immediately if evacuation orders are given for\nyour area.\n\n- POTENTIAL IMPACTS: Limited\n- Localized inundation with storm surge flooding mainly along\nimmediate shorelines and in low-lying spots, or in areas\nfarther inland near where higher surge waters move ashore.\n- Sections of near-shore roads and parking lots become\noverspread with surge water. Driving conditions dangerous\nin places where surge water covers the road.\n- Moderate beach erosion. Heavy surf also breaching dunes,\nmainly in usually vulnerable locations. Strong rip currents.\n- Minor to locally moderate damage to marinas, docks,\nboardwalks, and piers. A few small craft broken away from\nmoorings.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional around 1 inch\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for extreme\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nextreme flooding from heavy rain. Evacuations and rescues\nare likely.\n- PREPARE: Urgently consider protective actions from extreme\nand widespread rainfall flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Extreme rainfall flooding may prompt numerous evacuations\nand rescues.\n- Rivers and tributaries may overwhelmingly overflow their\nbanks in many places with deep moving water. Small streams,\ncreeks, canals, arroyos, and ditches may become raging\nrivers. In mountain areas, deadly runoff may rage down\nvalleys while increasing susceptibility to rockslides and\nmudslides. Flood control systems and barriers may become\nstressed.\n- Flood waters can enter numerous structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Numerous places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nraging water with underpasses submerged. Driving conditions\nbecome very dangerous. Numerous road and bridge closures\nwith some weakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is somewhat favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for a few\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for a\nfew tornadoes.\n- PREPARE: If your shelter is particularly vulnerable to\ntornadoes, prepare to relocate to safe shelter before\nhazardous weather arrives.\n- ACT: If a tornado warning is issued, be ready to shelter\nquickly.\n\n- POTENTIAL IMPACTS: Limited\n- The occurrence of isolated tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- A few places may experience tornado damage, along with\npower and communications disruptions.\n- Locations could realize roofs peeled off buildings,\nchimneys toppled, mobile homes pushed off foundations or\noverturned, large tree tops and branches snapped off,\nshallow-rooted trees knocked over, moving vehicles blown\noff roads, and small boats pulled from moorings.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
+      "description": "A Tropical Storm Warning means tropical storm-force winds are\nexpected somewhere within this area within the next 36 hours\n\n* LOCATIONS AFFECTED\n- Bradshaw Army Airfield\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 35-45 mph with gusts to 65 mph\n- Window for Tropical Storm force winds: Friday evening until\nSunday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind\ngreater than 110 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for extreme wind of equivalent CAT 3 hurricane\nforce or higher.\n- PREPARE: Remaining efforts to protect life and property\nshould be urgently completed. Prepare for catastrophic wind\ndamage.\n- ACT: Move to safe shelter before the wind becomes hazardous.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Structural damage to sturdy buildings, some with complete\nroof and wall failures. Complete destruction of mobile\nhomes. Damage greatly accentuated by large airborne\nprojectiles. Locations may be uninhabitable for weeks or\nmonths.\n- Numerous large trees snapped or uprooted along with fences\nand roadway signs blown over.\n- Many roads impassable from large debris, and more within\nurban or heavily wooded places. Many bridges, causeways,\nand access routes impassable.\n- Widespread power and communications outages.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional 6-10 inches, with locally\nhigher amounts\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for extreme\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nextreme flooding from heavy rain. Evacuations and rescues\nare likely.\n- PREPARE: Urgently consider protective actions from extreme\nand widespread rainfall flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Extreme rainfall flooding may prompt numerous evacuations\nand rescues.\n- Rivers and tributaries may overwhelmingly overflow their\nbanks in many places with deep moving water. Small streams,\ncreeks, canals, arroyos, and ditches may become raging\nrivers. In mountain areas, deadly runoff may rage down\nvalleys while increasing susceptibility to rockslides and\nmudslides. Flood control systems and barriers may become\nstressed.\n- Flood waters can enter numerous structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Numerous places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nraging water with underpasses submerged. Driving conditions\nbecome very dangerous. Numerous road and bridge closures\nwith some weakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is somewhat favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for a few\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for a\nfew tornadoes.\n- PREPARE: If your shelter is particularly vulnerable to\ntornadoes, prepare to relocate to safe shelter before\nhazardous weather arrives.\n- ACT: If a tornado warning is issued, be ready to shelter\nquickly.\n\n- POTENTIAL IMPACTS: Limited\n- The occurrence of isolated tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- A few places may experience tornado damage, along with\npower and communications disruptions.\n- Locations could realize roofs peeled off buildings,\nchimneys toppled, mobile homes pushed off foundations or\noverturned, large tree tops and branches snapped off,\nshallow-rooted trees knocked over, moving vehicles blown\noff roads, and small boats pulled from moorings.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
       "instruction": null,
-      "areaDesc": "Kohala",
+      "areaDesc": "Big Island Interior",
       "zones": [
-        "HIZ026"
+        "HIZ027"
       ],
       "effective": "2026-09-24T11:19:00-10:00",
       "expires": "2026-09-24T19:30:00-10:00",
       "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.025.2"
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.026.2"
     },
     {
       "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.015.1",
@@ -128,22 +128,22 @@
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.015.1"
     },
     {
-      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.026.2",
+      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.025.2",
       "event": "Tropical Storm Warning",
       "severity": "Severe",
       "urgency": "Immediate",
       "certainty": "Likely",
       "headline": "Tropical Storm Warning issued September 24 at 11:19AM HST by NWS Honolulu HI",
-      "description": "A Tropical Storm Warning means tropical storm-force winds are\nexpected somewhere within this area within the next 36 hours\n\n* LOCATIONS AFFECTED\n- Bradshaw Army Airfield\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 35-45 mph with gusts to 65 mph\n- Window for Tropical Storm force winds: Friday evening until\nSunday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind\ngreater than 110 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for extreme wind of equivalent CAT 3 hurricane\nforce or higher.\n- PREPARE: Remaining efforts to protect life and property\nshould be urgently completed. Prepare for catastrophic wind\ndamage.\n- ACT: Move to safe shelter before the wind becomes hazardous.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Structural damage to sturdy buildings, some with complete\nroof and wall failures. Complete destruction of mobile\nhomes. Damage greatly accentuated by large airborne\nprojectiles. Locations may be uninhabitable for weeks or\nmonths.\n- Numerous large trees snapped or uprooted along with fences\nand roadway signs blown over.\n- Many roads impassable from large debris, and more within\nurban or heavily wooded places. Many bridges, causeways,\nand access routes impassable.\n- Widespread power and communications outages.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional 6-10 inches, with locally\nhigher amounts\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for extreme\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nextreme flooding from heavy rain. Evacuations and rescues\nare likely.\n- PREPARE: Urgently consider protective actions from extreme\nand widespread rainfall flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Extreme rainfall flooding may prompt numerous evacuations\nand rescues.\n- Rivers and tributaries may overwhelmingly overflow their\nbanks in many places with deep moving water. Small streams,\ncreeks, canals, arroyos, and ditches may become raging\nrivers. In mountain areas, deadly runoff may rage down\nvalleys while increasing susceptibility to rockslides and\nmudslides. Flood control systems and barriers may become\nstressed.\n- Flood waters can enter numerous structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Numerous places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nraging water with underpasses submerged. Driving conditions\nbecome very dangerous. Numerous road and bridge closures\nwith some weakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is somewhat favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for a few\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for a\nfew tornadoes.\n- PREPARE: If your shelter is particularly vulnerable to\ntornadoes, prepare to relocate to safe shelter before\nhazardous weather arrives.\n- ACT: If a tornado warning is issued, be ready to shelter\nquickly.\n\n- POTENTIAL IMPACTS: Limited\n- The occurrence of isolated tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- A few places may experience tornado damage, along with\npower and communications disruptions.\n- Locations could realize roofs peeled off buildings,\nchimneys toppled, mobile homes pushed off foundations or\noverturned, large tree tops and branches snapped off,\nshallow-rooted trees knocked over, moving vehicles blown\noff roads, and small boats pulled from moorings.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
+      "description": "A Tropical Storm Warning means tropical storm-force winds are\nexpected somewhere within this area within the next 36 hours\n\n* LOCATIONS AFFECTED\n- Kawaihae\n- Waikoloa Village\n- Mahukona\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 30-40 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: early Saturday\nmorning until Sunday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 74\nto 110 mph\n- The wind threat has increased from the previous assessment.\n- PLAN: Plan for life-threatening wind of equivalent CAT 1 or\n2 hurricane force.\n- PREPARE: Efforts to protect life and property should now be\nrigorously underway. Prepare for considerable wind damage.\n- ACT: Act now to complete preparations before the wind\nbecomes hazardous.\n\n- POTENTIAL IMPACTS: Extensive\n- Considerable roof damage to sturdy buildings, with some\nhaving window, door, and garage door failures leading to\nstructural damage. Mobile homes severely damaged, with some\ndestroyed. Damage accentuated by airborne projectiles.\nLocations may be uninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within\nurban or heavily wooded places. Several bridges, causeways,\nand access routes impassable.\n- Large areas with power and communications outages.\n\n* STORM SURGE\n- LATEST LOCAL FORECAST: Localized storm surge possible\n- Peak Storm Surge Inundation: The potential for 1-3 feet\nabove ground somewhere within surge prone areas\n- Window of concern: Begins early Friday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for storm\nsurge flooding greater than 1 foot above ground\n- The storm surge threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for storm surge flooding greater than 1 foot\nabove ground.\n- PREPARE: Complete preparations for storm surge flooding,\nespecially in low-lying vulnerable areas, before conditions\nbecome unsafe.\n- ACT: Leave immediately if evacuation orders are given for\nyour area.\n\n- POTENTIAL IMPACTS: Limited\n- Localized inundation with storm surge flooding mainly along\nimmediate shorelines and in low-lying spots, or in areas\nfarther inland near where higher surge waters move ashore.\n- Sections of near-shore roads and parking lots become\noverspread with surge water. Driving conditions dangerous\nin places where surge water covers the road.\n- Moderate beach erosion. Heavy surf also breaching dunes,\nmainly in usually vulnerable locations. Strong rip currents.\n- Minor to locally moderate damage to marinas, docks,\nboardwalks, and piers. A few small craft broken away from\nmoorings.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional around 1 inch\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for extreme\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nextreme flooding from heavy rain. Evacuations and rescues\nare likely.\n- PREPARE: Urgently consider protective actions from extreme\nand widespread rainfall flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Extreme rainfall flooding may prompt numerous evacuations\nand rescues.\n- Rivers and tributaries may overwhelmingly overflow their\nbanks in many places with deep moving water. Small streams,\ncreeks, canals, arroyos, and ditches may become raging\nrivers. In mountain areas, deadly runoff may rage down\nvalleys while increasing susceptibility to rockslides and\nmudslides. Flood control systems and barriers may become\nstressed.\n- Flood waters can enter numerous structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Numerous places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nraging water with underpasses submerged. Driving conditions\nbecome very dangerous. Numerous road and bridge closures\nwith some weakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is somewhat favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for a few\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for a\nfew tornadoes.\n- PREPARE: If your shelter is particularly vulnerable to\ntornadoes, prepare to relocate to safe shelter before\nhazardous weather arrives.\n- ACT: If a tornado warning is issued, be ready to shelter\nquickly.\n\n- POTENTIAL IMPACTS: Limited\n- The occurrence of isolated tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- A few places may experience tornado damage, along with\npower and communications disruptions.\n- Locations could realize roofs peeled off buildings,\nchimneys toppled, mobile homes pushed off foundations or\noverturned, large tree tops and branches snapped off,\nshallow-rooted trees knocked over, moving vehicles blown\noff roads, and small boats pulled from moorings.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
       "instruction": null,
-      "areaDesc": "Big Island Interior",
+      "areaDesc": "Kohala",
       "zones": [
-        "HIZ027"
+        "HIZ026"
       ],
       "effective": "2026-09-24T11:19:00-10:00",
       "expires": "2026-09-24T19:30:00-10:00",
       "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.026.2"
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.025.2"
     },
     {
       "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.018.1",
@@ -416,22 +416,22 @@
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.023.2"
     },
     {
-      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.009.1",
-      "event": "Tropical Storm Watch",
+      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.027.1",
+      "event": "Hurricane Watch",
       "severity": "Severe",
       "urgency": "Future",
       "certainty": "Possible",
-      "headline": "Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI",
-      "description": "A Tropical Storm Watch means tropical storm-force winds are possible\nsomewhere within this area within the next 48 hours\n\n* LOCATIONS AFFECTED\n- Lanai City\n- Lanai Airport\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 30-40 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: early Saturday\nmorning until Saturday afternoon\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 39\nto 57 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for hazardous wind of equivalent tropical storm\nforce.\n- PREPARE: Efforts to protect property should now be\nunderway. Prepare for limited wind damage.\n- ACT: Act now to complete preparations before the wind\nbecomes hazardous.\n\n- POTENTIAL IMPACTS: Limited\n- Damage to porches, awnings, carports, sheds, and unanchored\nmobile homes. Unsecured lightweight objects blown about.\n- Many large tree limbs broken off. A few trees snapped or\nuprooted, but with greater numbers in places where trees\nare shallow rooted. Some fences and roadway signs blown\nover.\n- A few roads impassable from debris, particularly within\nurban or heavily wooded places. Hazardous driving\nconditions on bridges and other elevated roadways.\n- Scattered power and communications outages.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: around 1 inch\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for\nmoderate flooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nmoderate flooding from heavy rain. Evacuations and rescues\nare possible.\n- PREPARE: Consider protective actions if you are in an area\nvulnerable to flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction may result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Significant\n- Moderate rainfall flooding may prompt several evacuations\nand rescues.\n- Rivers and tributaries may quickly become swollen with\nswifter currents and overspill their banks in a few places,\nespecially in usually vulnerable spots. Small streams,\ncreeks, canals, arroyos, and ditches overflow.\n- Flood waters can enter some structures or weaken\nfoundations. Several places may experience expanded areas\nof rapid inundation at underpasses, low-lying spots, and\npoor drainage areas. Some streets and parking lots take on\nmoving water as storm drains and retention ponds overflow.\nDriving conditions become hazardous. Some road and bridge\nclosures.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is unfavorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Tornadoes not expected\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Tornadoes are not expected. Showers and thunderstorms\nwith gusty winds may still occur.\n- PREPARE: Little to no preparations needed to protect\nagainst tornadoes at this time. Keep informed of the latest\ntornado situation.\n- ACT: Listen for changes in the forecast.\n\n- POTENTIAL IMPACTS: Little to None\n- Little to no potential impacts from tornadoes.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
+      "headline": "Hurricane Watch issued September 24 at 11:19AM HST by NWS Honolulu HI",
+      "description": "A Tropical Storm Warning means tropical storm-force winds are\nexpected somewhere within this area within the next 36 hours\n\n* LOCATIONS AFFECTED\n- Mauna Kea Summit\n- Mauna Loa Summit\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 40-50 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: Friday morning until\nSunday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 74\nto 110 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for life-threatening wind of equivalent CAT 1 or\n2 hurricane force.\n- PREPARE: Remaining efforts to protect life and property\nshould be urgently completed. Prepare for considerable wind\ndamage.\n- ACT: Move to safe shelter before the wind becomes hazardous.\n\n- POTENTIAL IMPACTS: Extensive\n- Considerable roof damage to sturdy buildings, with some\nhaving window, door, and garage door failures leading to\nstructural damage. Mobile homes severely damaged, with some\ndestroyed. Damage accentuated by airborne projectiles.\nLocations may be uninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within\nurban or heavily wooded places. Several bridges, causeways,\nand access routes impassable.\n- Large areas with power and communications outages.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional 8-12 inches, with locally\nhigher amounts\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for extreme\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nextreme flooding from heavy rain. Evacuations and rescues\nare likely.\n- PREPARE: Urgently consider protective actions from extreme\nand widespread rainfall flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Extreme rainfall flooding may prompt numerous evacuations\nand rescues.\n- Rivers and tributaries may overwhelmingly overflow their\nbanks in many places with deep moving water. Small streams,\ncreeks, canals, arroyos, and ditches may become raging\nrivers. In mountain areas, deadly runoff may rage down\nvalleys while increasing susceptibility to rockslides and\nmudslides. Flood control systems and barriers may become\nstressed.\n- Flood waters can enter numerous structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Numerous places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nraging water with underpasses submerged. Driving conditions\nbecome very dangerous. Numerous road and bridge closures\nwith some weakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is somewhat favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for a few\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for a\nfew tornadoes.\n- PREPARE: If your shelter is particularly vulnerable to\ntornadoes, prepare to relocate to safe shelter before\nhazardous weather arrives.\n- ACT: If a tornado warning is issued, be ready to shelter\nquickly.\n\n- POTENTIAL IMPACTS: Limited\n- The occurrence of isolated tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- A few places may experience tornado damage, along with\npower and communications disruptions.\n- Locations could realize roofs peeled off buildings,\nchimneys toppled, mobile homes pushed off foundations or\noverturned, large tree tops and branches snapped off,\nshallow-rooted trees knocked over, moving vehicles blown\noff roads, and small boats pulled from moorings.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
       "instruction": null,
-      "areaDesc": "Lanai Mauka",
+      "areaDesc": "Big Island Summit",
       "zones": [
-        "HIZ015"
+        "HIZ028"
       ],
       "effective": "2026-09-24T11:19:00-10:00",
       "expires": "2026-09-24T19:30:00-10:00",
       "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.009.1"
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.027.1"
     },
     {
       "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.020.2",
@@ -470,24 +470,6 @@
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.006.1"
     },
     {
-      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.002.1",
-      "event": "Tropical Storm Watch",
-      "severity": "Severe",
-      "urgency": "Future",
-      "certainty": "Possible",
-      "headline": "Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI",
-      "description": "A Tropical Storm Watch means tropical storm-force winds are possible\nsomewhere within this area within the next 48 hours\n\n* LOCATIONS AFFECTED\n- Pukoo\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 30-40 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: Saturday morning\nuntil Saturday evening\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 39\nto 57 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for hazardous wind of equivalent tropical storm\nforce.\n- PREPARE: Efforts to protect property should now be\nunderway. Prepare for limited wind damage.\n- ACT: Act now to complete preparations before the wind\nbecomes hazardous.\n\n- POTENTIAL IMPACTS: Limited\n- Damage to porches, awnings, carports, sheds, and unanchored\nmobile homes. Unsecured lightweight objects blown about.\n- Many large tree limbs broken off. A few trees snapped or\nuprooted, but with greater numbers in places where trees\nare shallow rooted. Some fences and roadway signs blown\nover.\n- A few roads impassable from debris, particularly within\nurban or heavily wooded places. Hazardous driving\nconditions on bridges and other elevated roadways.\n- Scattered power and communications outages.\n\n* STORM SURGE\n- No storm surge inundation forecast\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Little to no storm\nsurge flooding\n- The storm surge threat has remained nearly steady from the\nprevious assessment.\n- PLAN: There is little to no threat of storm surge flooding.\nRough surf, coastal erosion, and life-threatening rip\ncurrents are possible.\n- PREPARE: Little to no preparations for storm surge flooding\nare needed.\n- ACT: Follow the instructions of local officials. Monitor\nforecasts.\n\n- POTENTIAL IMPACTS: Little to None\n- Little to no potential impacts from storm surge flooding.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional around 1 inch\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for\nmoderate flooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nmoderate flooding from heavy rain. Evacuations and rescues\nare possible.\n- PREPARE: Consider protective actions if you are in an area\nvulnerable to flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction may result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Significant\n- Moderate rainfall flooding may prompt several evacuations\nand rescues.\n- Rivers and tributaries may quickly become swollen with\nswifter currents and overspill their banks in a few places,\nespecially in usually vulnerable spots. Small streams,\ncreeks, canals, arroyos, and ditches overflow.\n- Flood waters can enter some structures or weaken\nfoundations. Several places may experience expanded areas\nof rapid inundation at underpasses, low-lying spots, and\npoor drainage areas. Some streets and parking lots take on\nmoving water as storm drains and retention ponds overflow.\nDriving conditions become hazardous. Some road and bridge\nclosures.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is unfavorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Tornadoes not expected\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Tornadoes are not expected. Showers and thunderstorms\nwith gusty winds may still occur.\n- PREPARE: Little to no preparations needed to protect\nagainst tornadoes at this time. Keep informed of the latest\ntornado situation.\n- ACT: Listen for changes in the forecast.\n\n- POTENTIAL IMPACTS: Little to None\n- Little to no potential impacts from tornadoes.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
-      "instruction": null,
-      "areaDesc": "Molokai Southeast",
-      "zones": [
-        "HIZ038"
-      ],
-      "effective": "2026-09-24T11:19:00-10:00",
-      "expires": "2026-09-24T19:30:00-10:00",
-      "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.002.1"
-    },
-    {
       "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.008.1",
       "event": "Tropical Storm Watch",
       "severity": "Severe",
@@ -504,6 +486,24 @@
       "expires": "2026-09-24T19:30:00-10:00",
       "senderName": "NWS Honolulu HI",
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.008.1"
+    },
+    {
+      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.002.1",
+      "event": "Tropical Storm Watch",
+      "severity": "Severe",
+      "urgency": "Future",
+      "certainty": "Possible",
+      "headline": "Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI",
+      "description": "A Tropical Storm Watch means tropical storm-force winds are possible\nsomewhere within this area within the next 48 hours\n\n* LOCATIONS AFFECTED\n- Pukoo\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 30-40 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: Saturday morning\nuntil Saturday evening\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 39\nto 57 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for hazardous wind of equivalent tropical storm\nforce.\n- PREPARE: Efforts to protect property should now be\nunderway. Prepare for limited wind damage.\n- ACT: Act now to complete preparations before the wind\nbecomes hazardous.\n\n- POTENTIAL IMPACTS: Limited\n- Damage to porches, awnings, carports, sheds, and unanchored\nmobile homes. Unsecured lightweight objects blown about.\n- Many large tree limbs broken off. A few trees snapped or\nuprooted, but with greater numbers in places where trees\nare shallow rooted. Some fences and roadway signs blown\nover.\n- A few roads impassable from debris, particularly within\nurban or heavily wooded places. Hazardous driving\nconditions on bridges and other elevated roadways.\n- Scattered power and communications outages.\n\n* STORM SURGE\n- No storm surge inundation forecast\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Little to no storm\nsurge flooding\n- The storm surge threat has remained nearly steady from the\nprevious assessment.\n- PLAN: There is little to no threat of storm surge flooding.\nRough surf, coastal erosion, and life-threatening rip\ncurrents are possible.\n- PREPARE: Little to no preparations for storm surge flooding\nare needed.\n- ACT: Follow the instructions of local officials. Monitor\nforecasts.\n\n- POTENTIAL IMPACTS: Little to None\n- Little to no potential impacts from storm surge flooding.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional around 1 inch\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for\nmoderate flooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nmoderate flooding from heavy rain. Evacuations and rescues\nare possible.\n- PREPARE: Consider protective actions if you are in an area\nvulnerable to flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction may result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Significant\n- Moderate rainfall flooding may prompt several evacuations\nand rescues.\n- Rivers and tributaries may quickly become swollen with\nswifter currents and overspill their banks in a few places,\nespecially in usually vulnerable spots. Small streams,\ncreeks, canals, arroyos, and ditches overflow.\n- Flood waters can enter some structures or weaken\nfoundations. Several places may experience expanded areas\nof rapid inundation at underpasses, low-lying spots, and\npoor drainage areas. Some streets and parking lots take on\nmoving water as storm drains and retention ponds overflow.\nDriving conditions become hazardous. Some road and bridge\nclosures.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is unfavorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Tornadoes not expected\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Tornadoes are not expected. Showers and thunderstorms\nwith gusty winds may still occur.\n- PREPARE: Little to no preparations needed to protect\nagainst tornadoes at this time. Keep informed of the latest\ntornado situation.\n- ACT: Listen for changes in the forecast.\n\n- POTENTIAL IMPACTS: Little to None\n- Little to no potential impacts from tornadoes.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
+      "instruction": null,
+      "areaDesc": "Molokai Southeast",
+      "zones": [
+        "HIZ038"
+      ],
+      "effective": "2026-09-24T11:19:00-10:00",
+      "expires": "2026-09-24T19:30:00-10:00",
+      "senderName": "NWS Honolulu HI",
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.002.1"
     },
     {
       "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.001.1",
@@ -576,24 +576,6 @@
       "expires": "2026-09-24T19:30:00-10:00",
       "senderName": "NWS Honolulu HI",
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.019.1"
-    },
-    {
-      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.027.1",
-      "event": "Hurricane Watch",
-      "severity": "Severe",
-      "urgency": "Future",
-      "certainty": "Possible",
-      "headline": "Hurricane Watch issued September 24 at 11:19AM HST by NWS Honolulu HI",
-      "description": "A Tropical Storm Warning means tropical storm-force winds are\nexpected somewhere within this area within the next 36 hours\n\n* LOCATIONS AFFECTED\n- Mauna Kea Summit\n- Mauna Loa Summit\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 40-50 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: Friday morning until\nSunday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 74\nto 110 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for life-threatening wind of equivalent CAT 1 or\n2 hurricane force.\n- PREPARE: Remaining efforts to protect life and property\nshould be urgently completed. Prepare for considerable wind\ndamage.\n- ACT: Move to safe shelter before the wind becomes hazardous.\n\n- POTENTIAL IMPACTS: Extensive\n- Considerable roof damage to sturdy buildings, with some\nhaving window, door, and garage door failures leading to\nstructural damage. Mobile homes severely damaged, with some\ndestroyed. Damage accentuated by airborne projectiles.\nLocations may be uninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within\nurban or heavily wooded places. Several bridges, causeways,\nand access routes impassable.\n- Large areas with power and communications outages.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: Additional 8-12 inches, with locally\nhigher amounts\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for extreme\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nextreme flooding from heavy rain. Evacuations and rescues\nare likely.\n- PREPARE: Urgently consider protective actions from extreme\nand widespread rainfall flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Devastating to Catastrophic\n- Extreme rainfall flooding may prompt numerous evacuations\nand rescues.\n- Rivers and tributaries may overwhelmingly overflow their\nbanks in many places with deep moving water. Small streams,\ncreeks, canals, arroyos, and ditches may become raging\nrivers. In mountain areas, deadly runoff may rage down\nvalleys while increasing susceptibility to rockslides and\nmudslides. Flood control systems and barriers may become\nstressed.\n- Flood waters can enter numerous structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Numerous places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nraging water with underpasses submerged. Driving conditions\nbecome very dangerous. Numerous road and bridge closures\nwith some weakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is somewhat favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for a few\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for a\nfew tornadoes.\n- PREPARE: If your shelter is particularly vulnerable to\ntornadoes, prepare to relocate to safe shelter before\nhazardous weather arrives.\n- ACT: If a tornado warning is issued, be ready to shelter\nquickly.\n\n- POTENTIAL IMPACTS: Limited\n- The occurrence of isolated tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- A few places may experience tornado damage, along with\npower and communications disruptions.\n- Locations could realize roofs peeled off buildings,\nchimneys toppled, mobile homes pushed off foundations or\noverturned, large tree tops and branches snapped off,\nshallow-rooted trees knocked over, moving vehicles blown\noff roads, and small boats pulled from moorings.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
-      "instruction": null,
-      "areaDesc": "Big Island Summit",
-      "zones": [
-        "HIZ028"
-      ],
-      "effective": "2026-09-24T11:19:00-10:00",
-      "expires": "2026-09-24T19:30:00-10:00",
-      "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.027.1"
     },
     {
       "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.021.2",
@@ -722,48 +704,22 @@
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.007.1"
     },
     {
-      "id": "urn:oid:2.49.0.1.840.0.2397da5fd17aa2af1c03271366b62d685d30458b.001.1",
-      "event": "Tropical Cyclone Local Statement",
-      "severity": "Moderate",
-      "urgency": "Expected",
-      "certainty": "Likely",
-      "headline": "Tropical Cyclone Local Statement issued September 24 at 5:11AM HST by NWS Honolulu HI",
-      "description": "HLSHFO\n\nThis product covers the Hawaiian islands\n\n**TROPICAL STORM NOLO CONTINUES TO STRENGTHEN AND MOVE SLOWLY\nNORTHWARD TOWARDS THE BIG ISLAND**\n\nNEW INFORMATION\n---------------\n\n* CHANGES TO WATCHES AND WARNINGS:\n- None\n\n* CURRENT WATCHES AND WARNINGS:\n- A Hurricane Watch is in effect for Big Island East, Big Island\nInterior, Big Island North, Big Island South, Big Island\nSoutheast, Big Island Summits, Kohala, and Kona\n\n* STORM INFORMATION:\n- About 460 miles south-southeast of Honolulu or about 340 miles\nsouth-southwest of Hilo\n- 14.9N 156.2W\n- Storm Intensity 60 mph\n- Movement Stationary\n\nSITUATION OVERVIEW\n------------------\n\nTropical Storm Nolo will continue to strengthen as it drifts slowly\nnorthward towards the Big Island through Friday. Nolo is then expected\nto make a turn to the west Friday night, passing south of the Big\nIsland Saturday.\n\nLittle change with the expected onset of conditions with this package,\nwith damaging tropical storm force winds reaching the Big Island as\nearly as midday Friday, and dangerous hurricane force winds possible\nby Friday night. Tropical storm watches may be needed for other\nislands should Nolo move closer to the state.\n\nBands of intense showers and thunderstorms associated with Nolo will\nreach the Big Island as early as later today. Excessive rainfall is\npossible which could lead to locally catastrophic flash flooding and\nmudslides, mainly on windward and southeast Big Island. Flooding can\noccur even in areas not usually prone to flooding. Outer rain bands\nassociated with Nolo are expected to reach the smaller islands, and\nwill be enhanced by the terrain, particularly on Maui. Storm total\nrainfall amounts greater than 20 inches are possible on the Big\nIsland, with localized amounts of 35 inches. On Maui, rainfall amounts\ngreater than 10 inches are possible, with localized amounts of\n20 inches.\n\nSwell generated by Nolo could bring very large and rough surf and\ndangerous rip currents for south and southeast facing shores,\nespecially for the Big Island.\n\nTornadoes and large waterspouts will be possible associated with Nolo,\nmainly over and near the Big Island, along and to the right of the\ntrack of the tropical cyclone.\n\nPOTENTIAL IMPACTS\n-----------------\n\n* FLOODING RAIN:\nPrepare for life-threatening rainfall flooding having possible\ndevastating impacts across the Big Island. Potential impacts include:\n- Extreme rainfall flooding may prompt numerous evacuations and\nrescues.\n- Rivers and tributaries may overwhelmingly overflow their banks\nin many places with deep moving water. Small streams, creeks,\ncanals, arroyos, and ditches may become raging rivers. In\nmountain areas, deadly runoff may rage down valleys while\nincreasing susceptibility to rockslides and mudslides. Flood\ncontrol systems and barriers may become stressed.\n- Flood waters can enter numerous structures within multiple\ncommunities, some structures becoming uninhabitable or washed\naway. Numerous places where flood waters may cover escape\nroutes. Streets and parking lots become rivers of raging water\nwith underpasses submerged. Driving conditions become very\ndangerous. Numerous road and bridge closures with some weakened\nor washed out.\n\nPrepare for life-threatening rainfall flooding having possible\nlimited to extensive impacts across Maui County.\n\n* WIND:\nPrepare for life-threatening wind having possible devastating impacts\nacross the Big Island. Potential impacts in this area include:\n- Structural damage to sturdy buildings, some with complete roof\nand wall failures. Complete destruction of mobile homes. Damage\ngreatly accentuated by large airborne projectiles. Locations\nmay be uninhabitable for weeks or months.\n- Numerous large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Many roads impassable from large debris, and more within urban\nor heavily wooded places. Many bridges, causeways, and access\nroutes impassable.\n- Widespread power and communications outages.\n\nAlso, prepare for life-threatening wind having possible limited to\nextensive impacts across Maui County.\n\n* SURGE:\nPrepare for locally hazardous surge having possible limited impacts\nacross the Big Island. Potential impacts in this area include:\n- Localized inundation with storm surge flooding mainly along\nimmediate shorelines and in low-lying spots, or in areas\nfarther inland near where higher surge waters move ashore.\n- Sections of near-shore roads and parking lots become overspread\nwith surge water. Driving conditions dangerous in places where\nsurge water covers the road.\n- Moderate beach erosion. Heavy surf also breaching dunes, mainly\nin usually vulnerable locations. Strong rip currents.\n- Minor to locally moderate damage to marinas, docks, boardwalks,\nand piers. A few small craft broken away from moorings.\n\nElsewhere across the Hawaiian islands, little to no impact is\nanticipated.\n\n* TORNADOES:\nPrepare for a tornado event having possible limited impacts across\nthe Big Island. Potential impacts include:\n- The occurrence of isolated tornadoes can hinder the execution\nof emergency plans during tropical events.\n- A few places may experience tornado damage, along with power\nand communications disruptions.\n- Locations could realize roofs peeled off buildings, chimneys\ntoppled, mobile homes pushed off foundations or overturned,\nlarge tree tops and branches snapped off, shallow-rooted trees\nknocked over, moving vehicles blown off roads, and small boats\npulled from moorings.\n\nPRECAUTIONARY/PREPAREDNESS ACTIONS\n----------------------------------\n\n* EVACUATIONS:\nFollow the advice of local officials.\n\n* OTHER PREPAREDNESS INFORMATION:\nNow is the time to check your emergency plan and emergency supplies\nkit and take necessary actions to protect your family and secure your\nhome or business.\n\nWhen making safety and preparedness decisions, do not focus on the\nexact forecast track since hazards such as flooding rain, damaging\nwind gusts, storm surge, and tornadoes extend well away from the\ncenter of the storm.\n\nIf in a place that is vulnerable to high wind, such as near large\ntrees, a manufactured home, upper floors of a high-rise building, or\non a boat, plan to move to safe shelter.\n\nIf you live in a place particularly vulnerable to flooding, such as\nnear the ocean or a large inland lake, in a low-lying or poor\ndrainage area, in a valley, or near an already swollen river, plan to\nmove to safe shelter on higher ground.\n\nAlways heed the advice of local officials and comply with orders that\nare issued. Do not needlessly jeopardize your life or the lives of\nothers.\n\nWhen securing your property, outside preparations should be concluded\nas soon as possible before conditions deteriorate. The onset of\nstrong gusty winds or flooding can cause certain preparedness\nactivities to become unsafe.\n\nBe sure to let friends and family members know of your intentions for\nweathering the storm and your whereabouts. Have someone located away\nfrom the threatened area serve as your point of contact. Share vital\ncontact information with others. Keep cell phones handy and charged.\n\nCheck on those who may not be fully aware of the situation or who are\nunable to make personal preparations.\n\nIf you are a visitor, know the name of the county or parish in which\nyou are located and where it is relative to current watches and\nwarnings. If staying at a hotel, ask the management staff about their\nonsite disaster plan. Listen for evacuation orders, especially\npertaining to area visitors.\n\nClosely monitor weather.gov, NOAA Weather Radio and local news\noutlets for official storm information. Listen for possible changes\nto the forecast.\n\nThere is a threat from tornadoes with this storm. Have multiple ways\nto receive Tornado Warnings. Be ready to shelter quickly.\n\n* ADDITIONAL SOURCES OF INFORMATION:\n- For information on appropriate preparations see ready.gov\n- For information on creating an emergency plan see getagameplan.org\n- For additional disaster preparedness information see redcross.org\n\nNEXT UPDATE\n-----------\n\nThe next local statement will be issued by the National Weather\nService in Honolulu HI around 11 AM HST, or sooner if conditions\nwarrant.",
+      "id": "urn:oid:2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.009.1",
+      "event": "Tropical Storm Watch",
+      "severity": "Severe",
+      "urgency": "Future",
+      "certainty": "Possible",
+      "headline": "Tropical Storm Watch issued September 24 at 11:19AM HST by NWS Honolulu HI",
+      "description": "A Tropical Storm Watch means tropical storm-force winds are possible\nsomewhere within this area within the next 48 hours\n\n* LOCATIONS AFFECTED\n- Lanai City\n- Lanai Airport\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind\n- Peak Wind Forecast: 30-40 mph with gusts to 60 mph\n- Window for Tropical Storm force winds: early Saturday\nmorning until Saturday afternoon\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 39\nto 57 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for hazardous wind of equivalent tropical storm\nforce.\n- PREPARE: Efforts to protect property should now be\nunderway. Prepare for limited wind damage.\n- ACT: Act now to complete preparations before the wind\nbecomes hazardous.\n\n- POTENTIAL IMPACTS: Limited\n- Damage to porches, awnings, carports, sheds, and unanchored\nmobile homes. Unsecured lightweight objects blown about.\n- Many large tree limbs broken off. A few trees snapped or\nuprooted, but with greater numbers in places where trees\nare shallow rooted. Some fences and roadway signs blown\nover.\n- A few roads impassable from debris, particularly within\nurban or heavily wooded places. Hazardous driving\nconditions on bridges and other elevated roadways.\n- Scattered power and communications outages.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: around 1 inch\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for\nmoderate flooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nmoderate flooding from heavy rain. Evacuations and rescues\nare possible.\n- PREPARE: Consider protective actions if you are in an area\nvulnerable to flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction may result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Significant\n- Moderate rainfall flooding may prompt several evacuations\nand rescues.\n- Rivers and tributaries may quickly become swollen with\nswifter currents and overspill their banks in a few places,\nespecially in usually vulnerable spots. Small streams,\ncreeks, canals, arroyos, and ditches overflow.\n- Flood waters can enter some structures or weaken\nfoundations. Several places may experience expanded areas\nof rapid inundation at underpasses, low-lying spots, and\npoor drainage areas. Some streets and parking lots take on\nmoving water as storm drains and retention ponds overflow.\nDriving conditions become hazardous. Some road and bridge\nclosures.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is unfavorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Tornadoes not expected\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Tornadoes are not expected. Showers and thunderstorms\nwith gusty winds may still occur.\n- PREPARE: Little to no preparations needed to protect\nagainst tornadoes at this time. Keep informed of the latest\ntornado situation.\n- ACT: Listen for changes in the forecast.\n\n- POTENTIAL IMPACTS: Little to None\n- Little to no potential impacts from tornadoes.\n\n* FOR MORE INFORMATION:\n- https://www.weather.gov/hfo",
       "instruction": null,
-      "areaDesc": "Lanai Mauka; Kahoolawe; Maui Windward West; Maui Leeward West; Haleakala Summit; Kona; Kohala; Big Island Interior; Big Island Summit; Molokai Windward; Molokai Southeast; Molokai North; Molokai West; Molokai Leeward South; Lanai Windward; Lanai Leeward; Lanai South; Maui Central Valley North; Maui Central Valley South; Windward Haleakala; Kipahulu; South Maui/Upcountry; South Haleakala; Big Island South; Big Island Southeast; Big Island East; Big Island North",
+      "areaDesc": "Lanai Mauka",
       "zones": [
-        "HIZ015",
-        "HIZ016",
-        "HIZ017",
-        "HIZ018",
-        "HIZ022",
-        "HIZ023",
-        "HIZ026",
-        "HIZ027",
-        "HIZ028",
-        "HIZ037",
-        "HIZ038",
-        "HIZ039",
-        "HIZ040",
-        "HIZ041",
-        "HIZ042",
-        "HIZ043",
-        "HIZ044",
-        "HIZ045",
-        "HIZ046",
-        "HIZ047",
-        "HIZ048",
-        "HIZ049",
-        "HIZ050",
-        "HIZ051",
-        "HIZ052",
-        "HIZ053",
-        "HIZ054"
+        "HIZ015"
       ],
-      "effective": "2026-09-24T05:11:00-10:00",
-      "expires": "2026-09-24T13:15:00-10:00",
+      "effective": "2026-09-24T11:19:00-10:00",
+      "expires": "2026-09-24T19:30:00-10:00",
       "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.2397da5fd17aa2af1c03271366b62d685d30458b.001.1"
+      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.c3126c4ccaa67bc07dfa47e9cdbf46d65f9328cf.009.1"
     },
     {
       "id": "urn:oid:2.49.0.1.840.0.0be23b1680d7f4f271507185e74b730f908185fa.001.1",
@@ -9597,18 +9553,13 @@
       "intensityKmh": 111,
       "pressureMb": 992,
       "lat": 14.9,
-      "lon": -156.1,
-      "movementDir": "360",
-      "movementMph": 2,
-      "lastUpdate": "2026-09-24T21:00:00.000Z",
+      "lon": -156,
+      "movementDir": "15",
+      "movementMph": 3,
+      "lastUpdate": "2026-09-25T00:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
-      "distanceKmToTrip": 736,
+      "distanceKmToTrip": 738,
       "track": [
-        {
-          "lat": 14.7,
-          "lon": -155.9,
-          "capturedAt": "2026-09-24T05:32:04.626Z"
-        },
         {
           "lat": 14.9,
           "lon": -156,
@@ -9623,6 +9574,11 @@
           "lat": 14.9,
           "lon": -156.1,
           "capturedAt": "2026-09-24T22:42:22.199Z"
+        },
+        {
+          "lat": 14.9,
+          "lon": -156,
+          "capturedAt": "2026-09-25T00:56:07.064Z"
         }
       ],
       "windRadii": [
@@ -9631,1447 +9587,1447 @@
           "ring": [
             [
               16.2295418,
-              -156.087952
+              -155.98793
             ],
             [
               16.2291336,
-              -156.063782
+              -155.96376
             ],
             [
               16.2283192,
-              -156.039612
+              -155.939621
             ],
             [
               16.2270985,
-              -156.015488
+              -155.915466
             ],
             [
               16.2254696,
-              -155.991379
+              -155.891373
             ],
             [
               16.2234344,
-              -155.967316
+              -155.867294
             ],
             [
               16.220993,
-              -155.943283
+              -155.843262
             ],
             [
               16.2181473,
-              -155.919296
+              -155.819275
             ],
             [
               16.2148972,
-              -155.89537
+              -155.795364
             ],
             [
               16.2112427,
-              -155.871506
+              -155.7715
             ],
             [
               16.2071896,
-              -155.847717
+              -155.747711
             ],
             [
               16.2027359,
-              -155.824005
+              -155.723984
             ],
             [
               16.1978779,
-              -155.800354
+              -155.700363
             ],
             [
               16.192627,
-              -155.776825
+              -155.676819
             ],
             [
               16.1869774,
-              -155.753403
+              -155.653381
             ],
             [
               16.1809349,
-              -155.730072
+              -155.630066
             ],
             [
               16.1744995,
-              -155.706848
+              -155.606842
             ],
             [
               16.1676712,
-              -155.683777
+              -155.583771
             ],
             [
               16.1604595,
-              -155.660812
+              -155.560806
             ],
             [
               16.1528587,
-              -155.637985
+              -155.537979
             ],
             [
               16.1448746,
-              -155.615295
+              -155.515289
             ],
             [
               16.1365089,
-              -155.592758
+              -155.492752
             ],
             [
               16.1277657,
-              -155.570374
+              -155.470398
             ],
             [
               16.1186447,
-              -155.548187
+              -155.448181
             ],
             [
               16.1091518,
-              -155.526154
+              -155.426132
             ],
             [
               16.099287,
-              -155.504303
+              -155.404266
             ],
             [
               16.0890579,
-              -155.482635
+              -155.382599
             ],
             [
               16.0784645,
-              -155.461121
+              -155.36113
             ],
             [
               16.0675087,
-              -155.43985
+              -155.339844
             ],
             [
               16.0561943,
-              -155.418762
+              -155.318771
             ],
             [
               16.044529,
-              -155.397888
+              -155.297897
             ],
             [
               16.0325108,
-              -155.377258
+              -155.277237
             ],
             [
               16.0201492,
-              -155.356812
+              -155.256805
             ],
             [
               16.0074425,
-              -155.336609
+              -155.236618
             ],
             [
               15.9943981,
-              -155.31665
+              -155.216644
             ],
             [
               15.9810219,
-              -155.296936
+              -155.19693
             ],
             [
               15.9673109,
-              -155.277466
+              -155.177444
             ],
             [
               15.9532757,
-              -155.25824
+              -155.158234
             ],
             [
               15.9389191,
-              -155.239288
+              -155.139282
             ],
             [
               15.9242449,
-              -155.220581
+              -155.120575
             ],
             [
               15.909256,
-              -155.202179
+              -155.102158
             ],
             [
               15.8938885,
-              -155.184113
+              -155.084091
             ],
             [
               15.8780785,
-              -155.166489
+              -155.066467
             ],
             [
               15.8618355,
-              -155.149323
+              -155.049301
             ],
             [
               15.8451691,
-              -155.132584
+              -155.032578
             ],
             [
               15.8280897,
-              -155.116348
+              -155.016342
             ],
             [
               15.8106117,
-              -155.100586
+              -155.000565
             ],
             [
               15.7927418,
-              -155.085312
+              -154.985291
             ],
             [
               15.7744942,
-              -155.070526
+              -154.97052
             ],
             [
               15.7558765,
-              -155.056274
+              -154.956253
             ],
             [
               15.7369757,
-              -155.04245
+              -154.942429
             ],
             [
               15.7178698,
-              -155.028992
+              -154.928955
             ],
             [
               15.6985674,
-              -155.0159
+              -154.915878
             ],
             [
               15.6790705,
-              -155.003189
+              -154.903168
             ],
             [
               15.6593895,
-              -154.990829
+              -154.890839
             ],
             [
               15.6395302,
-              -154.978867
+              -154.878876
             ],
             [
               15.6194983,
-              -154.9673
+              -154.86731
             ],
             [
               15.5993023,
-              -154.956116
+              -154.856125
             ],
             [
               15.578949,
-              -154.945312
+              -154.845306
             ],
             [
               15.5584431,
-              -154.934891
+              -154.8349
             ],
             [
               15.5377922,
-              -154.924881
+              -154.824875
             ],
             [
               15.5170069,
-              -154.915253
+              -154.815247
             ],
             [
               15.496089,
-              -154.906036
+              -154.806015
             ],
             [
               15.4750471,
-              -154.897186
+              -154.79718
             ],
             [
               15.4538898,
-              -154.888748
+              -154.788757
             ],
             [
               15.432622,
-              -154.880722
+              -154.780701
             ],
             [
               15.411253,
-              -154.873077
+              -154.773087
             ],
             [
               15.3897877,
-              -154.86586
+              -154.765839
             ],
             [
               15.3682318,
-              -154.859024
+              -154.759018
             ],
             [
               15.3465948,
-              -154.8526
+              -154.752594
             ],
             [
               15.3248854,
-              -154.846573
+              -154.746582
             ],
             [
               15.3031054,
-              -154.840958
+              -154.740952
             ],
             [
               15.2812672,
-              -154.835754
+              -154.735764
             ],
             [
               15.2593727,
-              -154.830948
+              -154.730957
             ],
             [
               15.2374353,
-              -154.826553
+              -154.726562
             ],
             [
               15.215456,
-              -154.822571
+              -154.72258
             ],
             [
               15.1934462,
-              -154.818985
+              -154.718994
             ],
             [
               15.1714087,
-              -154.815811
+              -154.715805
             ],
             [
               15.149353,
-              -154.813049
+              -154.713043
             ],
             [
               15.127285,
-              -154.810684
+              -154.710693
             ],
             [
               15.1052141,
-              -154.808731
+              -154.70871
             ],
             [
               15.0831451,
-              -154.80719
+              -154.707169
             ],
             [
               15.0610847,
-              -154.80603
+              -154.706009
             ],
             [
               15.0390406,
-              -154.805267
+              -154.705261
             ],
             [
               15.0170183,
-              -154.804932
+              -154.70491
             ],
             [
               14.9950256,
-              -154.804993
+              -154.704971
             ],
             [
               14.9730721,
-              -154.80545
+              -154.705429
             ],
             [
               14.9511585,
-              -154.806305
+              -154.706299
             ],
             [
               14.9292955,
-              -154.807541
+              -154.707535
             ],
             [
               14.9074898,
-              -154.809189
+              -154.709167
             ],
             [
               14.885747,
-              -154.811218
+              -154.711212
             ],
             [
               14.8640747,
-              -154.81366
+              -154.713638
             ],
             [
               14.8424788,
-              -154.816467
+              -154.716461
             ],
             [
               14.8209648,
-              -154.819672
+              -154.719666
             ],
             [
               14.7995405,
-              -154.823273
+              -154.723251
             ],
             [
               14.7782135,
-              -154.82724
+              -154.727219
             ],
             [
               14.7569866,
-              -154.831604
+              -154.731567
             ],
             [
               14.7358685,
-              -154.836319
+              -154.736282
             ],
             [
               14.7148676,
-              -154.841415
+              -154.741394
             ],
             [
               14.693985,
-              -154.846878
+              -154.746872
             ],
             [
               14.6732292,
-              -154.852722
+              -154.752716
             ],
             [
               14.6526079,
-              -154.858948
+              -154.758926
             ],
             [
               14.6321259,
-              -154.865509
+              -154.765488
             ],
             [
               14.6117907,
-              -154.872437
+              -154.77243
             ],
             [
               14.5916052,
-              -154.87973
+              -154.779709
             ],
             [
               14.5715752,
-              -154.887375
+              -154.787354
             ],
             [
               14.5517082,
-              -154.89534
+              -154.795334
             ],
             [
               14.532011,
-              -154.903687
+              -154.80368
             ],
             [
               14.5124865,
-              -154.912354
+              -154.812363
             ],
             [
               14.493144,
-              -154.921371
+              -154.821365
             ],
             [
               14.4739838,
-              -154.930725
+              -154.830719
             ],
             [
               14.4550152,
-              -154.940414
+              -154.840393
             ],
             [
               14.436244,
-              -154.950394
+              -154.850403
             ],
             [
               14.4176702,
-              -154.960724
+              -154.860718
             ],
             [
               14.3993053,
-              -154.971375
+              -154.871368
             ],
             [
               14.3811512,
-              -154.98233
+              -154.882309
             ],
             [
               14.3632116,
-              -154.993576
+              -154.893585
             ],
             [
               14.3454962,
-              -155.005157
+              -154.905167
             ],
             [
               14.3280067,
-              -155.017044
+              -154.917023
             ],
             [
               14.3107452,
-              -155.029205
+              -154.929214
             ],
             [
               14.2937212,
-              -155.041656
+              -154.941666
             ],
             [
               14.2769365,
-              -155.054398
+              -154.954391
             ],
             [
               14.2603979,
-              -155.067429
+              -154.967407
             ],
             [
               14.2441063,
-              -155.080719
+              -154.980713
             ],
             [
               14.2280693,
-              -155.094299
+              -154.994278
             ],
             [
               14.2122898,
-              -155.108109
+              -155.008118
             ],
             [
               14.1967707,
-              -155.122208
+              -155.022202
             ],
             [
               14.1815176,
-              -155.136551
+              -155.03656
             ],
             [
               14.1665344,
-              -155.151169
+              -155.051147
             ],
             [
               14.151824,
-              -155.165985
+              -155.065979
             ],
             [
               14.1373911,
-              -155.181091
+              -155.08107
             ],
             [
               14.1233854,
-              -155.196548
+              -155.096542
             ],
             [
               14.1099653,
-              -155.212524
+              -155.112518
             ],
             [
               14.0971432,
-              -155.229019
+              -155.128998
             ],
             [
               14.0849342,
-              -155.245972
+              -155.14595
             ],
             [
               14.0733471,
-              -155.263397
+              -155.163391
             ],
             [
               14.062397,
-              -155.281265
+              -155.181259
             ],
             [
               14.0520935,
-              -155.299576
+              -155.19957
             ],
             [
               14.042448,
-              -155.318298
+              -155.218292
             ],
             [
               14.033473,
-              -155.337402
+              -155.237381
             ],
             [
               14.0250301,
-              -155.35675
+              -155.256729
             ],
             [
               14.0169735,
-              -155.37616
+              -155.276154
             ],
             [
               14.009305,
-              -155.39563
+              -155.295609
             ],
             [
               14.0020247,
-              -155.415161
+              -155.31514
             ],
             [
               13.9951296,
-              -155.434738
+              -155.334732
             ],
             [
               13.9886227,
-              -155.454346
+              -155.35434
             ],
             [
               13.9825001,
-              -155.473984
+              -155.373978
             ],
             [
               13.9767618,
-              -155.493637
+              -155.393646
             ],
             [
               13.9714069,
-              -155.513336
+              -155.413315
             ],
             [
               13.9664326,
-              -155.53302
+              -155.432999
             ],
             [
               13.9618397,
-              -155.552704
+              -155.452682
             ],
             [
               13.9576283,
-              -155.572388
+              -155.472351
             ],
             [
               13.9537907,
-              -155.592041
+              -155.492035
             ],
             [
               13.9503307,
-              -155.611679
+              -155.511658
             ],
             [
               13.9472446,
-              -155.631287
+              -155.531296
             ],
             [
               13.9445295,
-              -155.650848
+              -155.550842
             ],
             [
               13.9421835,
-              -155.67038
+              -155.570374
             ],
             [
               13.9402046,
-              -155.68985
+              -155.589828
             ],
             [
               13.938591,
-              -155.709244
+              -155.609238
             ],
             [
               13.9373388,
-              -155.728592
+              -155.628601
             ],
             [
               13.9364433,
-              -155.747864
+              -155.647858
             ],
             [
               13.9359083,
-              -155.767059
+              -155.667053
             ],
             [
               13.9357233,
-              -155.786148
+              -155.686142
             ],
             [
               13.9358902,
-              -155.805145
+              -155.705154
             ],
             [
               13.9364042,
-              -155.824036
+              -155.72406
             ],
             [
               13.9372606,
-              -155.842834
+              -155.742844
             ],
             [
               13.9384575,
-              -155.861511
+              -155.76152
             ],
             [
               13.939991,
-              -155.880066
+              -155.78009
             ],
             [
               13.9418583,
-              -155.898514
+              -155.798508
             ],
             [
               13.9440536,
-              -155.916809
+              -155.816803
             ],
             [
               13.9465742,
-              -155.934952
+              -155.834946
             ],
             [
               13.9494133,
-              -155.952972
+              -155.852966
             ],
             [
               13.9525719,
-              -155.97084
+              -155.870819
             ],
             [
               13.9560413,
-              -155.988541
+              -155.888504
             ],
             [
               13.9598179,
-              -156.006058
+              -155.906067
             ],
             [
               13.9638996,
-              -156.023438
+              -155.923416
             ],
             [
               13.9682789,
-              -156.040634
+              -155.940613
             ],
             [
               13.9729538,
-              -156.057648
+              -155.957626
             ],
             [
               13.9779177,
-              -156.074478
+              -155.974457
             ],
             [
               13.9831657,
-              -156.09111
+              -155.991104
             ],
             [
               13.9886942,
-              -156.107544
+              -156.007538
             ],
             [
               13.9944983,
-              -156.123779
+              -156.023788
             ],
             [
               14.0005722,
-              -156.139816
+              -156.03981
             ],
             [
               14.0069103,
-              -156.155655
+              -156.055634
             ],
             [
               14.0135069,
-              -156.171265
+              -156.071243
             ],
             [
               14.0203581,
-              -156.186661
+              -156.086639
             ],
             [
               14.0274563,
-              -156.201813
+              -156.101807
             ],
             [
               14.0348005,
-              -156.216736
+              -156.116745
             ],
             [
               14.0423794,
-              -156.231461
+              -156.131439
             ],
             [
               14.0501909,
-              -156.245911
+              -156.14592
             ],
             [
               14.0582294,
-              -156.260162
+              -156.160141
             ],
             [
               14.0664864,
-              -156.274139
+              -156.174133
             ],
             [
               14.0749578,
-              -156.287888
+              -156.187866
             ],
             [
               14.0836411,
-              -156.301376
+              -156.201355
             ],
             [
               14.0925255,
-              -156.31459
+              -156.2146
             ],
             [
               14.1016064,
-              -156.327576
+              -156.22757
             ],
             [
               14.1108799,
-              -156.340302
+              -156.240295
             ],
             [
               14.1203375,
-              -156.352737
+              -156.252747
             ],
             [
               14.1299744,
-              -156.364929
+              -156.264938
             ],
             [
               14.1397829,
-              -156.376846
+              -156.276855
             ],
             [
               14.1497602,
-              -156.388504
+              -156.288513
             ],
             [
               14.1598969,
-              -156.399902
+              -156.299866
             ],
             [
               14.170186,
-              -156.41098
+              -156.310974
             ],
             [
               14.1806278,
-              -156.421814
+              -156.321808
             ],
             [
               14.1912079,
-              -156.432343
+              -156.332336
             ],
             [
               14.2019253,
-              -156.442612
+              -156.34259
             ],
             [
               14.2127705,
-              -156.452591
+              -156.352585
             ],
             [
               14.2237396,
-              -156.46228
+              -156.362274
             ],
             [
               14.2348261,
-              -156.47168
+              -156.371674
             ],
             [
               14.2460213,
-              -156.480804
+              -156.380798
             ],
             [
               14.2573204,
-              -156.489639
+              -156.389618
             ],
             [
               14.2687187,
-              -156.498169
+              -156.398163
             ],
             [
               14.2802076,
-              -156.506424
+              -156.406433
             ],
             [
               14.2917805,
-              -156.514389
+              -156.414383
             ],
             [
               14.3034325,
-              -156.522049
+              -156.422058
             ],
             [
               14.3151588,
-              -156.529434
+              -156.429413
             ],
             [
               14.3269482,
-              -156.536514
+              -156.436523
             ],
             [
               14.3387995,
-              -156.543289
+              -156.443298
             ],
             [
               14.3507042,
-              -156.549805
+              -156.449814
             ],
             [
               14.3626556,
-              -156.556
+              -156.456009
             ],
             [
               14.3746471,
-              -156.56192
+              -156.461929
             ],
             [
               14.3861694,
-              -156.568085
+              -156.468079
             ],
             [
               14.3967371,
-              -156.575012
+              -156.475021
             ],
             [
               14.4063807,
-              -156.582794
+              -156.482773
             ],
             [
               14.4151325,
-              -156.591415
+              -156.491425
             ],
             [
               14.4230232,
-              -156.600952
+              -156.500946
             ],
             [
               14.4300861,
-              -156.61142
+              -156.511414
             ],
             [
               14.4363575,
-              -156.622864
+              -156.522842
             ],
             [
               14.4418707,
-              -156.635254
+              -156.535248
             ],
             [
               14.4466619,
-              -156.648712
+              -156.548706
             ],
             [
               14.451272,
-              -156.662689
+              -156.562668
             ],
             [
               14.4562178,
-              -156.676666
+              -156.57666
             ],
             [
               14.4614983,
-              -156.690613
+              -156.590622
             ],
             [
               14.4671154,
-              -156.704559
+              -156.604553
             ],
             [
               14.4730701,
-              -156.718491
+              -156.618469
             ],
             [
               14.4793663,
-              -156.732391
+              -156.632385
             ],
             [
               14.486001,
-              -156.746246
+              -156.646225
             ],
             [
               14.4929762,
-              -156.76004
+              -156.660019
             ],
             [
               14.5002918,
-              -156.773788
+              -156.673767
             ],
             [
               14.507946,
-              -156.787476
+              -156.687454
             ],
             [
               14.5159416,
-              -156.801086
+              -156.701065
             ],
             [
               14.5242805,
-              -156.814621
+              -156.7146
             ],
             [
               14.5329571,
-              -156.828064
+              -156.728058
             ],
             [
               14.5419731,
-              -156.841385
+              -156.741394
             ],
             [
               14.5513306,
-              -156.854645
+              -156.754623
             ],
             [
               14.5610237,
-              -156.867783
+              -156.767761
             ],
             [
               14.5710554,
-              -156.880798
+              -156.780762
             ],
             [
               14.5814228,
-              -156.893661
+              -156.79364
             ],
             [
               14.592124,
-              -156.906403
+              -156.806396
             ],
             [
               14.6031599,
-              -156.919006
+              -156.819
             ],
             [
               14.6145258,
-              -156.931427
+              -156.831436
             ],
             [
               14.6262188,
-              -156.943695
+              -156.843689
             ],
             [
               14.6382427,
-              -156.955811
+              -156.855804
             ],
             [
               14.6505909,
-              -156.967758
+              -156.867737
             ],
             [
               14.6632624,
-              -156.979507
+              -156.879486
             ],
             [
               14.6762524,
-              -156.991043
+              -156.891037
             ],
             [
               14.6895638,
-              -157.00238
+              -156.90239
             ],
             [
               14.7031841,
-              -157.013535
+              -156.913528
             ],
             [
               14.7171173,
-              -157.02446
+              -156.924454
             ],
             [
               14.7313604,
-              -157.035156
+              -156.93515
             ],
             [
               14.7459068,
-              -157.045639
+              -156.945618
             ],
             [
               14.7607555,
-              -157.055847
+              -156.955841
             ],
             [
               14.7759008,
-              -157.065811
+              -156.965805
             ],
             [
               14.7913408,
-              -157.075531
+              -156.975525
             ],
             [
               14.8070698,
-              -157.084976
+              -156.984985
             ],
             [
               14.8230829,
-              -157.094162
+              -156.994171
             ],
             [
               14.8393755,
-              -157.103058
+              -157.003052
             ],
             [
               14.8559465,
-              -157.111664
+              -157.011658
             ],
             [
               14.8727894,
-              -157.11998
+              -157.019989
             ],
             [
               14.8898964,
-              -157.128006
+              -157.028015
             ],
             [
               14.9072657,
-              -157.135727
+              -157.035721
             ],
             [
               14.9248915,
-              -157.143127
+              -157.043121
             ],
             [
               14.9427662,
-              -157.150192
+              -157.050186
             ],
             [
               14.960887,
-              -157.156921
+              -157.056931
             ],
             [
               14.9792461,
-              -157.163361
+              -157.063339
             ],
             [
               14.9978399,
-              -157.169434
+              -157.069397
             ],
             [
               15.0166626,
-              -157.17514
+              -157.075119
             ],
             [
               15.0357056,
-              -157.180496
+              -157.08049
             ],
             [
               15.0549622,
-              -157.185486
+              -157.08551
             ],
             [
               15.0744286,
-              -157.19014
+              -157.090118
             ],
             [
               15.0940962,
-              -157.194397
+              -157.094391
             ],
             [
               15.1139612,
-              -157.198257
+              -157.098251
             ],
             [
               15.1340132,
-              -157.201752
+              -157.101746
             ],
             [
               15.1542463,
-              -157.204849
+              -157.104858
             ],
             [
               15.1746521,
-              -157.20755
+              -157.107559
             ],
             [
               15.1952295,
-              -157.209854
+              -157.109848
             ],
             [
               15.2159643,
-              -157.211731
+              -157.11174
             ],
             [
               15.2368507,
-              -157.213211
+              -157.11322
             ],
             [
               15.2578821,
-              -157.214279
+              -157.114273
             ],
             [
               15.2790489,
-              -157.214905
+              -157.114914
             ],
             [
               15.3003454,
-              -157.215134
+              -157.115112
             ],
             [
               15.321764,
-              -157.214905
+              -157.114883
             ],
             [
               15.3432941,
-              -157.214218
+              -157.114227
             ],
             [
               15.3649273,
-              -157.213135
+              -157.113113
             ],
             [
               15.3866577,
-              -157.211578
+              -157.111588
             ],
             [
               15.4084778,
-              -157.209579
+              -157.109589
             ],
             [
               15.4303761,
-              -157.207138
+              -157.107117
             ],
             [
               15.452343,
-              -157.204239
+              -157.104218
             ],
             [
               15.4743719,
-              -157.200867
+              -157.100876
             ],
             [
               15.4964581,
-              -157.197037
+              -157.097031
             ],
             [
               15.5185833,
-              -157.192734
+              -157.092728
             ],
             [
               15.5407476,
-              -157.187958
+              -157.087952
             ],
             [
               15.5629358,
-              -157.182739
+              -157.082718
             ],
             [
               15.5851402,
-              -157.177002
+              -157.077011
             ],
             [
               15.6073523,
-              -157.170837
+              -157.070831
             ],
             [
               15.6295643,
-              -157.164139
+              -157.064148
             ],
             [
               15.6517658,
-              -157.157013
+              -157.056992
             ],
             [
               15.6739454,
-              -157.149368
+              -157.049362
             ],
             [
               15.6960945,
-              -157.141266
+              -157.041229
             ],
             [
               15.7182055,
-              -157.132645
+              -157.032654
             ],
             [
               15.7402668,
-              -157.123581
+              -157.023575
             ],
             [
               15.7619762,
-              -157.113693
+              -157.013672
             ],
             [
               15.78302,
-              -157.102722
+              -157.002747
             ],
             [
               15.8033667,
-              -157.090729
+              -156.990723
             ],
             [
               15.8229895,
-              -157.077698
+              -156.977707
             ],
             [
               15.8418579,
-              -157.06366
+              -156.963654
             ],
             [
               15.8599443,
-              -157.04863
+              -156.948624
             ],
             [
               15.8772259,
-              -157.032639
+              -156.932617
             ],
             [
               15.8936701,
-              -157.015701
+              -156.91571
             ],
             [
               15.9092522,
-              -156.997864
+              -156.897842
             ],
             [
               15.9242401,
-              -156.979431
+              -156.879456
             ],
             [
               15.9389153,
-              -156.960754
+              -156.860748
             ],
             [
               15.9532738,
-              -156.941803
+              -156.841782
             ],
             [
               15.967309,
-              -156.922577
+              -156.822571
             ],
             [
               15.9810162,
-              -156.903107
+              -156.803101
             ],
             [
               15.9943953,
-              -156.883362
+              -156.783386
             ],
             [
               16.0074387,
-              -156.863419
+              -156.763428
             ],
             [
               16.0201454,
-              -156.843231
+              -156.743225
             ],
             [
               16.0325089,
-              -156.822784
+              -156.722794
             ],
             [
               16.0445251,
-              -156.802139
+              -156.702118
             ],
             [
               16.0561924,
-              -156.781265
+              -156.681259
             ],
             [
               16.0675049,
-              -156.760193
+              -156.660172
             ],
             [
               16.0784607,
-              -156.738907
+              -156.638885
             ],
             [
               16.0890541,
-              -156.717422
+              -156.617401
             ],
             [
               16.0992851,
-              -156.695755
+              -156.595749
             ],
             [
               16.1091499,
-              -156.673889
+              -156.573883
             ],
             [
               16.1186428,
-              -156.65184
+              -156.551834
             ],
             [
               16.1277618,
-              -156.629639
+              -156.529633
             ],
             [
               16.1365051,
-              -156.607254
+              -156.507263
             ],
             [
               16.1448708,
-              -156.584747
+              -156.484726
             ],
             [
               16.1528549,
-              -156.562057
+              -156.462051
             ],
             [
               16.1604576,
-              -156.539246
+              -156.43924
             ],
             [
               16.1676712,
-              -156.516281
+              -156.41626
             ],
             [
               16.1744976,
-              -156.493179
+              -156.393158
             ],
             [
               16.1809311,
-              -156.469971
+              -156.369949
             ],
             [
               16.1869755,
-              -156.446625
+              -156.346634
             ],
             [
               16.192625,
-              -156.423187
+              -156.323196
             ],
             [
               16.1978779,
-              -156.399673
+              -156.299652
             ],
             [
               16.202734,
-              -156.376038
+              -156.276031
             ],
             [
               16.2071877,
-              -156.352341
+              -156.252304
             ],
             [
               16.2112427,
-              -156.328552
+              -156.228516
             ],
             [
               16.2148972,
-              -156.304672
+              -156.204651
             ],
             [
               16.2181473,
-              -156.280746
+              -156.180725
             ],
             [
               16.2209911,
-              -156.256775
+              -156.156738
             ],
             [
               16.2234344,
-              -156.232742
+              -156.132721
             ],
             [
               16.2254715,
-              -156.208664
+              -156.108643
             ],
             [
               16.2270985,
-              -156.18454
+              -156.084534
             ],
             [
               16.2283192,
-              -156.1604
+              -156.06041
             ],
             [
               16.2291336,
-              -156.136261
+              -156.03627
             ],
             [
               16.2295418,
-              -156.112106
+              -156.0121
             ],
             [
               16.2295418,
-              -156.087952
+              -155.98793
             ]
           ]
         },
@@ -11080,1447 +11036,1447 @@
           "ring": [
             [
               15.4826002,
-              -156.094513
+              -155.994492
             ],
             [
               15.4842644,
-              -156.083923
+              -155.983917
             ],
             [
               15.4857483,
-              -156.073257
+              -155.973251
             ],
             [
               15.487052,
-              -156.062531
+              -155.962524
             ],
             [
               15.4881706,
-              -156.051758
+              -155.951752
             ],
             [
               15.4891033,
-              -156.040939
+              -155.940918
             ],
             [
               15.489851,
-              -156.03006
+              -155.930038
             ],
             [
               15.4904137,
-              -156.019119
+              -155.919113
             ],
             [
               15.4907856,
-              -156.008148
+              -155.908157
             ],
             [
               15.4909668,
-              -155.997162
+              -155.897156
             ],
             [
               15.4909582,
-              -155.98613
+              -155.886124
             ],
             [
               15.490757,
-              -155.975067
+              -155.875061
             ],
             [
               15.4903612,
-              -155.963974
+              -155.863953
             ],
             [
               15.4897718,
-              -155.95285
+              -155.852844
             ],
             [
               15.488987,
-              -155.941711
+              -155.841705
             ],
             [
               15.4880066,
-              -155.930573
+              -155.830536
             ],
             [
               15.4868279,
-              -155.919373
+              -155.819397
             ],
             [
               15.4854546,
-              -155.908203
+              -155.808212
             ],
             [
               15.48388,
-              -155.897034
+              -155.797028
             ],
             [
               15.4821062,
-              -155.885849
+              -155.785843
             ],
             [
               15.480135,
-              -155.874664
+              -155.774673
             ],
             [
               15.4779625,
-              -155.86348
+              -155.763489
             ],
             [
               15.4755907,
-              -155.852341
+              -155.752335
             ],
             [
               15.4730186,
-              -155.841187
+              -155.74118
             ],
             [
               15.4702454,
-              -155.830048
+              -155.730042
             ],
             [
               15.4672718,
-              -155.818939
+              -155.718933
             ],
             [
               15.4640961,
-              -155.807861
+              -155.707855
             ],
             [
               15.4607201,
-              -155.796814
+              -155.696808
             ],
             [
               15.4571419,
-              -155.785782
+              -155.685791
             ],
             [
               15.4533625,
-              -155.774826
+              -155.674805
             ],
             [
               15.4493828,
-              -155.763885
+              -155.663864
             ],
             [
               15.4452038,
-              -155.752991
+              -155.652969
             ],
             [
               15.4408245,
-              -155.742126
+              -155.64212
             ],
             [
               15.436244,
-              -155.731339
+              -155.631317
             ],
             [
               15.4314623,
-              -155.720612
+              -155.62059
             ],
             [
               15.4264851,
-              -155.70993
+              -155.609924
             ],
             [
               15.4213066,
-              -155.69931
+              -155.599304
             ],
             [
               15.4159327,
-              -155.688782
+              -155.588791
             ],
             [
               15.4103632,
-              -155.678314
+              -155.578323
             ],
             [
               15.4045954,
-              -155.667938
+              -155.567917
             ],
             [
               15.398632,
-              -155.657639
+              -155.557617
             ],
             [
               15.3922596,
-              -155.647629
+              -155.547623
             ],
             [
               15.3852758,
-              -155.638199
+              -155.538193
             ],
             [
               15.377696,
-              -155.629333
+              -155.529327
             ],
             [
               15.3695374,
-              -155.621048
+              -155.521057
             ],
             [
               15.3608208,
-              -155.613403
+              -155.513412
             ],
             [
               15.3515606,
-              -155.606384
+              -155.506378
             ],
             [
               15.3417768,
-              -155.600006
+              -155.5
             ],
             [
               15.3314905,
-              -155.594299
+              -155.494308
             ],
             [
               15.3207197,
-              -155.589264
+              -155.489258
             ],
             [
               15.3096991,
-              -155.584702
+              -155.48468
             ],
             [
               15.2986536,
-              -155.580383
+              -155.480377
             ],
             [
               15.2875872,
-              -155.576309
+              -155.476288
             ],
             [
               15.2765045,
-              -155.572464
+              -155.472458
             ],
             [
               15.2654133,
-              -155.568878
+              -155.468857
             ],
             [
               15.2543144,
-              -155.565506
+              -155.4655
             ],
             [
               15.2432146,
-              -155.562393
+              -155.462387
             ],
             [
               15.2321186,
-              -155.559509
+              -155.459503
             ],
             [
               15.2210302,
-              -155.55687
+              -155.456848
             ],
             [
               15.2099543,
-              -155.554459
+              -155.454453
             ],
             [
               15.1988945,
-              -155.552292
+              -155.452286
             ],
             [
               15.1878595,
-              -155.550339
+              -155.450333
             ],
             [
               15.1768456,
-              -155.54863
+              -155.448624
             ],
             [
               15.1658669,
-              -155.54715
+              -155.447159
             ],
             [
               15.1549187,
-              -155.545883
+              -155.445877
             ],
             [
               15.1440125,
-              -155.544861
+              -155.44487
             ],
             [
               15.1331482,
-              -155.544067
+              -155.444061
             ],
             [
               15.1223316,
-              -155.543503
+              -155.443481
             ],
             [
               15.1115675,
-              -155.543137
+              -155.443115
             ],
             [
               15.1008587,
-              -155.542984
+              -155.442978
             ],
             [
               15.09021,
-              -155.54306
+              -155.443054
             ],
             [
               15.0796251,
-              -155.54335
+              -155.443344
             ],
             [
               15.0691071,
-              -155.543854
+              -155.443848
             ],
             [
               15.0586596,
-              -155.544571
+              -155.44455
             ],
             [
               15.0482903,
-              -155.545471
+              -155.44548
             ],
             [
               15.0380011,
-              -155.546616
+              -155.446594
             ],
             [
               15.0277929,
-              -155.547928
+              -155.447922
             ],
             [
               15.0176735,
-              -155.549469
+              -155.449432
             ],
             [
               15.0076427,
-              -155.551163
+              -155.451157
             ],
             [
               14.9977064,
-              -155.55307
+              -155.453064
             ],
             [
               14.9878654,
-              -155.555176
+              -155.45517
             ],
             [
               14.9781256,
-              -155.557465
+              -155.457458
             ],
             [
               14.9684906,
-              -155.559937
+              -155.459946
             ],
             [
               14.9589643,
-              -155.562607
+              -155.462585
             ],
             [
               14.9495459,
-              -155.565445
+              -155.465424
             ],
             [
               14.9402418,
-              -155.568451
+              -155.468445
             ],
             [
               14.9310541,
-              -155.571625
+              -155.471619
             ],
             [
               14.9219856,
-              -155.574966
+              -155.474976
             ],
             [
               14.9130383,
-              -155.578491
+              -155.478485
             ],
             [
               14.9042187,
-              -155.582169
+              -155.482162
             ],
             [
               14.895525,
-              -155.585999
+              -155.486008
             ],
             [
               14.886961,
-              -155.589996
+              -155.489975
             ],
             [
               14.8785295,
-              -155.594131
+              -155.494125
             ],
             [
               14.8702354,
-              -155.598419
+              -155.498428
             ],
             [
               14.8620777,
-              -155.602859
+              -155.502853
             ],
             [
               14.8540611,
-              -155.607422
+              -155.507401
             ],
             [
               14.8461876,
-              -155.612137
+              -155.512131
             ],
             [
               14.8384571,
-              -155.616974
+              -155.516968
             ],
             [
               14.8308754,
-              -155.621948
+              -155.521957
             ],
             [
               14.8234406,
-              -155.627029
+              -155.527039
             ],
             [
               14.8161554,
-              -155.632263
+              -155.532272
             ],
             [
               14.8090229,
-              -155.637604
+              -155.537598
             ],
             [
               14.8020458,
-              -155.643036
+              -155.54303
             ],
             [
               14.7952223,
-              -155.648621
+              -155.548599
             ],
             [
               14.7885571,
-              -155.654266
+              -155.55426
             ],
             [
               14.7820482,
-              -155.660049
+              -155.560028
             ],
             [
               14.7757025,
-              -155.665909
+              -155.565887
             ],
             [
               14.7695179,
-              -155.671844
+              -155.571838
             ],
             [
               14.7634954,
-              -155.677902
+              -155.577911
             ],
             [
               14.7576361,
-              -155.684036
+              -155.58403
             ],
             [
               14.7519426,
-              -155.690247
+              -155.59024
             ],
             [
               14.7464142,
-              -155.696533
+              -155.596527
             ],
             [
               14.7410536,
-              -155.702911
+              -155.60289
             ],
             [
               14.7358589,
-              -155.709335
+              -155.609314
             ],
             [
               14.7308331,
-              -155.715866
+              -155.615814
             ],
             [
               14.7259741,
-              -155.722397
+              -155.622391
             ],
             [
               14.7212868,
-              -155.729019
+              -155.629013
             ],
             [
               14.7167683,
-              -155.735687
+              -155.635681
             ],
             [
               14.7124176,
-              -155.742401
+              -155.642395
             ],
             [
               14.7082386,
-              -155.749176
+              -155.64917
             ],
             [
               14.7042284,
-              -155.755981
+              -155.655975
             ],
             [
               14.7003899,
-              -155.762817
+              -155.662811
             ],
             [
               14.696723,
-              -155.769699
+              -155.669693
             ],
             [
               14.6932268,
-              -155.776596
+              -155.67659
             ],
             [
               14.6899004,
-              -155.783524
+              -155.683533
             ],
             [
               14.6867437,
-              -155.790466
+              -155.690475
             ],
             [
               14.6837568,
-              -155.797424
+              -155.697433
             ],
             [
               14.6809387,
-              -155.804428
+              -155.704407
             ],
             [
               14.6782885,
-              -155.811401
+              -155.711395
             ],
             [
               14.675808,
-              -155.81839
+              -155.718384
             ],
             [
               14.6734962,
-              -155.825378
+              -155.725372
             ],
             [
               14.6713495,
-              -155.832382
+              -155.732361
             ],
             [
               14.6693678,
-              -155.839355
+              -155.739334
             ],
             [
               14.6675529,
-              -155.846313
+              -155.746307
             ],
             [
               14.6658983,
-              -155.853271
+              -155.75325
             ],
             [
               14.6644096,
-              -155.860214
+              -155.760193
             ],
             [
               14.663084,
-              -155.867126
+              -155.76712
             ],
             [
               14.6619177,
-              -155.874023
+              -155.774017
             ],
             [
               14.6609106,
-              -155.880875
+              -155.780884
             ],
             [
               14.6600628,
-              -155.887695
+              -155.787674
             ],
             [
               14.6593695,
-              -155.894485
+              -155.794479
             ],
             [
               14.6588326,
-              -155.90123
+              -155.801208
             ],
             [
               14.6584492,
-              -155.907928
+              -155.807922
             ],
             [
               14.6582165,
-              -155.914597
+              -155.81459
             ],
             [
               14.6581335,
-              -155.921204
+              -155.821198
             ],
             [
               14.6581993,
-              -155.92775
+              -155.827728
             ],
             [
               14.6584129,
-              -155.93425
+              -155.834229
             ],
             [
               14.6587696,
-              -155.940674
+              -155.840652
             ],
             [
               14.6592693,
-              -155.947037
+              -155.847031
             ],
             [
               14.6599102,
-              -155.953339
+              -155.853333
             ],
             [
               14.6606884,
-              -155.959579
+              -155.859558
             ],
             [
               14.6616039,
-              -155.965744
+              -155.865723
             ],
             [
               14.662652,
-              -155.971817
+              -155.871811
             ],
             [
               14.6638317,
-              -155.977829
+              -155.877808
             ],
             [
               14.6651411,
-              -155.983734
+              -155.883728
             ],
             [
               14.6665764,
-              -155.989578
+              -155.889572
             ],
             [
               14.6681404,
-              -155.995316
+              -155.895325
             ],
             [
               14.6698217,
-              -156.000977
+              -155.90097
             ],
             [
               14.6716223,
-              -156.006546
+              -155.906555
             ],
             [
               14.673542,
-              -156.012024
+              -155.912018
             ],
             [
               14.6755724,
-              -156.017395
+              -155.917404
             ],
             [
               14.6777172,
-              -156.022675
+              -155.922668
             ],
             [
               14.6799707,
-              -156.027847
+              -155.927811
             ],
             [
               14.6823273,
-              -156.032898
+              -155.932892
             ],
             [
               14.6847878,
-              -156.037872
+              -155.937836
             ],
             [
               14.6873474,
-              -156.042725
+              -155.942688
             ],
             [
               14.6900063,
-              -156.04744
+              -155.947418
             ],
             [
               14.6927557,
-              -156.052063
+              -155.952042
             ],
             [
               14.6955976,
-              -156.05658
+              -155.956573
             ],
             [
               14.6985283,
-              -156.060959
+              -155.960968
             ],
             [
               14.7015429,
-              -156.065231
+              -155.965225
             ],
             [
               14.7046394,
-              -156.069397
+              -155.969376
             ],
             [
               14.7078142,
-              -156.07341
+              -155.973389
             ],
             [
               14.7110662,
-              -156.077316
+              -155.977295
             ],
             [
               14.7143879,
-              -156.081085
+              -155.981079
             ],
             [
               14.7177782,
-              -156.084732
+              -155.984741
             ],
             [
               14.7212334,
-              -156.088272
+              -155.988251
             ],
             [
               14.7247534,
-              -156.091644
+              -155.991653
             ],
             [
               14.7283306,
-              -156.09491
+              -155.994919
             ],
             [
               14.731966,
-              -156.098053
+              -155.998032
             ],
             [
               14.7356501,
-              -156.101059
+              -156.001038
             ],
             [
               14.7393847,
-              -156.103928
+              -156.003922
             ],
             [
               14.743166,
-              -156.106644
+              -156.006653
             ],
             [
               14.7469873,
-              -156.109253
+              -156.009247
             ],
             [
               14.7508478,
-              -156.11171
+              -156.011688
             ],
             [
               14.7547455,
-              -156.114044
+              -156.014023
             ],
             [
               14.7586718,
-              -156.116226
+              -156.016205
             ],
             [
               14.7626305,
-              -156.118271
+              -156.01825
             ],
             [
               14.7666101,
-              -156.120178
+              -156.020172
             ],
             [
               14.7706127,
-              -156.121964
+              -156.021927
             ],
             [
               14.7746344,
-              -156.123596
+              -156.023575
             ],
             [
               14.7786713,
-              -156.125092
+              -156.025085
             ],
             [
               14.7827196,
-              -156.12645
+              -156.026443
             ],
             [
               14.7867756,
-              -156.127655
+              -156.027664
             ],
             [
               14.7908344,
-              -156.128754
+              -156.028748
             ],
             [
               14.7948952,
-              -156.1297
+              -156.029694
             ],
             [
               14.798954,
-              -156.130508
+              -156.030502
             ],
             [
               14.8030052,
-              -156.13118
+              -156.031189
             ],
             [
               14.8070478,
-              -156.131714
+              -156.031708
             ],
             [
               14.811079,
-              -156.132111
+              -156.03212
             ],
             [
               14.815094,
-              -156.132385
+              -156.032379
             ],
             [
               14.819087,
-              -156.132507
+              -156.032501
             ],
             [
               14.8230629,
-              -156.132507
+              -156.032501
             ],
             [
               14.8270073,
-              -156.132355
+              -156.032364
             ],
             [
               14.830924,
-              -156.13208
+              -156.032074
             ],
             [
               14.8348103,
-              -156.131668
+              -156.031677
             ],
             [
               14.8386602,
-              -156.131165
+              -156.031158
             ],
             [
               14.8424721,
-              -156.130493
+              -156.030487
             ],
             [
               14.846241,
-              -156.1297
+              -156.029709
             ],
             [
               14.8499622,
-              -156.128799
+              -156.028793
             ],
             [
               14.8536377,
-              -156.127747
+              -156.02774
             ],
             [
               14.8572626,
-              -156.126602
+              -156.026566
             ],
             [
               14.8608332,
-              -156.125305
+              -156.025314
             ],
             [
               14.8643456,
-              -156.123917
+              -156.02388
             ],
             [
               14.8677979,
-              -156.122375
+              -156.022385
             ],
             [
               14.8711872,
-              -156.120728
+              -156.020737
             ],
             [
               14.8745079,
-              -156.118988
+              -156.018982
             ],
             [
               14.8777618,
-              -156.117126
+              -156.01712
             ],
             [
               14.8809443,
-              -156.115128
+              -156.015137
             ],
             [
               14.8840523,
-              -156.113037
+              -156.013016
             ],
             [
               14.887085,
-              -156.110855
+              -156.010818
             ],
             [
               14.8896751,
-              -156.108932
+              -156.008911
             ],
             [
               14.8914833,
-              -156.107666
+              -156.007675
             ],
             [
               14.8925304,
-              -156.107117
+              -156.007126
             ],
             [
               14.8928461,
-              -156.107315
+              -156.007309
             ],
             [
               14.8924494,
-              -156.108231
+              -156.00824
             ],
             [
               14.8913708,
-              -156.109985
+              -156.009979
             ],
             [
               14.889637,
-              -156.112488
+              -156.012512
             ],
             [
               14.88727,
-              -156.115845
+              -156.015854
             ],
             [
               14.8842993,
-              -156.120056
+              -156.020065
             ],
             [
               14.881115,
-              -156.124771
+              -156.024765
             ],
             [
               14.878087,
-              -156.129593
+              -156.029602
             ],
             [
               14.8752155,
-              -156.134521
+              -156.034531
             ],
             [
               14.8725061,
-              -156.139587
+              -156.039581
             ],
             [
               14.8699598,
-              -156.14473
+              -156.044739
             ],
             [
               14.8675804,
-              -156.149979
+              -156.049988
             ],
             [
               14.8653679,
-              -156.155334
+              -156.055344
             ],
             [
               14.8633289,
-              -156.160812
+              -156.060806
             ],
             [
               14.8614635,
-              -156.166336
+              -156.066345
             ],
             [
               14.8597755,
-              -156.171951
+              -156.07196
             ],
             [
               14.8582649,
-              -156.177673
+              -156.077652
             ],
             [
               14.8569355,
-              -156.183426
+              -156.083435
             ],
             [
               14.8557892,
-              -156.189285
+              -156.089294
             ],
             [
               14.8548279,
-              -156.195206
+              -156.0952
             ],
             [
               14.8540516,
-              -156.201187
+              -156.101181
             ],
             [
               14.853466,
-              -156.207214
+              -156.107224
             ],
             [
               14.8530693,
-              -156.213287
+              -156.113297
             ],
             [
               14.8528633,
-              -156.219406
+              -156.119415
             ],
             [
               14.8528509,
-              -156.225586
+              -156.125565
             ],
             [
               14.8530321,
-              -156.231781
+              -156.131775
             ],
             [
               14.8534107,
-              -156.238007
+              -156.138
             ],
             [
               14.8539839,
-              -156.244263
+              -156.144257
             ],
             [
               14.8547554,
-              -156.250534
+              -156.150558
             ],
             [
               14.8557234,
-              -156.256836
+              -156.156815
             ],
             [
               14.8568897,
-              -156.263123
+              -156.163116
             ],
             [
               14.8582563,
-              -156.269424
+              -156.169403
             ],
             [
               14.8598213,
-              -156.275726
+              -156.17572
             ],
             [
               14.8615875,
-              -156.282028
+              -156.182022
             ],
             [
               14.8635559,
-              -156.2883
+              -156.188293
             ],
             [
               14.8657227,
-              -156.294571
+              -156.194565
             ],
             [
               14.8680897,
-              -156.300827
+              -156.200806
             ],
             [
               14.870656,
-              -156.307037
+              -156.207031
             ],
             [
               14.8734245,
-              -156.313202
+              -156.213196
             ],
             [
               14.8763924,
-              -156.319351
+              -156.219345
             ],
             [
               14.8795576,
-              -156.325439
+              -156.225449
             ],
             [
               14.8829212,
-              -156.331497
+              -156.231506
             ],
             [
               14.8864851,
-              -156.337494
+              -156.237488
             ],
             [
               14.8902454,
-              -156.343445
+              -156.243439
             ],
             [
               14.8942022,
-              -156.349319
+              -156.249313
             ],
             [
               14.8983545,
-              -156.355118
+              -156.255112
             ],
             [
               14.9026985,
-              -156.36084
+              -156.260834
             ],
             [
               14.9072351,
-              -156.366486
+              -156.266479
             ],
             [
               14.9119616,
-              -156.37204
+              -156.272034
             ],
             [
               14.9168806,
-              -156.377502
+              -156.277512
             ],
             [
               14.9219856,
-              -156.382889
+              -156.282883
             ],
             [
               14.9272766,
-              -156.388153
+              -156.288162
             ],
             [
               14.9327507,
-              -156.393341
+              -156.29332
             ],
             [
               14.9384089,
-              -156.398376
+              -156.29837
             ],
             [
               14.9442482,
-              -156.40332
+              -156.303299
             ],
             [
               14.950263,
-              -156.408127
+              -156.308121
             ],
             [
               14.9564533,
-              -156.412811
+              -156.312805
             ],
             [
               14.9628162,
-              -156.417389
+              -156.317368
             ],
             [
               14.9693499,
-              -156.421814
+              -156.321777
             ],
             [
               14.9760542,
-              -156.426086
+              -156.326065
             ],
             [
               14.9829206,
-              -156.430222
+              -156.3302
             ],
             [
               14.9899492,
-              -156.434204
+              -156.334183
             ],
             [
               14.997138,
-              -156.438034
+              -156.338013
             ],
             [
               15.0044813,
-              -156.441711
+              -156.34169
             ],
             [
               15.0119762,
-              -156.445206
+              -156.3452
             ],
             [
               15.0196228,
-              -156.448547
+              -156.348541
             ],
             [
               15.0274153,
-              -156.451706
+              -156.3517
             ],
             [
               15.0353498,
-              -156.454697
+              -156.354675
             ],
             [
               15.0434227,
-              -156.457504
+              -156.357498
             ],
             [
               15.051631,
-              -156.460144
+              -156.360123
             ],
             [
               15.0599709,
-              -156.46257
+              -156.362549
             ],
             [
               15.0684376,
-              -156.464813
+              -156.364792
             ],
             [
               15.0770283,
-              -156.466858
+              -156.366837
             ],
             [
               15.0857372,
-              -156.468689
+              -156.368698
             ],
             [
               15.0945625,
-              -156.470322
+              -156.370316
             ],
             [
               15.1034985,
-              -156.471756
+              -156.371765
             ],
             [
               15.1125422,
-              -156.472977
+              -156.372986
             ],
             [
               15.121685,
-              -156.473999
+              -156.373978
             ],
             [
               15.130929,
-              -156.474777
+              -156.374771
             ],
             [
               15.1402636,
-              -156.475327
+              -156.375336
             ],
             [
               15.1496849,
-              -156.475662
+              -156.375671
             ],
             [
               15.1591949,
-              -156.475784
+              -156.375793
             ],
             [
               15.1687794,
-              -156.475677
+              -156.375671
             ],
             [
               15.1784401,
-              -156.475296
+              -156.375305
             ],
             [
               15.1881676,
-              -156.474716
+              -156.37471
             ],
             [
               15.1979609,
-              -156.473907
+              -156.373886
             ],
             [
               15.2078133,
-              -156.472839
+              -156.372833
             ],
             [
               15.2175713,
-              -156.471359
+              -156.371368
             ],
             [
               15.2270775,
-              -156.469376
+              -156.36937
             ],
             [
               15.2363176,
-              -156.466843
+              -156.366852
             ],
             [
               15.2452765,
-              -156.463806
+              -156.3638
             ],
             [
               15.2539406,
-              -156.460251
+              -156.360229
             ],
             [
               15.2622919,
-              -156.456177
+              -156.356171
             ],
             [
               15.2703199,
-              -156.451645
+              -156.351624
             ],
             [
               15.2780085,
-              -156.446625
+              -156.346603
             ],
             [
               15.2853441,
-              -156.441132
+              -156.34111
             ],
             [
               15.2924614,
-              -156.435333
+              -156.335312
             ],
             [
               15.2995014,
-              -156.429382
+              -156.329361
             ],
             [
               15.3064575,
-              -156.423279
+              -156.323273
             ],
             [
               15.3133307,
-              -156.417023
+              -156.317001
             ],
             [
               15.320116,
-              -156.410599
+              -156.310608
             ],
             [
               15.3268089,
-              -156.404037
+              -156.304031
             ],
             [
               15.3334112,
-              -156.397324
+              -156.297333
             ],
             [
               15.3399153,
-              -156.390472
+              -156.290466
             ],
             [
               15.3463202,
-              -156.383484
+              -156.283463
             ],
             [
               15.3526239,
-              -156.376328
+              -156.276321
             ],
             [
               15.3588209,
-              -156.369049
+              -156.269043
             ],
             [
               15.3649092,
-              -156.361618
+              -156.261612
             ],
             [
               15.3708868,
-              -156.354065
+              -156.254044
             ],
             [
               15.3767509,
-              -156.346359
+              -156.246353
             ],
             [
               15.3825006,
-              -156.338531
+              -156.23851
             ],
             [
               15.3881273,
-              -156.330536
+              -156.23053
             ],
             [
               15.3936348,
-              -156.322449
+              -156.222443
             ],
             [
               15.3990135,
-              -156.314209
+              -156.214188
             ],
             [
               15.4042702,
-              -156.305847
+              -156.205826
             ],
             [
               15.4093933,
-              -156.297363
+              -156.197357
             ],
             [
               15.4143848,
-              -156.288757
+              -156.188751
             ],
             [
               15.41924,
-              -156.280029
+              -156.180008
             ],
             [
               15.4239588,
-              -156.271179
+              -156.171173
             ],
             [
               15.4285345,
-              -156.262207
+              -156.162216
             ],
             [
               15.4329681,
-              -156.253128
+              -156.153137
             ],
             [
               15.4372578,
-              -156.243942
+              -156.143951
             ],
             [
               15.4413977,
-              -156.23465
+              -156.134644
             ],
             [
               15.4453888,
-              -156.22525
+              -156.125229
             ],
             [
               15.4492254,
-              -156.215729
+              -156.115723
             ],
             [
               15.4529095,
-              -156.206116
+              -156.106125
             ],
             [
               15.4564362,
-              -156.196381
+              -156.09639
             ],
             [
               15.4598017,
-              -156.186584
+              -156.086594
             ],
             [
               15.4630079,
-              -156.176697
+              -156.076691
             ],
             [
               15.4660492,
-              -156.166687
+              -156.066696
             ],
             [
               15.4689264,
-              -156.156631
+              -156.05661
             ],
             [
               15.4716358,
-              -156.146454
+              -156.046463
             ],
             [
               15.4741755,
-              -156.13623
+              -156.036224
             ],
             [
               15.4765425,
-              -156.125916
+              -156.025909
             ],
             [
               15.4787378,
-              -156.115509
+              -156.015503
             ],
             [
               15.4807568,
-              -156.105042
+              -156.005051
             ],
             [
               15.4826002,
-              -156.094513
+              -155.994492
             ]
           ]
         }
@@ -12529,60 +12485,60 @@
   ],
   "outlookFormation48h": null,
   "outlookFormation7day": 40,
-  "outlookText": "000\nACPN50 PHFO 241755\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Thu Sep 24 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nPolo, located about 100 miles offshore of southwestern Mexico, on\nHurricane Odalys, located well west-southwest of the southern tip\nof Baja California, and on Tropical Storm Nolo, located a few\nhundred miles south of the Big Island of Hawaii.\n\nWell East-Southeast of the Hawaiian Islands:\nAn area of low pressure could form about 1000 miles east-southeast\nof the Hawaiian Islands over the weekend. Environmental conditions\ncould support some gradual development of this system, and a\ntropical depression could form during the early middle portion of\nnext week. The system is forecast to move generally northeastward,\nremaining well east-southeast of the Hawaiian Islands.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...medium...40 percent.\n\n$$\nForecaster Pierce/Brown\nNNNN",
+  "outlookText": "000\nACPN50 PHFO 242306\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Thu Sep 24 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nPolo, located about 150 miles offshore of southwestern Mexico, on\nHurricane Odalys, located well west-southwest of the southern tip of\nBaja California, and on Tropical Storm Nolo, located a few hundred\nmiles south of the Big Island of Hawaii.\n\nWell East-Southeast of the Hawaiian Islands:\nAn area of low pressure could form about 1000 miles east-southeast\nof the Hawaiian Islands over the weekend. Environmental conditions\ncould support some gradual development of this system, and a\ntropical depression could form late this weekend or early next week.\nThe system is forecast to move generally northeastward, remaining\nwell east-southeast of the Hawaiian Islands.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...medium...40 percent.\n\n$$\nForecaster Pierce/Evans/Pasch\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.199Z",
+      "fetchedAt": "2026-09-25T00:56:07.064Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.234Z",
+      "fetchedAt": "2026-09-25T00:56:07.091Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.235Z",
+      "fetchedAt": "2026-09-25T00:56:07.093Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.236Z",
+      "fetchedAt": "2026-09-25T00:56:07.094Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.238Z",
+      "fetchedAt": "2026-09-25T00:56:07.095Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.239Z",
+      "fetchedAt": "2026-09-25T00:56:07.096Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.241Z",
+      "fetchedAt": "2026-09-25T00:56:07.097Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.242Z",
+      "fetchedAt": "2026-09-25T00:56:07.098Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-09-24T22:42:22.244Z",
+      "fetchedAt": "2026-09-25T00:56:07.099Z",
       "ageSeconds": 0
     }
   ],
@@ -12665,110 +12621,110 @@
     "Oahu": [
       {
         "date": "2026-09-24",
-        "weatherCode": 55,
-        "tempMaxC": 26.2,
+        "weatherCode": 53,
+        "tempMaxC": 26.6,
         "tempMinC": 21,
-        "precipMm": 6.4,
-        "windMaxKmh": 23.7,
-        "windGustMaxKmh": 59.4,
-        "waveHeightMaxM": 1.58,
-        "wavePeriodMaxS": 8.95,
-        "cloudCoverPct": 91
+        "precipMm": 5,
+        "windMaxKmh": 23.9,
+        "windGustMaxKmh": 59.8,
+        "waveHeightMaxM": 1.56,
+        "wavePeriodMaxS": 9.1,
+        "cloudCoverPct": 79
       },
       {
         "date": "2026-09-25",
         "weatherCode": 55,
-        "tempMaxC": 24.6,
-        "tempMinC": 21.1,
-        "precipMm": 15,
-        "windMaxKmh": 26.1,
-        "windGustMaxKmh": 66.6,
-        "waveHeightMaxM": 2.1,
-        "wavePeriodMaxS": 8.05,
-        "cloudCoverPct": 94
+        "tempMaxC": 25.8,
+        "tempMinC": 21.4,
+        "precipMm": 9.7,
+        "windMaxKmh": 28.1,
+        "windGustMaxKmh": 69.1,
+        "waveHeightMaxM": 2.04,
+        "wavePeriodMaxS": 7.95,
+        "cloudCoverPct": 99
       },
       {
         "date": "2026-09-26",
         "weatherCode": 80,
-        "tempMaxC": 24.4,
-        "tempMinC": 21.7,
-        "precipMm": 12.8,
-        "windMaxKmh": 27.8,
-        "windGustMaxKmh": 72.7,
-        "waveHeightMaxM": 2.92,
-        "wavePeriodMaxS": 9.35,
-        "cloudCoverPct": 85
+        "tempMaxC": 24.5,
+        "tempMinC": 21.3,
+        "precipMm": 13.9,
+        "windMaxKmh": 27.5,
+        "windGustMaxKmh": 67.7,
+        "waveHeightMaxM": 2.54,
+        "wavePeriodMaxS": 9.1,
+        "cloudCoverPct": 96
       },
       {
         "date": "2026-09-27",
-        "weatherCode": 51,
-        "tempMaxC": 26.4,
-        "tempMinC": 22.1,
-        "precipMm": 1.8,
-        "windMaxKmh": 30.5,
-        "windGustMaxKmh": 76.3,
-        "waveHeightMaxM": 2.9,
-        "wavePeriodMaxS": 9.05,
-        "cloudCoverPct": 53
+        "weatherCode": 61,
+        "tempMaxC": 25.9,
+        "tempMinC": 21.3,
+        "precipMm": 6.9,
+        "windMaxKmh": 31.3,
+        "windGustMaxKmh": 77,
+        "waveHeightMaxM": 2.58,
+        "wavePeriodMaxS": 8.9,
+        "cloudCoverPct": 66
       },
       {
         "date": "2026-09-28",
-        "weatherCode": 3,
+        "weatherCode": 2,
         "tempMaxC": 27.1,
-        "tempMinC": 22.2,
+        "tempMinC": 22.3,
         "precipMm": 0,
         "windMaxKmh": 23.9,
-        "windGustMaxKmh": 61.6,
-        "waveHeightMaxM": 2.32,
-        "wavePeriodMaxS": 8.3,
-        "cloudCoverPct": 38
+        "windGustMaxKmh": 62.6,
+        "waveHeightMaxM": 2.26,
+        "wavePeriodMaxS": 9,
+        "cloudCoverPct": 28
       },
       {
         "date": "2026-09-29",
         "weatherCode": 51,
-        "tempMaxC": 26.9,
-        "tempMinC": 22.6,
+        "tempMaxC": 27.1,
+        "tempMinC": 22,
         "precipMm": 0.3,
-        "windMaxKmh": 18.4,
-        "windGustMaxKmh": 49.3,
-        "waveHeightMaxM": 1.74,
-        "wavePeriodMaxS": 8.95,
-        "cloudCoverPct": 81
+        "windMaxKmh": 18.8,
+        "windGustMaxKmh": 50.4,
+        "waveHeightMaxM": 2.32,
+        "wavePeriodMaxS": 10.25,
+        "cloudCoverPct": 32
       },
       {
         "date": "2026-09-30",
         "weatherCode": 95,
-        "tempMaxC": 23.7,
+        "tempMaxC": 23.8,
         "tempMinC": 21.8,
-        "precipMm": 35.1,
+        "precipMm": 32.1,
         "windMaxKmh": 16.4,
         "windGustMaxKmh": 55.1,
-        "waveHeightMaxM": 1.28,
-        "wavePeriodMaxS": 10,
-        "cloudCoverPct": 99
+        "waveHeightMaxM": 2.9,
+        "wavePeriodMaxS": 10.15,
+        "cloudCoverPct": 95
       }
     ],
     "BigIsland": [
       {
         "date": "2026-09-24",
-        "weatherCode": 61,
-        "tempMaxC": 12.5,
+        "weatherCode": 53,
+        "tempMaxC": 14,
         "tempMinC": 10.3,
-        "precipMm": 5.4,
-        "windMaxKmh": 17.2,
-        "windGustMaxKmh": 36,
+        "precipMm": 3.2,
+        "windMaxKmh": 20.2,
+        "windGustMaxKmh": 38.9,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
         "cloudCoverPct": 100
       },
       {
         "date": "2026-09-25",
-        "weatherCode": 81,
-        "tempMaxC": 11.6,
-        "tempMinC": 10,
-        "precipMm": 50.5,
-        "windMaxKmh": 23.6,
-        "windGustMaxKmh": 56.9,
+        "weatherCode": 82,
+        "tempMaxC": 12.7,
+        "tempMinC": 9.8,
+        "precipMm": 89.6,
+        "windMaxKmh": 31.1,
+        "windGustMaxKmh": 65.5,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
         "cloudCoverPct": 100
@@ -12776,11 +12732,11 @@
       {
         "date": "2026-09-26",
         "weatherCode": 82,
-        "tempMaxC": 11.1,
-        "tempMinC": 9.8,
-        "precipMm": 222,
-        "windMaxKmh": 36.2,
-        "windGustMaxKmh": 69.5,
+        "tempMaxC": 11.6,
+        "tempMinC": 10.2,
+        "precipMm": 124.4,
+        "windMaxKmh": 30.1,
+        "windGustMaxKmh": 61.6,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
         "cloudCoverPct": 100
@@ -12788,136 +12744,136 @@
       {
         "date": "2026-09-27",
         "weatherCode": 81,
-        "tempMaxC": 10.7,
-        "tempMinC": 9.5,
-        "precipMm": 56.5,
-        "windMaxKmh": 24.3,
-        "windGustMaxKmh": 51.8,
+        "tempMaxC": 10.8,
+        "tempMinC": 9.6,
+        "precipMm": 41.8,
+        "windMaxKmh": 22.6,
+        "windGustMaxKmh": 47.2,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
         "cloudCoverPct": 100
       },
       {
         "date": "2026-09-28",
-        "weatherCode": 51,
-        "tempMaxC": 14.7,
-        "tempMinC": 9.1,
-        "precipMm": 1.5,
-        "windMaxKmh": 15.3,
-        "windGustMaxKmh": 33.8,
+        "weatherCode": 53,
+        "tempMaxC": 14,
+        "tempMinC": 9.9,
+        "precipMm": 3.8,
+        "windMaxKmh": 17.6,
+        "windGustMaxKmh": 37.4,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
-        "cloudCoverPct": 77
+        "cloudCoverPct": 81
       },
       {
         "date": "2026-09-29",
-        "weatherCode": 80,
-        "tempMaxC": 15.5,
-        "tempMinC": 9.1,
-        "precipMm": 10.2,
-        "windMaxKmh": 13.5,
-        "windGustMaxKmh": 31,
+        "weatherCode": 81,
+        "tempMaxC": 14.4,
+        "tempMinC": 10,
+        "precipMm": 24.6,
+        "windMaxKmh": 11.1,
+        "windGustMaxKmh": 28.1,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
-        "cloudCoverPct": 79
+        "cloudCoverPct": 73
       },
       {
         "date": "2026-09-30",
         "weatherCode": 81,
         "tempMaxC": 15.9,
-        "tempMinC": 10.5,
+        "tempMinC": 9.2,
         "precipMm": 31.5,
         "windMaxKmh": 7.1,
         "windGustMaxKmh": 24.5,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
-        "cloudCoverPct": 71
+        "cloudCoverPct": 82
       }
     ],
     "Maui": [
       {
         "date": "2026-09-24",
         "weatherCode": 51,
-        "tempMaxC": 24.3,
+        "tempMaxC": 24.1,
         "tempMinC": 21.4,
-        "precipMm": 1.6,
-        "windMaxKmh": 21,
-        "windGustMaxKmh": 41,
+        "precipMm": 1.8,
+        "windMaxKmh": 23.2,
+        "windGustMaxKmh": 47.5,
         "waveHeightMaxM": 0.72,
-        "wavePeriodMaxS": 10.25,
+        "wavePeriodMaxS": 10.35,
         "cloudCoverPct": 96
       },
       {
         "date": "2026-09-25",
         "weatherCode": 61,
-        "tempMaxC": 23.8,
-        "tempMinC": 20.9,
-        "precipMm": 9.1,
-        "windMaxKmh": 30.5,
-        "windGustMaxKmh": 59,
-        "waveHeightMaxM": 1.16,
-        "wavePeriodMaxS": 10,
-        "cloudCoverPct": 99
+        "tempMaxC": 24.8,
+        "tempMinC": 21.2,
+        "precipMm": 8.1,
+        "windMaxKmh": 27.9,
+        "windGustMaxKmh": 54.4,
+        "waveHeightMaxM": 1.1,
+        "wavePeriodMaxS": 10.25,
+        "cloudCoverPct": 100
       },
       {
         "date": "2026-09-26",
         "weatherCode": 61,
-        "tempMaxC": 23.3,
-        "tempMinC": 20.4,
-        "precipMm": 25.4,
-        "windMaxKmh": 30.7,
-        "windGustMaxKmh": 60.8,
-        "waveHeightMaxM": 1.56,
-        "wavePeriodMaxS": 10.4,
+        "tempMaxC": 22.7,
+        "tempMinC": 20.5,
+        "precipMm": 29.9,
+        "windMaxKmh": 30.9,
+        "windGustMaxKmh": 63,
+        "waveHeightMaxM": 1.28,
+        "wavePeriodMaxS": 10.45,
         "cloudCoverPct": 100
       },
       {
         "date": "2026-09-27",
-        "weatherCode": 55,
-        "tempMaxC": 24.5,
-        "tempMinC": 20.1,
-        "precipMm": 9.3,
-        "windMaxKmh": 28,
-        "windGustMaxKmh": 56.2,
-        "waveHeightMaxM": 1.64,
-        "wavePeriodMaxS": 9.95,
-        "cloudCoverPct": 86
+        "weatherCode": 61,
+        "tempMaxC": 24.9,
+        "tempMinC": 20,
+        "precipMm": 8.8,
+        "windMaxKmh": 26.6,
+        "windGustMaxKmh": 55.8,
+        "waveHeightMaxM": 1.46,
+        "wavePeriodMaxS": 10.4,
+        "cloudCoverPct": 82
       },
       {
         "date": "2026-09-28",
-        "weatherCode": 2,
-        "tempMaxC": 27.9,
-        "tempMinC": 19,
+        "weatherCode": 3,
+        "tempMaxC": 27.8,
+        "tempMinC": 18.9,
         "precipMm": 0,
-        "windMaxKmh": 11.1,
-        "windGustMaxKmh": 36,
-        "waveHeightMaxM": 1.28,
-        "wavePeriodMaxS": 9.1,
-        "cloudCoverPct": 25
+        "windMaxKmh": 14.7,
+        "windGustMaxKmh": 34.2,
+        "waveHeightMaxM": 1.42,
+        "wavePeriodMaxS": 10,
+        "cloudCoverPct": 22
       },
       {
         "date": "2026-09-29",
-        "weatherCode": 53,
-        "tempMaxC": 26.7,
-        "tempMinC": 18.8,
-        "precipMm": 4.5,
-        "windMaxKmh": 10.7,
-        "windGustMaxKmh": 30.2,
-        "waveHeightMaxM": 0.92,
-        "wavePeriodMaxS": 10,
-        "cloudCoverPct": 53
+        "weatherCode": 1,
+        "tempMaxC": 26.8,
+        "tempMinC": 18.1,
+        "precipMm": 0,
+        "windMaxKmh": 9.7,
+        "windGustMaxKmh": 28.4,
+        "waveHeightMaxM": 1.24,
+        "wavePeriodMaxS": 10.6,
+        "cloudCoverPct": 16
       },
       {
         "date": "2026-09-30",
         "weatherCode": 95,
         "tempMaxC": 24.6,
-        "tempMinC": 20.9,
-        "precipMm": 11.4,
+        "tempMinC": 19,
+        "precipMm": 10.5,
         "windMaxKmh": 10.9,
         "windGustMaxKmh": 33.1,
-        "waveHeightMaxM": 0.78,
-        "wavePeriodMaxS": 11.2,
-        "cloudCoverPct": 60
+        "waveHeightMaxM": 1.46,
+        "wavePeriodMaxS": 10.6,
+        "cloudCoverPct": 50
       }
     ]
   },
@@ -12925,28 +12881,34 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.5,
-      "peakPeriodSec": 11,
-      "waterTempC": 27,
-      "observedAt": "2026-09-24T21:56:00Z"
+      "seasM": 1.4,
+      "peakPeriodSec": 10,
+      "waterTempC": 27.1,
+      "observedAt": "2026-09-25T00:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.5,
+      "seasM": 2.6,
       "peakPeriodSec": 9,
       "waterTempC": 27.4,
-      "observedAt": "2026-09-24T21:56:00Z"
+      "observedAt": "2026-09-25T00:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
       "seasM": 2.1,
-      "peakPeriodSec": 9,
+      "peakPeriodSec": 10,
       "waterTempC": 26.6,
-      "observedAt": "2026-09-24T21:56:00Z"
+      "observedAt": "2026-09-25T00:26:00Z"
     }
   },
-  "aiBriefing": "To bardzo poważna sytuacja: aktywny Sztorm Tropikalny Nolo wzmacnia się i zmierza w kierunku Big Island, z ostrzeżeniami huraganowymi i sztormowymi dla Big Island i hrabstwa Maui. Szczyt zagrożenia (huraganowe wiatry, katastrofalne opady 15-35 cali, powodzie, wysokie fale) przypada na piątek-niedzielę, czyli 26-28 września. Wasza podróż zaczyna się dopiero za 7 dni (2 października), więc Nolo powinno zakończyć swoje przejście przez wyspy zanim wylądujecie na Oahu — nie powinniście fizycznie trafić na ten konkretny sztorm. Mimo to warto śledzić sytuację blisko wyjazdu: prognoza CPHC wskazuje 40% szans na uformowanie się nowego układu w ciągu 7 dni daleko na wschód-południowy wschód od wysp, więc do daty wylotu może pojawić się kolejny system wymagający obserwacji. Zalecamy sprawdzić aktualne alerty NWS ponownie na 2-3 dni przed wylotem.",
-  "aiUnnamedSystem": null
+  "aiBriefing": "Podróż zaczyna się za 7 dni (2 października), a obecne, bardzo poważne ostrzeżenia dotyczą Sztormu Tropikalnego Nolo, który ma uderzyć w Big Island i Maui już w piątek-niedzielę, czyli w ciągu najbliższych 2-3 dni. To oznacza, że to konkretne zagrożenie (huraganowe wiatry, ekstremalne opady, powodzie, możliwe tornada) powinno się zakończyć na długo przed Waszym przylotem – nie polecicie prosto w ten sztorm. Poziom zagrożenia 4 (Warning) odzwierciedla obecną powagę sytuacji na wyspach teraz, a nie w dniach Waszej podróży. Warto jednak śledzić sytuację do wyjazdu: po przejściu Nolo mogą zostać zniszczenia infrastruktury (drogi, prąd) na Big Island, które da się odczuć jeszcze podczas Waszego pobytu tam 5-8 października. Dodatkowo CPHC wskazuje na 40% szans na nowy system pogodowy w ciągu 7 dni daleko na wschód-południowy wschód od wysp – to zbyt odległe i niepewne, by teraz cokolwiek przesądzać, ale warto sprawdzić prognozę bliżej wyjazdu.",
+  "aiUnnamedSystem": {
+    "description": "Możliwy nowy system nisko-ciśnieniowy, opisany jako mogący uformować się około 1000 mil na wschód-południowy wschód od Hawajów w ciągu weekendu, poruszający się generalnie na północny wschód (z dala od wysp)",
+    "approxLat": 18.5,
+    "approxLon": -141,
+    "uncertaintyKm": 500,
+    "confidence": "low"
+  }
 }
