@@ -1,11 +1,11 @@
 {
-  "computedAt": "2026-10-04T21:20:07.860Z",
+  "computedAt": "2026-10-05T00:02:10.651Z",
   "mode": "on-location",
-  "currentIsland": "Oahu",
+  "currentIsland": "BigIsland",
   "level": 0,
   "levelLabel": "Spokój",
   "recommendation": "Bez zmian. Plan dnia aktualny.",
-  "scopeLabel": "Oahu — 10 stref NWS na trasie dnia",
+  "scopeLabel": "Big Island — 8 stref NWS na trasie dnia",
   "reasons": [
     "Brak cyklonów w zasięgu i brak aktywnych alertów NWS dla trasy."
   ],
@@ -26,7 +26,7 @@
       "movementMph": 6,
       "lastUpdate": "2026-10-04T21:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
-      "distanceKmToTrip": 4529,
+      "distanceKmToTrip": 4298,
       "track": [
         {
           "lat": 20,
@@ -4414,7 +4414,7 @@
       "movementMph": 17,
       "lastUpdate": "2026-10-04T21:00:00.000Z",
       "publicAdvisoryUrl": "https://www.nhc.noaa.gov/text/HFOTCPCP2.shtml",
-      "distanceKmToTrip": 2275,
+      "distanceKmToTrip": 2576,
       "track": [
         {
           "lat": 23.4,
@@ -8790,60 +8790,60 @@
   ],
   "outlookFormation48h": null,
   "outlookFormation7day": null,
-  "outlookText": "000\nACPN50 PHFO 041726\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sun Oct 04 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nNolo, located well to the west-northwest of the main Hawaiian\nIslands, and on Hurricane Rachel, located a few hundred miles\nsouthwest of the southern tip of the Baja California Peninsula.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly\nNNNN",
+  "outlookText": "000\nACPN50 PHFO 042326\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Sun Oct 04 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center has issued its last advisory on\nHurricane Nolo, which has crossed the International Date Line while\nlocated well to the west-northwest of the main Hawaiian\nIslands, and continues to issue advisories on Hurricane Rachel,\nlocated a few hundred miles southwest of the southern tip of the\nBaja California Peninsula.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.860Z",
+      "fetchedAt": "2026-10-05T00:02:10.651Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.896Z",
+      "fetchedAt": "2026-10-05T00:02:10.681Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.897Z",
+      "fetchedAt": "2026-10-05T00:02:10.682Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.898Z",
+      "fetchedAt": "2026-10-05T00:02:10.684Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.900Z",
+      "fetchedAt": "2026-10-05T00:02:10.686Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.901Z",
+      "fetchedAt": "2026-10-05T00:02:10.687Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.903Z",
+      "fetchedAt": "2026-10-05T00:02:10.688Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.904Z",
+      "fetchedAt": "2026-10-05T00:02:10.690Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": true,
-      "fetchedAt": "2026-10-04T21:20:07.906Z",
+      "fetchedAt": "2026-10-05T00:02:10.691Z",
       "ageSeconds": 0
     }
   ],
@@ -8921,7 +8921,7 @@
       ]
     }
   ],
-  "defaultForecastIsland": "Oahu",
+  "defaultForecastIsland": "BigIsland",
   "forecastByIsland": {
     "Oahu": [
       {
@@ -9186,28 +9186,28 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.2,
+      "seasM": 1.5,
       "peakPeriodSec": 8,
       "waterTempC": 26.7,
-      "observedAt": "2026-10-04T20:26:00Z"
+      "observedAt": "2026-10-04T23:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 1.8,
-      "peakPeriodSec": 8,
-      "waterTempC": 27,
-      "observedAt": "2026-10-04T20:56:00Z"
+      "seasM": 1.9,
+      "peakPeriodSec": 7,
+      "waterTempC": 27.2,
+      "observedAt": "2026-10-04T23:26:00Z"
     },
     "Maui": {
       "stationId": "51205",
       "stationLabel": "Pauwela, Maui",
       "seasM": 1.4,
       "peakPeriodSec": 8,
-      "waterTempC": 26.7,
-      "observedAt": "2026-10-04T20:56:00Z"
+      "waterTempC": 26.8,
+      "observedAt": "2026-10-04T22:56:00Z"
     }
   },
-  "aiBriefing": "Obecnie na Hawajach panuje spokój — nie ma żadnych aktywnych alertów pogodowych ani cyklonów zagrażających Waszej trasie po Oahu, Big Island i Maui. Huragany Rachel i Nolo są bardzo daleko (odpowiednio ok. 4529 km i 2275 km), więc nie stanowią zagrożenia dla Waszej podróży. Prognoza CPHC nie przewiduje też formowania się nowych cyklonów tropikalnych w ciągu najbliższych 7 dni. Możecie spokojnie kontynuować plany podróży bez obaw o pogodę.",
+  "aiBriefing": "Obecnie na Hawajach panuje spokój — poziom zagrożenia to 0. Huragany Rachel i Nolo są bardzo daleko (tysiące kilometrów) i nie mają wpływu na Wasz region, a prognoza nie przewiduje powstania nowych cyklonów w ciągu najbliższych 7 dni. Brak też jakichkolwiek aktywnych alertów NWS dla Waszej trasy przez Oahu, Big Island i Maui. Możecie planować podróż bez obaw o pogodę tropikalną w tym momencie.",
   "aiUnnamedSystem": null
 }
