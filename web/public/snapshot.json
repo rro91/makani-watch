@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-10-18T21:52:02.667Z",
+  "computedAt": "2026-10-19T00:00:51.648Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -4402,60 +4402,61 @@
   ],
   "outlookFormation48h": null,
   "outlookFormation7day": null,
-  "outlookText": "774 \nACPN50 PHFO 181734\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sun Oct 18 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nTrudy, located offshore of southwestern Mexico.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams\nNNNN",
+  "outlookText": "000\nACPN50 PHFO 182333\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Sun Oct 18 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nTrudy, located offshore of southwestern Mexico.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Papin\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.667Z",
+      "fetchedAt": "2026-10-19T00:00:51.648Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.694Z",
+      "fetchedAt": "2026-10-19T00:00:51.673Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.695Z",
+      "fetchedAt": "2026-10-19T00:00:51.674Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.695Z",
+      "fetchedAt": "2026-10-19T00:00:51.675Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.697Z",
+      "fetchedAt": "2026-10-19T00:00:51.677Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
-      "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.698Z",
-      "ageSeconds": 0
+      "ok": false,
+      "fetchedAt": "2026-10-19T00:00:51.678Z",
+      "ageSeconds": 0,
+      "error": "open-meteo forecast: HTTP 503"
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.699Z",
+      "fetchedAt": "2026-10-19T00:00:51.679Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-10-18T21:52:02.700Z",
+      "fetchedAt": "2026-10-19T00:00:51.680Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-10-18T21:52:02.701Z",
+      "fetchedAt": "2026-10-19T00:00:51.682Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -4622,92 +4623,7 @@
         "cloudCoverPct": 99
       }
     ],
-    "BigIsland": [
-      {
-        "date": "2026-10-18",
-        "weatherCode": 53,
-        "tempMaxC": 12.6,
-        "tempMinC": 8.4,
-        "precipMm": 1.4,
-        "windMaxKmh": 21.1,
-        "windGustMaxKmh": 39.6,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 75
-      },
-      {
-        "date": "2026-10-19",
-        "weatherCode": 45,
-        "tempMaxC": 13.5,
-        "tempMinC": 7.9,
-        "precipMm": 0,
-        "windMaxKmh": 19,
-        "windGustMaxKmh": 36.4,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 47
-      },
-      {
-        "date": "2026-10-20",
-        "weatherCode": 45,
-        "tempMaxC": 13.2,
-        "tempMinC": 7.7,
-        "precipMm": 0,
-        "windMaxKmh": 17.1,
-        "windGustMaxKmh": 34.2,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 22
-      },
-      {
-        "date": "2026-10-21",
-        "weatherCode": 53,
-        "tempMaxC": 13,
-        "tempMinC": 7.2,
-        "precipMm": 2.5,
-        "windMaxKmh": 10.2,
-        "windGustMaxKmh": 25.6,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 54
-      },
-      {
-        "date": "2026-10-22",
-        "weatherCode": 55,
-        "tempMaxC": 13.5,
-        "tempMinC": 5.6,
-        "precipMm": 5.4,
-        "windMaxKmh": 8.9,
-        "windGustMaxKmh": 24.5,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 68
-      },
-      {
-        "date": "2026-10-23",
-        "weatherCode": 53,
-        "tempMaxC": 15.1,
-        "tempMinC": 7.7,
-        "precipMm": 2.7,
-        "windMaxKmh": 10.6,
-        "windGustMaxKmh": 25.9,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 75
-      },
-      {
-        "date": "2026-10-24",
-        "weatherCode": 81,
-        "tempMaxC": 15.1,
-        "tempMinC": 8.5,
-        "precipMm": 19.8,
-        "windMaxKmh": 9.8,
-        "windGustMaxKmh": 26.6,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 53
-      }
-    ],
+    "BigIsland": [],
     "Maui": [
       {
         "date": "2026-10-18",
@@ -4800,20 +4716,20 @@
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
       "seasM": 2.1,
-      "peakPeriodSec": 13,
+      "peakPeriodSec": 12,
       "waterTempC": 26.6,
-      "observedAt": "2026-10-18T20:56:00Z"
+      "observedAt": "2026-10-18T22:56:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
       "seasM": 2.4,
       "peakPeriodSec": 8,
-      "waterTempC": 27,
-      "observedAt": "2026-10-18T20:56:00Z"
+      "waterTempC": 27.1,
+      "observedAt": "2026-10-18T23:26:00Z"
     },
     "Maui": null
   },
-  "aiBriefing": "Podróż zakończyła się 12 dni temu (dziś jest 18 października, a trasa kończyła się 12 października), więc monitoring tras hawajskich jest obecnie wstrzymany. Huragan Trudy znajduje się daleko od Hawajów, u wybrzeży Meksyku, więc nie ma żadnego związku z Waszą trasą. Poziom zagrożenia wynosi 0 — czyli spokój — i nie ma żadnych aktywnych alertów dotyczących Oahu, Big Island ani Maui. Nie ma potrzeby podejmowania żadnych działań.",
+  "aiBriefing": "Podróż rodziny odbyła się już w przeszłości (2-12 października 2026), a dzisiejsza data to 19 października 2026 — jesteście już po powrocie, więc monitoring zagrożeń jest wstrzymany. Poziom zagrożenia wynosi 0 (Spokój) i nie ma żadnych aktywnych alertów dla Hawajów. Huragan Trudy znajduje się bardzo daleko, u wybrzeży południowo-zachodniego Meksyku, i nie ma żadnego związku z Waszą trasą ani z Hawajami. Nie ma też żadnych innych systemów tropikalnych zagrażających rejonowi w najbliższych dniach. Nic nie wymaga teraz Waszej uwagi.",
   "aiUnnamedSystem": null
 }
