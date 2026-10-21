@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-10-21T16:04:33.348Z",
+  "computedAt": "2026-10-21T20:06:59.118Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -1488,61 +1488,61 @@
     }
   ],
   "outlookFormation48h": null,
-  "outlookFormation7day": 20,
-  "outlookText": "000\nACPN50 PHFO 211144\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 AM HST Wed Oct 21 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nWestern Central Pacific:\nAn area of low pressure is forecast to form in the far western\ncentral Pacific a few hundred miles southwest of Johnson Atoll late\nthis weekend of early next week. Environmental conditions appear\nconducive for some gradual development thereafter while the system\nmoves generally eastward to east-northeastward.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...low...20 percent.\n\n&&\nHigh Seas Forecasts issued by the National Weather Service\ncan be found under AWIPS header NFDHSFEPI, WMO header FZPN02\nKWBC, and on the web at ocean.weather.gov/shtml/NFDHSFEPI.php\n\n$$\nForecaster Kelly\nNNNN",
+  "outlookFormation7day": 30,
+  "outlookText": "000\nACPN50 PHFO 211705\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Wed Oct 21 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on newly formed\nTropical Depression Twenty-Two-E, located several hundred miles\nsouth of Acapulco, Mexico.\n\nWestern Central Pacific:\nAn area of low pressure is forecast to form near the International\nDate Line, a few hundred miles southwest of Johnston Atoll late\nthis weekend or early next week. Environmental conditions appear\nconducive for some gradual development thereafter while the system\nmoves generally eastward to east-northeastward.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...low...30 percent.\n\n&&\nPublic advisories on Tropical Depression Twenty-Two-E are issued\nunder WMO header WTPZ32 KNHC and under AWIPS header MIATCPEP2.\nForecast/advisories on Tropical Depression Twenty-Two-E are issued\nunder WMO header WTPZ22 KNHC and under AWIPS header MIATCMEP2.\n\n$$\nForecaster Kelly\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.348Z",
+      "fetchedAt": "2026-10-21T20:06:59.118Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.410Z",
+      "fetchedAt": "2026-10-21T20:06:59.144Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.411Z",
+      "fetchedAt": "2026-10-21T20:06:59.145Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.412Z",
+      "fetchedAt": "2026-10-21T20:06:59.146Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.413Z",
+      "fetchedAt": "2026-10-21T20:06:59.148Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.414Z",
+      "fetchedAt": "2026-10-21T20:06:59.149Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.415Z",
+      "fetchedAt": "2026-10-21T20:06:59.150Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-10-21T16:04:33.416Z",
+      "fetchedAt": "2026-10-21T20:06:59.152Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-10-21T16:04:33.416Z",
+      "fetchedAt": "2026-10-21T20:06:59.153Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -1626,256 +1626,256 @@
     "Oahu": [
       {
         "date": "2026-10-21",
-        "weatherCode": 51,
-        "tempMaxC": 25.3,
-        "tempMinC": 20.3,
-        "precipMm": 2.2,
-        "windMaxKmh": 19.5,
-        "windGustMaxKmh": 50.4,
+        "weatherCode": 53,
+        "tempMaxC": 25.2,
+        "tempMinC": 19.9,
+        "precipMm": 2.5,
+        "windMaxKmh": 17.3,
+        "windGustMaxKmh": 45.4,
         "waveHeightMaxM": 1.22,
         "wavePeriodMaxS": 8.9,
-        "cloudCoverPct": 21
+        "cloudCoverPct": 20
       },
       {
         "date": "2026-10-22",
         "weatherCode": 53,
-        "tempMaxC": 25.3,
+        "tempMaxC": 24.7,
         "tempMinC": 18.4,
         "precipMm": 2.7,
-        "windMaxKmh": 13.2,
-        "windGustMaxKmh": 36.4,
+        "windMaxKmh": 15.3,
+        "windGustMaxKmh": 41.8,
         "waveHeightMaxM": 1.12,
         "wavePeriodMaxS": 9.75,
-        "cloudCoverPct": 28
+        "cloudCoverPct": 26
       },
       {
         "date": "2026-10-23",
-        "weatherCode": 51,
-        "tempMaxC": 25.6,
-        "tempMinC": 18.7,
-        "precipMm": 0.4,
-        "windMaxKmh": 13.1,
-        "windGustMaxKmh": 37.1,
+        "weatherCode": 53,
+        "tempMaxC": 25.7,
+        "tempMinC": 18.8,
+        "precipMm": 1.2,
+        "windMaxKmh": 13.4,
+        "windGustMaxKmh": 37.8,
         "waveHeightMaxM": 1.04,
         "wavePeriodMaxS": 10.85,
-        "cloudCoverPct": 67
+        "cloudCoverPct": 80
       },
       {
         "date": "2026-10-24",
-        "weatherCode": 51,
-        "tempMaxC": 25.6,
-        "tempMinC": 18.4,
-        "precipMm": 0.5,
-        "windMaxKmh": 13.7,
-        "windGustMaxKmh": 36,
+        "weatherCode": 3,
+        "tempMaxC": 25.8,
+        "tempMinC": 17.9,
+        "precipMm": 0,
+        "windMaxKmh": 12.9,
+        "windGustMaxKmh": 35.6,
         "waveHeightMaxM": 1,
         "wavePeriodMaxS": 11.5,
-        "cloudCoverPct": 93
+        "cloudCoverPct": 92
       },
       {
         "date": "2026-10-25",
         "weatherCode": 51,
-        "tempMaxC": 24.7,
-        "tempMinC": 17.6,
-        "precipMm": 1.9,
-        "windMaxKmh": 11.7,
-        "windGustMaxKmh": 34.9,
+        "tempMaxC": 23.3,
+        "tempMinC": 18.7,
+        "precipMm": 2.4,
+        "windMaxKmh": 10.4,
+        "windGustMaxKmh": 31.7,
         "waveHeightMaxM": 1.02,
         "wavePeriodMaxS": 11.8,
-        "cloudCoverPct": 76
+        "cloudCoverPct": 98
       },
       {
         "date": "2026-10-26",
         "weatherCode": 51,
-        "tempMaxC": 25.8,
-        "tempMinC": 17.3,
-        "precipMm": 1.2,
-        "windMaxKmh": 7.3,
-        "windGustMaxKmh": 22.3,
+        "tempMaxC": 23.9,
+        "tempMinC": 18.3,
+        "precipMm": 1.5,
+        "windMaxKmh": 8.5,
+        "windGustMaxKmh": 27,
         "waveHeightMaxM": 1.04,
         "wavePeriodMaxS": 12.9,
-        "cloudCoverPct": 87
+        "cloudCoverPct": 94
       },
       {
         "date": "2026-10-27",
         "weatherCode": 3,
-        "tempMaxC": 25.4,
-        "tempMinC": 17.3,
+        "tempMaxC": 24.7,
+        "tempMinC": 18.7,
         "precipMm": 0,
-        "windMaxKmh": 7.1,
-        "windGustMaxKmh": 29.2,
+        "windMaxKmh": 10.3,
+        "windGustMaxKmh": 32.4,
         "waveHeightMaxM": 1.14,
         "wavePeriodMaxS": 13.15,
-        "cloudCoverPct": 98
+        "cloudCoverPct": 99
       }
     ],
     "BigIsland": [
       {
         "date": "2026-10-21",
-        "weatherCode": 53,
-        "tempMaxC": 12.2,
-        "tempMinC": 7.2,
-        "precipMm": 2.8,
-        "windMaxKmh": 12.6,
-        "windGustMaxKmh": 27.7,
+        "weatherCode": 55,
+        "tempMaxC": 11.6,
+        "tempMinC": 6.7,
+        "precipMm": 3.8,
+        "windMaxKmh": 18.8,
+        "windGustMaxKmh": 37.1,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
-        "cloudCoverPct": 54
+        "cloudCoverPct": 66
       },
       {
         "date": "2026-10-22",
-        "weatherCode": 51,
-        "tempMaxC": 13.4,
-        "tempMinC": 6,
-        "precipMm": 0.9,
-        "windMaxKmh": 10.1,
-        "windGustMaxKmh": 21.6,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 69
-      },
-      {
-        "date": "2026-10-23",
-        "weatherCode": 51,
-        "tempMaxC": 14,
-        "tempMinC": 7.2,
-        "precipMm": 0.4,
-        "windMaxKmh": 10.9,
-        "windGustMaxKmh": 23.4,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 64
-      },
-      {
-        "date": "2026-10-24",
-        "weatherCode": 3,
-        "tempMaxC": 14.7,
-        "tempMinC": 7.2,
-        "precipMm": 0,
-        "windMaxKmh": 10.6,
-        "windGustMaxKmh": 23.4,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 47
-      },
-      {
-        "date": "2026-10-25",
-        "weatherCode": 45,
-        "tempMaxC": 14.6,
-        "tempMinC": 8.6,
-        "precipMm": 0,
-        "windMaxKmh": 10.6,
-        "windGustMaxKmh": 24.5,
-        "waveHeightMaxM": null,
-        "wavePeriodMaxS": null,
-        "cloudCoverPct": 85
-      },
-      {
-        "date": "2026-10-26",
-        "weatherCode": 3,
-        "tempMaxC": 15.9,
-        "tempMinC": 8.2,
-        "precipMm": 0,
-        "windMaxKmh": 19.5,
-        "windGustMaxKmh": 39.6,
+        "weatherCode": 55,
+        "tempMaxC": 13,
+        "tempMinC": 5.6,
+        "precipMm": 4.5,
+        "windMaxKmh": 9.8,
+        "windGustMaxKmh": 24.1,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
         "cloudCoverPct": 58
       },
       {
-        "date": "2026-10-27",
-        "weatherCode": 3,
-        "tempMaxC": 17,
-        "tempMinC": 9,
+        "date": "2026-10-23",
+        "weatherCode": 45,
+        "tempMaxC": 14.6,
+        "tempMinC": 7.1,
         "precipMm": 0,
-        "windMaxKmh": 16.4,
-        "windGustMaxKmh": 34.2,
+        "windMaxKmh": 10.9,
+        "windGustMaxKmh": 24.1,
         "waveHeightMaxM": null,
         "wavePeriodMaxS": null,
-        "cloudCoverPct": 72
+        "cloudCoverPct": 50
+      },
+      {
+        "date": "2026-10-24",
+        "weatherCode": 51,
+        "tempMaxC": 14.9,
+        "tempMinC": 7.2,
+        "precipMm": 0.3,
+        "windMaxKmh": 10.8,
+        "windGustMaxKmh": 23.4,
+        "waveHeightMaxM": null,
+        "wavePeriodMaxS": null,
+        "cloudCoverPct": 62
+      },
+      {
+        "date": "2026-10-25",
+        "weatherCode": 45,
+        "tempMaxC": 15,
+        "tempMinC": 8.2,
+        "precipMm": 0,
+        "windMaxKmh": 10.4,
+        "windGustMaxKmh": 24.1,
+        "waveHeightMaxM": null,
+        "wavePeriodMaxS": null,
+        "cloudCoverPct": 84
+      },
+      {
+        "date": "2026-10-26",
+        "weatherCode": 51,
+        "tempMaxC": 15.7,
+        "tempMinC": 8.5,
+        "precipMm": 1.5,
+        "windMaxKmh": 21.2,
+        "windGustMaxKmh": 43.6,
+        "waveHeightMaxM": null,
+        "wavePeriodMaxS": null,
+        "cloudCoverPct": 73
+      },
+      {
+        "date": "2026-10-27",
+        "weatherCode": 53,
+        "tempMaxC": 13.8,
+        "tempMinC": 10,
+        "precipMm": 10.6,
+        "windMaxKmh": 9.1,
+        "windGustMaxKmh": 23.4,
+        "waveHeightMaxM": null,
+        "wavePeriodMaxS": null,
+        "cloudCoverPct": 100
       }
     ],
     "Maui": [
       {
         "date": "2026-10-21",
         "weatherCode": 51,
-        "tempMaxC": 24.3,
-        "tempMinC": 18.3,
-        "precipMm": 0.4,
-        "windMaxKmh": 19,
-        "windGustMaxKmh": 43.6,
+        "tempMaxC": 23.9,
+        "tempMinC": 18.9,
+        "precipMm": 0.3,
+        "windMaxKmh": 18,
+        "windGustMaxKmh": 40.3,
         "waveHeightMaxM": 0.64,
         "wavePeriodMaxS": 10.4,
-        "cloudCoverPct": 44
+        "cloudCoverPct": 54
       },
       {
         "date": "2026-10-22",
-        "weatherCode": 81,
-        "tempMaxC": 23,
-        "tempMinC": 18.6,
-        "precipMm": 8.8,
-        "windMaxKmh": 13.8,
-        "windGustMaxKmh": 30.6,
+        "weatherCode": 80,
+        "tempMaxC": 23.8,
+        "tempMinC": 19.1,
+        "precipMm": 6,
+        "windMaxKmh": 14.5,
+        "windGustMaxKmh": 33.5,
         "waveHeightMaxM": 0.64,
         "wavePeriodMaxS": 11.2,
-        "cloudCoverPct": 55
+        "cloudCoverPct": 44
       },
       {
         "date": "2026-10-23",
-        "weatherCode": 51,
-        "tempMaxC": 23.6,
-        "tempMinC": 18.5,
-        "precipMm": 0.1,
-        "windMaxKmh": 22,
-        "windGustMaxKmh": 47.5,
+        "weatherCode": 45,
+        "tempMaxC": 23.7,
+        "tempMinC": 18.7,
+        "precipMm": 0,
+        "windMaxKmh": 21.4,
+        "windGustMaxKmh": 46.8,
         "waveHeightMaxM": 0.62,
         "wavePeriodMaxS": 12.2,
-        "cloudCoverPct": 71
+        "cloudCoverPct": 80
       },
       {
         "date": "2026-10-24",
         "weatherCode": 51,
         "tempMaxC": 22.7,
-        "tempMinC": 17.5,
-        "precipMm": 1.2,
-        "windMaxKmh": 20.8,
-        "windGustMaxKmh": 46.1,
+        "tempMinC": 18.5,
+        "precipMm": 1.3,
+        "windMaxKmh": 18.1,
+        "windGustMaxKmh": 40.7,
         "waveHeightMaxM": 0.7,
         "wavePeriodMaxS": 12.4,
-        "cloudCoverPct": 87
+        "cloudCoverPct": 83
       },
       {
         "date": "2026-10-25",
-        "weatherCode": 53,
-        "tempMaxC": 22.1,
-        "tempMinC": 18.2,
-        "precipMm": 3.8,
-        "windMaxKmh": 16.5,
-        "windGustMaxKmh": 40,
+        "weatherCode": 45,
+        "tempMaxC": 22.5,
+        "tempMinC": 18.5,
+        "precipMm": 0,
+        "windMaxKmh": 14.2,
+        "windGustMaxKmh": 36,
         "waveHeightMaxM": 0.68,
         "wavePeriodMaxS": 12.45,
-        "cloudCoverPct": 84
+        "cloudCoverPct": 92
       },
       {
         "date": "2026-10-26",
         "weatherCode": 51,
-        "tempMaxC": 21.5,
-        "tempMinC": 18.9,
-        "precipMm": 3.4,
-        "windMaxKmh": 14.2,
-        "windGustMaxKmh": 34.6,
+        "tempMaxC": 21.9,
+        "tempMinC": 18.5,
+        "precipMm": 4.8,
+        "windMaxKmh": 14.9,
+        "windGustMaxKmh": 36.4,
         "waveHeightMaxM": 0.72,
         "wavePeriodMaxS": 13.15,
-        "cloudCoverPct": 98
+        "cloudCoverPct": 86
       },
       {
         "date": "2026-10-27",
-        "weatherCode": 3,
-        "tempMaxC": 21.9,
-        "tempMinC": 18.7,
-        "precipMm": 0,
-        "windMaxKmh": 13.6,
-        "windGustMaxKmh": 34.2,
+        "weatherCode": 80,
+        "tempMaxC": 20.9,
+        "tempMinC": 18.5,
+        "precipMm": 7,
+        "windMaxKmh": 13.5,
+        "windGustMaxKmh": 31,
         "waveHeightMaxM": 0.82,
         "wavePeriodMaxS": 13.35,
         "cloudCoverPct": 99
@@ -1886,27 +1886,21 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.5,
+      "seasM": 1.6,
       "peakPeriodSec": 8,
       "waterTempC": 26.2,
-      "observedAt": "2026-10-21T15:26:00Z"
+      "observedAt": "2026-10-21T19:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 2.6,
+      "seasM": 2.2,
       "peakPeriodSec": 8,
-      "waterTempC": 26.6,
-      "observedAt": "2026-10-21T15:26:00Z"
+      "waterTempC": 26.5,
+      "observedAt": "2026-10-21T19:26:00Z"
     },
     "Maui": null
   },
-  "aiBriefing": "Jesteście obecnie poza Hawajami, więc monitoring zagrożeń jest wstrzymany — poziom zagrożenia to 0, czyli spokój. Wasza trasa (Oahu, Big Island, Maui) dotyczyła dat na początku października 2026, a dziś jest już 21 października, czyli podróż się zakończyła. Jedyny aktywny system tropikalny, depresja Twenty-Two-E, znajduje się bardzo daleko (ponad 6300 km) i nie ma znaczenia dla tej podróży. W prognozie CPHC wspomniana jest też możliwa przyszła strefa niskiego ciśnienia w rejonie Johnston Atoll, ale to odległa przyszłość i niepewne zjawisko, niezwiązane z Waszym już zakończonym wyjazdem. Nie ma obecnie żadnego działania do podjęcia.",
-  "aiUnnamedSystem": {
-    "description": "Obszar niskiego ciśnienia prognozowany do uformowania się kilkaset mil na południowy zachód od atolu Johnston, z niską (20%) szansą rozwoju w ciągu 7 dni.",
-    "approxLat": 14,
-    "approxLon": -172,
-    "uncertaintyKm": 500,
-    "confidence": "low"
-  }
+  "aiBriefing": "Dane pokazują, że podróż już się zakończyła — dzisiejsza data jest 20 dni po jej rozpoczęciu, więc monitoring tras na Oahu, Big Island i Maui nie jest już aktualny. Obecnie nie ma żadnych aktywnych alertów pogodowych dla Hawajów. Istnieje depresja tropikalna Twenty-Two-E, ale znajduje się bardzo daleko (ponad 6000 km) i nie stanowi zagrożenia. Wspomniany w prognozie obszar niskiego ciśnienia koło Johnston Atoll ma tylko 30% szans na rozwój w ciągu 7 dni i również nie dotyczy Waszej (zakończonej) trasy. Poziom zagrożenia wynosi 0 — spokój, nic nie wymaga Waszej uwagi.",
+  "aiUnnamedSystem": null
 }
