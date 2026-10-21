@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-10-21T00:55:42.922Z",
+  "computedAt": "2026-10-21T05:51:24.576Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -13,60 +13,60 @@
   "storms": [],
   "outlookFormation48h": null,
   "outlookFormation7day": null,
-  "outlookText": "000\nACPN50 PHFO 202333\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Tue Oct 20 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Evans/Pierce/Pasch\nNNNN",
+  "outlookText": "246 \nACPN50 PHFO 210511\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 PM HST Tue Oct 20 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pierce/Pasch\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.922Z",
+      "fetchedAt": "2026-10-21T05:51:24.576Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.953Z",
+      "fetchedAt": "2026-10-21T05:51:24.610Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.954Z",
+      "fetchedAt": "2026-10-21T05:51:24.612Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.955Z",
+      "fetchedAt": "2026-10-21T05:51:24.613Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.958Z",
+      "fetchedAt": "2026-10-21T05:51:24.616Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.959Z",
+      "fetchedAt": "2026-10-21T05:51:24.617Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.960Z",
+      "fetchedAt": "2026-10-21T05:51:24.618Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-10-21T00:55:42.962Z",
+      "fetchedAt": "2026-10-21T05:51:24.620Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-10-21T00:55:42.963Z",
+      "fetchedAt": "2026-10-21T05:51:24.621Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -410,21 +410,21 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 1.6,
+      "seasM": 1.5,
       "peakPeriodSec": 7,
-      "waterTempC": 26.4,
-      "observedAt": "2026-10-21T00:26:00Z"
+      "waterTempC": 26.3,
+      "observedAt": "2026-10-21T04:56:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
       "seasM": 2.3,
       "peakPeriodSec": 8,
-      "waterTempC": 27.4,
-      "observedAt": "2026-10-21T00:26:00Z"
+      "waterTempC": 27.3,
+      "observedAt": "2026-10-21T05:26:00Z"
     },
     "Maui": null
   },
-  "aiBriefing": "Podróż, którą opisujesz, odbyła się już w przeszłości (dzisiejsza data to 21 października 2026, a trasa kończyła się 12 października), więc monitoring nie ma praktycznego zastosowania. Obecnie nie ma żadnych aktywnych alertów ani sztormów w rejonie Hawajów. Prognoza CPHC mówi wprost, że w ciągu najbliższych 7 dni nie oczekuje się formowania cyklonów tropikalnych. Poziom zagrożenia 0 ('Spokój') w pełni odzwierciedla ten brak aktywności — nie ma się czym martwić.",
+  "aiBriefing": "Obecnie nie jesteście na Hawajach, a wasza podróż (2-12 października 2026) już się zakończyła według dzisiejszej daty (21 października) — czyli dane te dotyczą okresu, który minął. Poziom zagrożenia wynosi 0 (",
   "aiUnnamedSystem": null
 }
