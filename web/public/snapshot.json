@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-10-25T16:11:09.383Z",
+  "computedAt": "2026-10-25T19:07:02.238Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -41,22 +41,6 @@
       "expires": "2026-10-26T06:00:00-10:00",
       "senderName": "NWS Honolulu HI",
       "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.52d2342d3e223b092fb480fdc2dc402fd21ecb2b.001.1"
-    },
-    {
-      "id": "urn:oid:2.49.0.1.840.0.93c25bfe196323ffa6691ab7862da1762e7b3c90.001.1",
-      "event": "Hydrologic Outlook",
-      "severity": "Unknown",
-      "urgency": "Future",
-      "certainty": "Possible",
-      "headline": "Hydrologic Outlook issued October 24 at 3:10PM HST by NWS Honolulu HI",
-      "description": "ESFHFO\n\nA significant pattern change is expected Monday night through at\nleast Thursday as deep tropical moisture is brought north. A\ncombination of surface lows and troughs will bring exceptionally\nmoist air over the eastern end of the state beginning Monday night\nand extending to all islands Tuesday. Heavy rain and thunderstorms\nare possible throughout this period. Models have not converged on\ndetails yet, so exact locations, timing, and rainfall amounts are not\ncertain. Please be prepared for periods of heavy rain this coming\nweek.\n\nKeep up to date with the latest forecast information through the\nInternet (weather.gov/hawaii), local media, social media, or NOAA\nWeather Radio broadcasts.\n\nAn updated outlook will be issued Sunday by 6 AM HST or sooner if\nnecessary.",
-      "instruction": null,
-      "areaDesc": "Hawaii in Hawaii, HI; Oahu in Honolulu, HI; Kauai, HI; Maui, HI",
-      "zones": [],
-      "effective": "2026-10-24T15:10:00-10:00",
-      "expires": "2026-10-25T06:15:00-10:00",
-      "senderName": "NWS Honolulu HI",
-      "sourceUrl": "https://api.weather.gov/alerts/urn%3Aoid%3A2.49.0.1.840.0.93c25bfe196323ffa6691ab7862da1762e7b3c90.001.1"
     }
   ],
   "storms": [
@@ -5924,62 +5908,62 @@
       ]
     }
   ],
-  "outlookFormation48h": 70,
-  "outlookFormation7day": 70,
-  "outlookText": "000\nACPN50 PHFO 251133\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 AM HST Sun Oct 25 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nVance, located a few hundred miles southwest of Acapulco, Mexico.\n\nWestern Central Pacific:\nShowers and thunderstorms continue to show signs of organization\nwith an area of low pressure just crossing the International Date\nLine, several hundred miles west of Johnston Atoll. Earlier\nsatellite wind data indicated that the circulation was also becoming\nbetter defined. If these current trends continue, the system is\nlikely to become a tropical depression, possibly as soon as later\ntoday. The system is moving towards the east-northeast at 10 to 15\nmph and will slowly approach the Johnston Atoll later this week. By\nthe middle of the week, however, strong upper-level winds should\nlimit additional development of the system.\n* Formation chance through 48 hours...high...70 percent.\n* Formation chance through 7 days...high...70 percent.\n\n$$\nForecaster Papin\nNNNN",
+  "outlookFormation48h": null,
+  "outlookFormation7day": null,
+  "outlookText": "000\nACPN50 PHFO 251727\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sun Oct 25 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nVance, located a few hundred miles west-southwest of Acapulco,\nMexico, and on newly formed Tropical Depression Three-C, located\nseveral hundred miles west-southwest of Johnston Atoll.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Depression Three-C are issued under\nWMO header WTPA33 KNHC and under AWIPS header HFOTCPCP3.\nForecast/Advisories on Tropical Depression Three-C are issued under\nWMO header WTPA23 KNHC and under AWIPS header HFOTCMCP3.\n\n$$\nForecaster Papin\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.383Z",
+      "fetchedAt": "2026-10-25T19:07:02.239Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.403Z",
+      "fetchedAt": "2026-10-25T19:07:02.296Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.404Z",
+      "fetchedAt": "2026-10-25T19:07:02.298Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.404Z",
+      "fetchedAt": "2026-10-25T19:07:02.299Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.406Z",
+      "fetchedAt": "2026-10-25T19:07:02.301Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.407Z",
+      "fetchedAt": "2026-10-25T19:07:02.302Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.408Z",
+      "fetchedAt": "2026-10-25T19:07:02.303Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-10-25T16:11:09.409Z",
+      "fetchedAt": "2026-10-25T19:07:02.305Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-10-25T16:11:09.409Z",
+      "fetchedAt": "2026-10-25T19:07:02.306Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -6324,17 +6308,17 @@
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
       "seasM": 2.2,
-      "peakPeriodSec": 12,
+      "peakPeriodSec": 13,
       "waterTempC": 26.1,
-      "observedAt": "2026-10-25T15:26:00Z"
+      "observedAt": "2026-10-25T18:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
       "seasM": 1.6,
-      "peakPeriodSec": 12,
-      "waterTempC": 26.8,
-      "observedAt": "2026-10-25T15:26:00Z"
+      "peakPeriodSec": 13,
+      "waterTempC": 26.9,
+      "observedAt": "2026-10-25T18:26:00Z"
     },
     "Maui": null
   },
