@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-10-25T21:45:48.887Z",
+  "computedAt": "2026-10-25T23:37:10.516Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -4466,60 +4466,60 @@
   ],
   "outlookFormation48h": null,
   "outlookFormation7day": null,
-  "outlookText": "000\nACPN50 PHFO 251727\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sun Oct 25 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane\nVance, located a few hundred miles west-southwest of Acapulco,\nMexico, and on newly formed Tropical Depression Three-C, located\nseveral hundred miles west-southwest of Johnston Atoll.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Depression Three-C are issued under\nWMO header WTPA33 KNHC and under AWIPS header HFOTCPCP3.\nForecast/Advisories on Tropical Depression Three-C are issued under\nWMO header WTPA23 KNHC and under AWIPS header HFOTCMCP3.\n\n$$\nForecaster Papin\nNNNN",
+  "outlookText": "884 \nACPN50 PHFO 252309\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Sun Oct 25 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently\ndowngraded Tropical Storm Vance, located a few hundred miles\nwest-southwest of Acapulco, Mexico, and on recently upgraded\nTropical Storm Olana, located several hundred miles west-southwest\nof Johnston Atoll.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Olana are issued under\nWMO header WTPA33 KNHC and under AWIPS header HFOTCPCP3.\nForecast/Advisories on Tropical Storm Olana are issued under\nWMO header WTPA23 KNHC and under AWIPS header HFOTCMCP3.\n\n$$\nForecaster Katz/Cangialosi\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.887Z",
+      "fetchedAt": "2026-10-25T23:37:10.516Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.935Z",
+      "fetchedAt": "2026-10-25T23:37:10.553Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.936Z",
+      "fetchedAt": "2026-10-25T23:37:10.554Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.937Z",
+      "fetchedAt": "2026-10-25T23:37:10.556Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.938Z",
+      "fetchedAt": "2026-10-25T23:37:10.559Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.939Z",
+      "fetchedAt": "2026-10-25T23:37:10.560Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.940Z",
+      "fetchedAt": "2026-10-25T23:37:10.562Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-10-25T21:45:48.941Z",
+      "fetchedAt": "2026-10-25T23:37:10.564Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-10-25T21:45:48.941Z",
+      "fetchedAt": "2026-10-25T23:37:10.565Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -4864,17 +4864,17 @@
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
       "seasM": 1.9,
-      "peakPeriodSec": 12,
-      "waterTempC": 26.2,
-      "observedAt": "2026-10-25T21:26:00Z"
+      "peakPeriodSec": 11,
+      "waterTempC": 26.3,
+      "observedAt": "2026-10-25T22:56:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 1.5,
-      "peakPeriodSec": 13,
+      "seasM": 1.6,
+      "peakPeriodSec": 10,
       "waterTempC": 27.3,
-      "observedAt": "2026-10-25T21:26:00Z"
+      "observedAt": "2026-10-25T22:56:00Z"
     },
     "Maui": null
   },
