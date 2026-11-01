@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-11-01T20:45:56.522Z",
+  "computedAt": "2026-11-01T23:57:49.160Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -43,60 +43,60 @@
   "storms": [],
   "outlookFormation48h": null,
   "outlookFormation7day": 50,
-  "outlookText": "000\nACPN50 PHFO 011703\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sun Nov 01 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nWell Southeast of the Hawaiian Islands:\nA broad area of low pressure is forecast to develop well to the\nsoutheast of the Hawaiian Islands in a couple of days. Thereafter,\nenvironmental conditions appear generally favorable for gradual\ndevelopment of this system, and a tropical depression could form by\nthe middle to end of the week as it moves westward to\nwest-northwestward over the Central Pacific basin.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...medium...50 percent.\n\n$$\nForecaster Kelly\nNNNN",
+  "outlookText": "000\nACPN50 PHFO 012311\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Sun Nov 01 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nWell Southeast of the Hawaiian Islands:\nA broad area of low pressure is forecast to develop well to the\nsoutheast of the Hawaiian Islands in a couple of days. Thereafter,\nenvironmental conditions appear generally favorable for gradual\ndevelopment of this system, and a tropical depression could form\nlate this week as it moves westward to west-northwestward over the\nCentral Pacific basin.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...medium...50 percent.\n\n$$\nForecaster Gibbs\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.522Z",
+      "fetchedAt": "2026-11-01T23:57:49.160Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.557Z",
+      "fetchedAt": "2026-11-01T23:57:49.192Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.559Z",
+      "fetchedAt": "2026-11-01T23:57:49.193Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.560Z",
+      "fetchedAt": "2026-11-01T23:57:49.194Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.563Z",
+      "fetchedAt": "2026-11-01T23:57:49.196Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.564Z",
+      "fetchedAt": "2026-11-01T23:57:49.197Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.565Z",
+      "fetchedAt": "2026-11-01T23:57:49.199Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-11-01T20:45:56.567Z",
+      "fetchedAt": "2026-11-01T23:57:49.200Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-11-01T20:45:56.568Z",
+      "fetchedAt": "2026-11-01T23:57:49.202Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -440,18 +440,18 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 2.1,
+      "seasM": 2,
       "peakPeriodSec": 17,
-      "waterTempC": 26.2,
-      "observedAt": "2026-11-01T19:56:00Z"
+      "waterTempC": 26.3,
+      "observedAt": "2026-11-01T22:56:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 1.6,
+      "seasM": 1.7,
       "peakPeriodSec": 18,
-      "waterTempC": 26.8,
-      "observedAt": "2026-11-01T20:26:00Z"
+      "waterTempC": 26.9,
+      "observedAt": "2026-11-01T22:56:00Z"
     },
     "Maui": null
   },
