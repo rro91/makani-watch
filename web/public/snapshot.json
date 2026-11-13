@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-11-13T03:36:15.250Z",
+  "computedAt": "2026-11-13T05:53:51.976Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -39,62 +39,62 @@
     }
   ],
   "storms": [],
-  "outlookFormation48h": null,
-  "outlookFormation7day": null,
-  "outlookText": "000\nACPN50 PHFO 122323\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Thu Nov 12 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Beven\n\nNNNN",
+  "outlookFormation48h": 10,
+  "outlookFormation7day": 10,
+  "outlookText": "000\nACPN50 PHFO 130523\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 PM HST Thu Nov 12 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nWell West-Southwest of the Hawaiian Islands (Remnants of Pena):\nShowers and thunderstorms have increased somewhat in association\nwith the remnants of Tropical Storm Pena. However, recent\nsatellite-derived wind data indicate that the system lacks a\nwell-defined circulation. Environmental conditions appear only\nmarginally conducive for some redevelopment before the system moves\nwestward across the International Date Line on Friday.\n* Formation chance through 48 hours...low...10 percent.\n* Formation chance through 7 days...low...10 percent.\n\n$$\nForecaster Pierce/Gibbs\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.250Z",
+      "fetchedAt": "2026-11-13T05:53:51.977Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.281Z",
+      "fetchedAt": "2026-11-13T05:53:52.011Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.282Z",
+      "fetchedAt": "2026-11-13T05:53:52.013Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.283Z",
+      "fetchedAt": "2026-11-13T05:53:52.014Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.285Z",
+      "fetchedAt": "2026-11-13T05:53:52.016Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.286Z",
+      "fetchedAt": "2026-11-13T05:53:52.017Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.288Z",
+      "fetchedAt": "2026-11-13T05:53:52.018Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": true,
-      "fetchedAt": "2026-11-13T03:36:15.289Z",
+      "fetchedAt": "2026-11-13T05:53:52.020Z",
       "ageSeconds": 0
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-11-13T03:36:15.291Z",
+      "fetchedAt": "2026-11-13T05:53:52.021Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -438,18 +438,18 @@
     "Oahu": {
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
-      "seasM": 3.4,
+      "seasM": 2.9,
       "peakPeriodSec": 14,
       "waterTempC": 25.7,
-      "observedAt": "2026-11-13T02:56:00Z"
+      "observedAt": "2026-11-13T05:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
-      "seasM": 3.1,
-      "peakPeriodSec": 8,
-      "waterTempC": 26.7,
-      "observedAt": "2026-11-13T02:56:00Z"
+      "seasM": 3,
+      "peakPeriodSec": 13,
+      "waterTempC": 26.6,
+      "observedAt": "2026-11-13T05:26:00Z"
     },
     "Maui": null
   },
