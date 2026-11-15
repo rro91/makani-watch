@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-11-14T22:46:18.206Z",
+  "computedAt": "2026-11-15T02:12:01.795Z",
   "mode": "outside-hawaii",
   "currentIsland": null,
   "level": 0,
@@ -13,63 +13,63 @@
   "storms": [],
   "outlookFormation48h": null,
   "outlookFormation7day": null,
-  "outlookText": "000\nACPN50 PHFO 141705\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n800 AM HST Sat Nov 14 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Papin\nNNNN",
+  "outlookText": "000\nACPN50 PHFO 142329\nTWOCP \n\nTropical Weather Outlook\nNWS Central Pacific Hurricane Center Honolulu HI\nIssued by NWS National Hurricane Center Miami FL\n200 PM HST Sat Nov 14 2026\n\nFor the central North Pacific...between 140W and 180W:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Beven\n\nNNNN",
   "sources": [
     {
       "source": "api.weather.gov/alerts",
       "ok": true,
-      "fetchedAt": "2026-11-14T22:46:18.206Z",
+      "fetchedAt": "2026-11-15T02:12:01.795Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/CurrentStorms.json",
       "ok": true,
-      "fetchedAt": "2026-11-14T22:46:18.255Z",
+      "fetchedAt": "2026-11-15T02:12:01.819Z",
       "ageSeconds": 0
     },
     {
       "source": "nhc.noaa.gov/index-cp.xml",
       "ok": true,
-      "fetchedAt": "2026-11-14T22:46:18.256Z",
+      "fetchedAt": "2026-11-15T02:12:01.820Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Oahu)",
       "ok": false,
-      "fetchedAt": "2026-11-14T22:46:18.257Z",
+      "fetchedAt": "2026-11-15T02:12:01.821Z",
       "ageSeconds": 0,
       "error": "fetch failed"
     },
     {
       "source": "ndbc buoy (Oahu)",
       "ok": true,
-      "fetchedAt": "2026-11-14T22:46:18.259Z",
+      "fetchedAt": "2026-11-15T02:12:01.823Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Big Island)",
       "ok": false,
-      "fetchedAt": "2026-11-14T22:46:18.259Z",
+      "fetchedAt": "2026-11-15T02:12:01.824Z",
       "ageSeconds": 0,
       "error": "fetch failed"
     },
     {
       "source": "ndbc buoy (Big Island)",
       "ok": true,
-      "fetchedAt": "2026-11-14T22:46:18.260Z",
+      "fetchedAt": "2026-11-15T02:12:01.825Z",
       "ageSeconds": 0
     },
     {
       "source": "open-meteo (Maui)",
       "ok": false,
-      "fetchedAt": "2026-11-14T22:46:18.262Z",
+      "fetchedAt": "2026-11-15T02:12:01.826Z",
       "ageSeconds": 0,
       "error": "fetch failed"
     },
     {
       "source": "ndbc buoy (Maui)",
       "ok": false,
-      "fetchedAt": "2026-11-14T22:46:18.263Z",
+      "fetchedAt": "2026-11-15T02:12:01.827Z",
       "ageSeconds": 0,
       "error": "NDBC 51205: HTTP 404"
     }
@@ -159,17 +159,17 @@
       "stationId": "51201",
       "stationLabel": "Waimea Bay, Oahu",
       "seasM": 1.9,
-      "peakPeriodSec": 13,
+      "peakPeriodSec": 12,
       "waterTempC": 25.8,
-      "observedAt": "2026-11-14T21:56:00Z"
+      "observedAt": "2026-11-15T01:26:00Z"
     },
     "BigIsland": {
       "stationId": "51206",
       "stationLabel": "Hilo, Big Island",
       "seasM": 2.5,
       "peakPeriodSec": 9,
-      "waterTempC": 26.7,
-      "observedAt": "2026-11-14T21:56:00Z"
+      "waterTempC": 26.5,
+      "observedAt": "2026-11-15T01:26:00Z"
     },
     "Maui": null
   },
