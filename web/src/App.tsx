@@ -78,6 +78,10 @@ function ageLabel(iso: string): string {
   return `${h} h temu`;
 }
 
+// Project closed after the October 2026 trip: the page stays online as a
+// read-only archive of the last snapshot. No live fetches, no auto-refresh.
+const ARCHIVED = true;
+
 export default function App() {
   const [snapshot, setSnapshot] = useState<ThreatSnapshot | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -101,7 +105,7 @@ export default function App() {
   // fetch them fresh on every visit and recompute the level from that,
   // instead of waiting on the snapshot for the thing that matters most.
   useEffect(() => {
-    if (!snapshot) return;
+    if (!snapshot || ARCHIVED) return;
     const activeSegment =
       snapshot.tripSegments.find((s) => s.island === snapshot.currentIsland) ?? null;
     fetchLiveAlertsHI()
@@ -159,6 +163,13 @@ export default function App() {
 
   return (
     <div className="app">
+      {ARCHIVED && (
+        <div className="archived-note">
+          Projekt zakończony. To archiwum — dane nie są już odświeżane (ostatnie:{" "}
+          {new Date(snapshot.computedAt).toLocaleDateString("pl-PL")}). Aktualne
+          ostrzeżenia: <a href="https://www.weather.gov/hfo/">NWS Honolulu</a>.
+        </div>
+      )}
       <div className="topbar">
         <span className="brand">Makani Watch</span>
         <span className="mode">

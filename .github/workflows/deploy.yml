@@ -1,16 +1,18 @@
-name: Refresh data and deploy
+name: Deploy archived site
+
+# Project closed after the October 2026 trip. The site is a read-only
+# archive of the last committed snapshot: no schedule, no data fetching,
+# no AI calls. Deploys only on push or manual trigger.
+# To revive live monitoring, restore the schedule + ingest steps from git
+# history (commit b8918ce) and add an ANTHROPIC_API_KEY secret if wanted.
 
 on:
   push:
     branches: [main]
-  schedule:
-    # Every 10 minutes. GitHub may delay scheduled runs under load, but a
-    # weather-watch app doesn't need to-the-second precision.
-    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -28,22 +30,6 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install ingest dependencies
-        run: npm ci
-
-      - name: Run ingest (fetch live NOAA data)
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: npm run ingest
-
-      - name: Commit refreshed snapshot
-        run: |
-          git config user.name "makani-watch-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add data/snapshot.json web/public/snapshot.json
-          git diff --cached --quiet || git commit -m "chore: refresh snapshot [skip ci]"
-          git push
-
       - name: Install web dependencies
         working-directory: web
         run: npm ci
@@ -52,7 +38,7 @@ jobs:
         working-directory: web
         run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: web/dist
 

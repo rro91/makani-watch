@@ -145,6 +145,19 @@ body {
   display: inline-block;
 }
 
+.archived-note {
+  padding: 0.7rem 1.25rem;
+  background: var(--surface-2);
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.archived-note a {
+  color: var(--accent);
+}
+
 .topbar {
   display: flex;
   align-items: baseline;

@@ -20,3 +20,11 @@ cd web
 npm install
 npm run dev
 ```
+
+## Status: zakończony (listopad 2026)
+
+Projekt służył do podróży na Hawaje (2–12.10.2026) i został zamknięty.
+Strona https://rro91.github.io/makani-watch/ zostaje jako archiwum ostatnich danych —
+nic się już automatycznie nie odświeża i nie korzysta z AI.
+Żeby wznowić monitoring, przywróć harmonogram i krok `ingest` w
+`.github/workflows/deploy.yml` (wersja z commita `b8918ce`).
